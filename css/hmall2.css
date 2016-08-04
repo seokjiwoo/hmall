@@ -1,0 +1,635 @@
+@charset 'utf-8';
+html,
+body {width:100%; position:relative;}
+
+#wrap {width:100%; position:relative; top:0;}
+
+.dim {position:absolute; top:0; left:0; width:0; height:0; background:rgba(0,0,0,0.5);}
+.dim a {position:absolute; top:0; left:0; width:100%;height:100%; z-index:999;}
+.dim.on {width:100%; height:100%; z-index:999;}
+
+/* container */
+#container {width:100%; float:left; }
+#container header {position:relative; z-index:100}
+
+#container header .gnb_area {z-index:5; position:relative; overflow:hidden; border:2px solid #dd6540; padding:0 10px; background:#ff7e6b url("http://image.hyundaihmall.com/static/smart/2013/img/common/bg_head.jpg") repeat-x;}
+#container header .gnb_area h1 {float:left; padding:14px 0 10px;}
+#container header .gnb_area div.bot {position:relative; height:80px; clear:both; width:100%; }
+#container header .gnb_area div.bot > a {width:68px; height:68px; text-indent:-1000%}
+#container header .gnb_area div.bot a[href='#left_side'] {position:relative; z-index:100; float:left; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/ico_total.png") no-repeat 0 -147px}
+#container header .gnb_area div.bot a[href='#right_side'] {position:absolute; top:0; right:4px; z-index:100; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/ico_total.png") no-repeat -68px -147px}
+
+#container header nav.gnb {position:absolute; top:28px; right:10px;}
+#container header nav.gnb a {margin:0 0 0 15px; height:24px; line-height:24px; display:inline-block;}
+#container header nav.gnb a img {vertical-align:top}
+
+#container header .search_area {display:block; margin:0 auto; width:70%; height:66px; padding-left:6px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/head_inputs_search.png") no-repeat 0 0}
+#container header .search_area .inputs {display:block; font-size:30px; padding-right:20px; height:66px; line-height:66px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/head_inputs_search.png") no-repeat right 0}
+#container header .search_area .inputs input {background:#fff; float:left; margin:6px 0 0;width:78%; border:0}
+#container header .search_area .inputs a {float:right}
+
+#container section.top_event_area {border-top:1px solid #828282; border-bottom:1px solid #454545; /*padding-bottom:1px;  background:#656464; background:linear-gradient(#656464, #464646); */ height:50px; text-align:center}
+#container section.top_event_area a.sample {letter-spacing:-1pt; height:50px; line-height:50px; font-size:1.6em; color:#fff; width:100%; background:#616060 url("http://image.hyundaihmall.com/static/smart/2013/img/common/header_shadow.png") repeat-x 50% 0;}
+#container section.top_event_area a span.setp {color:#fd7d6b}
+
+.contanier {padding:0 0 30px; min-height:870px;}
+.contanier header h2 {padding:15px 0; font-size:30px; line-height:40px; height:40px; overflow:hidden;}
+.contanier header h2 .ico {margin:0 10px 0 0}
+
+.contanier header ul.location {font-size: 21px; overflow:hidden; height:70px; line-height:70px; width:100%; padding:0 20px; margin-left:-20px; border-top:1px solid #d5d5d5;}
+.contanier header ul.location li{float:left; margin:0 0 0 15px; padding:0 25px 0 0; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/arrow.png") no-repeat right 50%;}
+.contanier header ul.location li:first-child{margin:0}
+.contanier header ul.location li:last-child{background:none; padding-right:0;}
+
+.contanier.detail_list .location{font-size: 21px; width:100%; padding:20px 38px; margin-left:-20px; border-top:2px solid #d5d5d5;}
+.contanier.detail_list .location .catc{color:#fc7e6d;}
+
+.contanier div.contents_tit {position:relative; padding:0 20px; height:70px; line-height:70px; border-top:2px solid #a7a7a7; border-bottom:1px solid #cacaca; background:#f9f9f9}
+.contanier div.contents_tit h3 {font-size:1.8em}
+.contanier div.contents_tit .btns {position:absolute; top:7px; right:20px; height:54px; line-height:54px !important; border:2px solid #999; padding-left:0; border-radius:5px; -webkit-box-shadow: #666 0px 2px 2px; box-shadow: #666 0px 2px 2px; background-image:none;}
+.contanier div.contents_tit .btns span {height:50px; padding:0 10px; background-image:none; border-radius:5px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/btn_48w.gif") repeat-x; background-size:auto 100%}
+
+/* side_set */
+.side_set {float:left; min-height:320px; height:100%; z-index:99999; }
+.side_set h2 {position:relative; width:432px; height:30px; padding:28px 0 36px 28px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/bg_side_bar.gif") repeat-x 0 bottom;}
+.side_set .bg_note {width:440px; height:100%; padding-left:20px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/bg_side_left_line.gif") repeat-y 16px 0}
+
+#left_side {position:absolute; left:-200%; top:0; width:460px; overflow:hidden; background:#f9f8ed;}
+#left_side .bg_note {padding-top:20px; padding-left:0; width:460px}
+#left_side .login_box.login {overflow:hidden}
+#left_side .login_box.login > span {float:left; text-align:center; display:inline-block; width:160px;}
+#left_side .login_box.login > div {display:inline-block; padding-top:10px; width:300px;}
+#left_side .login_box.login > div p {font-weight:bold; margin:0 0 10px; color:#484848; font-size:24px}
+#left_side .login_box.login ul li {width:50%; float:left}
+#left_side .login_box.login ul li:first-child {width:35%; margin:0 5% 0 0; background:url("http://image.hyundaihmall.com/static/smart/2013/img/main/bar_cate_gray2.jpg") no-repeat right 50%;}
+#left_side .login_box.login ul li strong,
+#left_side .login_box.login ul li a {height:28px; line-height:24px; display:inline-block; vertical-align:middle; font-size:20px}
+#left_side .login_box.login ul li strong {margin:0 10px 0 0; color:#484848}
+#left_side .login_box.login ul li a {font-weight:bold; color:#f45c46}
+#left_side .login_box.no {width:360px; margin:0 auto 20px; padding:20px; border-radius:10px; border:2px dashed #d0cda1}
+#left_side .login_box.no p {color:#484848; font-size:20px; text-align:center; padding:0 0 15px}
+#left_side .login_box.no p + div {text-align:center}
+#left_side .login_box.no p + div .btns2 {min-width:120px; margin:0 5px}
+#left_side .login_box.no p + div .btns2 span {color:#656565; font-size:20px; display:block; border:2px solid #fff; height:46px; background: -webkit-linear-gradient(#fff, #f8f8f8); background: linear-gradient(#fff, #f8f8f8);}
+#left_side .left_box {border-top:1px solid #d0cea1}
+#left_side .left_box .anchor_line {color:#373737; font-size:20px; display:block; padding-left:30px; height:65px; line-height:65px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/main/left_side_link_line.png") no-repeat right 50%}
+#left_side .left_box.num3 {}
+#left_side .left_box.num3 ul {text-align:center}
+#left_side .left_box.num3 ul li {display:inline-block; margin:0 5px 0 0;}
+#left_side .left_box.num3 ul li:last-child {margin:0}
+#left_side .left_box.num3 ul li img {font-size:0; width:86px; height:86px; display:block; padding:4px; border:2px solid #d8d8d8}
+#left_side .left_box.num4 {position:relative; overflow:hidden;}
+#left_side .left_box.num4 .bt_tnrh {text-align:center; vertical-align:middle; margin-top:-10px; display:inline-block; background:#fff; width:36px; height:46px; line-height:46px; border:2px solid #dadada; border-radius:5px; -webkit-box-shadow: #999 0px 2px 3px; box-shadow:#999 0px 2px 3px;}
+#left_side .left_box.num4 .bt_tnrh a {display:block;}
+#left_side .left_box.num4 .bt_tnrh img {display:inline-block; font-size:0; line-height:46px;}
+#left_side .left_box.num4 .anchor_line + .bt_tnrh {margin-left:30px}
+
+#left_side .left_box.num4 .left_4_list {display:block; margin:0 auto; vertical-align:middle; width:330px; overflow-x:hidden;}
+#left_side .left_box.num4 .left_4_list ul {}
+#left_side .left_box.num4 .left_4_list .l4l_wrap .flex-viewport ul li {display:inline-block; vertical-align:top; width:82px; min-height:110px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/main/left_side_bg_favorite.s.png") no-repeat 50% 0; background-size:100% auto;}
+#left_side .left_box.num4 .left_4_list .l4l_wrap .flex-viewport ul li a {display:block; text-align:center; padding:9px 0 0;}
+#left_side .left_box.num4 .left_4_list .l4l_wrap .flex-viewport ul li a span {display:block; font-size:16px;}
+#left_side .left_box.num4 .left_4_list .l4l_wrap .flex-viewport ul li a img {display:inline-block; width:50px; margin:0 0 5px}
+
+#left_side .left_box.num4 .flex-direction-nav {}
+#left_side .left_box.num4 .flex-direction-nav li {top:50%}
+#left_side .left_box.num4 .flex-direction-nav li a {text-align:center; vertical-align:middle; display:inline-block; width:36px; border:2px solid #dadada; border-radius:5px; -webkit-box-shadow: #999 0px 2px 3px; box-shadow:#999 0px 2px 3px; background:#fff url("http://image.hyundaihmall.com/static/smart/2013/img/main/left_side_btn_left.png") no-repeat 50%}
+#left_side .left_box.num4 .flex-direction-nav li + li a {background:#fff url("http://image.hyundaihmall.com/static/smart/2013/img/main/left_side_btn_right.png") no-repeat 50%}
+
+#left_side .left_box.num5 li {clear:both; margin:0 0 20px}
+#left_side .left_box.num5 li a {display:block}
+#left_side .left_box.num5 li a img {float:left; margin:0 10px 0 30px; padding:4px; width:86px; height:86px; border:2px solid #d8d8d8}
+#left_side .left_box.num5 li a img + span {line-height:18px; height:30px;}
+#left_side .left_box.num5 li a > span {display:block; font-size:18px; padding:0 0 3px}
+#left_side .left_box.num5 li a > span strike {font-size:18px;display:inline-block;margin:0 10px 0 0}
+#left_side .left_box.num5 li a > span strong {font-size:22px;display:inline-block;}
+
+#left_side .left_box.num3,
+#left_side .left_box.num4,
+#left_side .left_box.num5 {padding-bottom:20px;}
+
+#right_side {position:relative; right:200%; width:460px; top:0; overflow:hidden; background:#f9f8ed;}
+#right_side .bg_note {padding-top:11px;background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/bg_side_right_line.gif") repeat-y 16px 0}
+#right_side h3 a {display:block; height:74px; overflow:hidden}
+#right_side h3.on a img{margin-top:-74px}
+#right_side h3.on + ul {display:block}
+
+#right_side h3.btn a {display:block; color:#fff; font-size:26px; padding:0 0 12px 10px; height:62px; line-height:54px; overflow:hidden; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/bg_car1.jpg") no-repeat 0 0;}
+#right_side h3.btn a img {margin:0 10px 0 0; display:inline-block; vertical-align:middle}
+#right_side h3.btn a span {display:inline-block; vertical-align:middle}
+#right_side h3.btn.on a {background-position:0 -74px;}
+#right_side h3.btn.on + ul {display:block}
+#right_side ul {display:none; margin:0 0 20px}
+#right_side ul li {padding:0 0 0 42px; height:60px; line-height:60px; font-size:1.6em; border-bottom:1px solid #e4e2c5}
+#right_side ul li:last-child {border-bottom:0}
+.box_in_side {position:absolute; top:0; left:0; height:100%}
+
+/* body */
+#body {}
+
+/* footer */
+footer {width:100%; min-height:435px; background:#f8f8f8; border-top:1px solid #8a8a8a;}
+footer > .btns_top {display:block; height:60px; line-height:60px; background:#fff; font-size:24px; text-align:center; border-bottom:1px solid #8a8a8a}
+footer nav {margin-bottom:22px}
+footer nav > ul {border-top:1px solid #fff;border-bottom:1px solid #8a8a8a; text-align:center; background:#c6c6c6}
+footer nav > ul li {width:28%; margin-right:-5px; display:inline-block; border-left:1px solid #fff}
+footer nav > ul li:first-child,
+footer nav > ul li:first-child a {border-left:0}
+footer nav > ul li:last-child {width:15%}
+footer nav > ul li a {display:inline-block; width:100%; text-align:center; padding:24px 0 20px; border-left:1px solid #a0a0a0}
+footer nav > ul li:last-child a {padding:12px 0 14px}
+footer > ul {text-align:center; margin-bottom:20px}
+footer > ul li {display:inline-block}
+
+footer address {text-align:center}
+footer address p,
+footer address a {font-size:1.3em; line-height:140%; vertical-align:middle; color:#424242}
+footer address a {font-size:1em; line-height:100%; display:inline-block}
+
+/* btns */
+.btns {text-align:center; display:inline-block; height:60px; line-height:60px !important; padding-left:10px; background-image:url("http://image.hyundaihmall.com/static/smart/2013/img/common/btns_left.png"); background-repeat:no-repeat; background-position:0 0;}
+.btns span {display:block; font-size:26px; height:60px; line-height:60px !important; padding-right:10px; background-image:url("http://image.hyundaihmall.com/static/smart/2013/img/common/btns_right.png"); background-repeat:no-repeat; background-position:right 0}
+
+.btns.go_hyundai {border:2px solid #999; padding-left:0; border-radius:5px; -webkit-box-shadow: #666 0px 2px 2px; box-shadow: #666 0px 2px 2px; background-image:none;}
+.btns.go_hyundai span {height:56px; padding:0 10px; background-image:none; border-radius:5px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/btn_48w.gif") repeat-x; background-size:auto 100%}
+
+.qick_service_tit .btns {border:2px solid #999; height:56px; line-height:56px !important; padding-left:0; border-radius:5px; -webkit-box-shadow: #666 0px 2px 2px; box-shadow: #666 0px 2px 2px; background-image:none;}
+.qick_service_tit .btns span {height:52px; padding:0 10px; background-image:none; border-radius:5px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/btn_48w.gif") repeat-x; background-size:auto 100%}
+
+.btns.setblock {display:block;}
+.btns.setblock > span {display:block;}
+
+.btns_i {position:relative;width:50px; height:50px; display:inline-block; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/btn_set.png") no-repeat;}
+.btns_i span {display:inline-block; font-size:0; width:0px; height:0px; position:absolute; top:100%; left:-100%;}
+.btns_i.type1 {width:48px; height:48px; overflow:hidden; background-position:0 0}
+.btns_i.type2 {background-position:0 -48px}
+.btns_i.type3 {background-position:0 -98px}
+
+.btns.colorf{color:#fff}
+.btns.w46 {padding:0; height:43px; line-height:43px !important; border:2px solid #dadada; border-radius:5px; background-image:none; -webkit-box-shadow: #666 0px 2px 2px; box-shadow: #666 0px 2px 2px;}
+.btns.w46 span {height:39px; line-height:39px !important; font-size:18px; padding:0 10px; border:2px solid #fff; border-radius:5px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/btn_48w.gif") repeat-x}
+.btns.w70 {height:70px; line-height:70px !important; background-position:0 -120px}
+.btns.w70 span {height:70px; line-height:70px !important; background-position:right -240px}
+.btns.p70 {height:70px; line-height:70px !important; background-position:0 -260px}
+.btns.p70 span {height:70px; line-height:70px !important; background-position:right -520px}
+.btns.b60 {height:60px; line-height:60px !important; background-position:0 -60px}
+.btns.b60 span {height:60px; line-height:60px !important; background-position:right -120px}
+.btns.g68 {height:68px; line-height:68px !important; background-position:0 -634px}
+.btns.g68 span {height:68px; line-height:68px !important; background-position:right -894px}
+.btns.p68 {height:68px; line-height:68px !important; background-position:0 -702px}
+.btns.p68 span {height:68px; line-height:68px !important; background-position:right -962px}
+.btns.b70 {height:70px; line-height:70px !important; background-position:0 -190px}
+.btns.b70 span {height:70px; line-height:70px !important; background-position:right -380px}
+.btns.b70.swch {background-position:0 -190px}
+.btns.b70.swch span {background-position:right -380px}
+.btns.b70.swch.on {background-position:0 -190px}
+.btns.b70.swch.on span {background-position:right -380px}
+.btns.swch {background-position:0 0}
+.btns.swch span {padding-right:50px; background-position:right -60px}
+.btns.swch.on {background-position:0 -60px}
+.btns.swch.on span {color:#fff; padding-right:50px; background-position:right -180px}
+.btns.swch.dw {background-position:0 -910px}
+.btns.swch.dw span {color:#fff; padding-right:50px; background-position:right -1170px}
+.btns.w70.swch {background-position:0 -120px}
+.btns.w70.swch span {background-position:right -310px}
+.btns.gray {height:70px;background-position:0 -840px}
+.btns.gray span {height:70px; line-height:70px;background-position:right -1030px}
+.btns.w70.swch.notdw span {background-position:right -1230px}
+.btns.w70.swch.on {background-position:0 -190px}
+.btns.w70.swch.on span {background-position:right -450px}
+
+.btns.p90 {height:90px; line-height:90px !important; background-position:0 -330px}
+.btns.p90 span {height:90px; line-height:90px !important; background-position:right -590px}
+.btns.ak {height:72px; line-height:72px !important; background-position:0 -420px}
+.btns.ak span {height:72px; line-height:72px !important; background-position:right -680px}
+.btns.ak.pink {background-position:0 -492px}
+.btns.ak.pink span {background-position:right -752px}
+.btns.ac.swch {font-size:18px;height:70px; line-height:70px !important; background-position:0 -564px}
+.btns.ac.swch span {height:70px; line-height:70px !important;background-position:right -824px}
+.btns.ac.swch.on {background-position:0 -770px}
+.btns.ac.swch.on span {color:#fff; background-position:right -1099px}
+
+.btns.type_page {padding-left:0; min-width:50px; height:50px; line-height:50px !important; border:2px solid #848484; border-radius:5px; background-image:none}
+.btns.type_page.nowpage {border-color:#f56d5a; color:#eb5542; border-radius:5px; background-image:none}
+.btns.type_page span {padding-right:0; height:50px; line-height:50px !important; background-image:none}
+
+.btns .ico {margin:-4px 5px 0 0}
+.btns.icon .ico {margin:-5px 0 0 0}
+
+.btns2 {display:inline-block; vertical-align:middle; height:50px; line-height:50px !important; border-radius:5px; border:2px solid #a1a1a1; box-shadow: #666 0px 1px 1px;}
+.btns2 span {display:inline-block; height:46px; border-radius:5px; border:2px solid #fff; padding:0 20px}
+.btns2.mline span {line-height:20px; padding:5px 20px;}
+
+.btns3 {border:2px solid #999; display:inline-block; vertical-align:middle; height:50px; line-height:50px !important; border-radius:5px; box-shadow: #666 0px 1px 1px;}
+.btns3 span {display:inline-block; text-align:center; height:50px; border-radius:5px; padding:0 20px; color:#fff; background: -webkit-linear-gradient(#fff, #f8f8f8);
+background: linear-gradient(#fff, #f8f8f8);}
+
+.btns3.green {border:0}
+.btns3.green span {background: -webkit-linear-gradient(#bfd476, #9eb54c);
+background: linear-gradient(#bfd476, #9eb54c);}
+
+.btns3.red {border:0}
+.btns3.red span {background: -webkit-linear-gradient(#f86b56, #e54e39);
+background: linear-gradient(#f86b56, #e54e39);}
+
+.btns3.gray {border:0}
+.btns3.gray span {background: -webkit-linear-gradient(#bcbcbc, #959595);
+background: linear-gradient(#bcbcbc, #959595);}
+
+.btns3.dw {border-color:#666}
+.btns3.dw span {background: -webkit-linear-gradient(#bcbcbc, #959595);
+background: linear-gradient(#bcbcbc, #959595);}
+
+.btns_more {display:block; height:58px; line-height:58px; background:#f9f9f9; border:2px solid #c3c3c3; border-radius:5px; text-align:center}
+
+/* inputs */
+.inputs {display:inline-block;}
+.inputs input[type=text],.inputs input[type=number],.inputs input[type=password] {border:2px solid #bab9be; width:100%}
+.inputs input[readonly=readonly] {background:#f5f6f7;}
+.inputs.chek {position:relative; display:inline-block; min-width:60px; height:60px; overflow:hidden;}
+
+.inputs.chek input + label {text-indent:-1000%; font-size:0; width:60px; height:60px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/inputs_chek.png") no-repeat 0 0}
+.inputs.chek label + label {vertical-align:middle; height:60px; line-height:60px;}
+.inputs.chek.ked input + label {background-position:0 -60px}
+
+.inputs.chek.nbdr {min-width:38px; height:38px; line-height:38px;}
+.inputs.chek.nbdr input + label {text-indent:-1000%; font-size:0; width:38px; height:38px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/ico_total.png") no-repeat -116px -58px}
+.inputs.chek.nbdr label + label {vertical-align:middle; height:38px; line-height:38px;}
+.inputs.chek.ked.nbdr input + label {background-position:-162px -58px}
+
+.inputs.radio {position:relative; min-width:52px; height:52px; overflow:hidden;}
+.inputs.radio input + label {text-indent:-1000%; font-size:0; width:52px; height:52px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/inputs_radio.png") no-repeat 0 0}
+.inputs.radio label + label {vertical-align:middle; height:52px; line-height:52px;}
+.inputs.radio.ked input + label {background-position:0 -54px}
+.inputs.chek input,.inputs.radio input {position:absolute; top:-100%; left:-100%;}
+.inputs.radio label + label,.inputs.chek input + label {margin-right:10px;}
+
+.inputs.text,
+.inputs.number,
+.inputs.password {}
+.inputs.text input,
+.inputs.number input,
+.inputs.password input {border-radius:3px; border:2px solid #bab9be}
+
+.inputs.number input {height:46px; line-height:46px; font-size:18px;}
+.inputs.number a.setting {overflow:hidden; text-indent:-1000%;width:50px; height:50px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/btn_set.png") no-repeat 0 -49px; display:inline-block;}
+.inputs.number input + a.setting {background-position:0 -100px}
+
+/* textarea */
+.textareas {display:inline-block; border-radius:3px; border:2px solid #bab9be}
+.textareas textarea {border:0; padding:6px 10px;}
+
+/* selects */
+.selects {display:inline-block; vertical-align:middle; border:2px solid #848484; height:52px; line-height:46px; border-radius:5px;}
+.selects select {display:block; width:100%; height:52px; line-height:46px; padding:0 45px 0 10px;border:0; background:#fff url("http://image.hyundaihmall.com/static/smart/2013/img/common/ico_total.png") no-repeat right -220px; -webkit-appearance:none}
+
+/* pagenation */
+.pagenation {text-align:center; margin:20px 0 0 0;}
+.pagenation a {margin:0 4px 0 0;}
+.pagenation a:first-child {}
+.pagenation a:last-child {}
+.pagenation a.btns i.ico {margin:-4px 0 0;}
+
+/* chain_search_key_box */
+.chain_search_key_box {position:relative; display:none; font-size:24px;}
+.chain_search_key_box.on {display:block;}
+.chain_search_key_box.on .set_shadow{position:absolute;top:0;left:0; width:100%; display:block; height:8px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/header_shadow.png") repeat-x;}
+.chain_search_key_box table {width:100%;}
+.chain_search_key_box table td {height:68px; line-height:68px; border-bottom:2px solid #f2f2f2}
+.chain_search_key_box table tr td:first-child {border-right:2px solid #f2f2f2}
+.chain_search_key_box table tr td a {padding:0 0 0 10px; height:68px; line-height:68px; display:block}
+.chain_search_key_box a.close_cskb {background:#f9f9f9; height:68px; line-height:68px; border-bottom:2px solid #f2f2f2; display:block; text-align:right; padding:0 20px 0 0}
+.chain_search_key_box a.close_cskb .ico {margin:0 5px 0 0}
+
+/* ico */
+.ico {vertical-align:middle;text-indent:-1000%; display:inline-block; font-size:0; background-image:url("http://image.hyundaihmall.com/static/smart/2013/img/common/ico_total.png"); background-repeat:no-repeat;}
+.ico.x_g {width:24px; height:24px; background-position:-207px -67px}
+.ico.question {width:18px; height:30px; background-position:-244px -66px}
+.ico.minus {width:24px; height:24px; background-position:-225px -111px}
+.ico.plus {width:24px; height:24px; background-position:-255px -111px}
+.ico.card_w {width:34px; height:24px; background-position:-124px -104px}
+.ico.bag_w {width:32px; height:38px; background-position:-82px -97px}
+.ico.round1_w {width:24px; height:24px; background-position:-44px -104px}
+.ico.round1_p {width:22px; height:30px; background-position:-82px -66px}
+.ico.round1_b {width:22px; height:22px; background-position:-154px -152px}
+.ico.round1_g {width:22px; height:22px; background-position:-186px -183px}
+.ico.round_rb {width:22px; height:22px; background-position:-154px -182px}
+.ico.chek_w {width:32px; height:26px; background-position:-1px -103px}
+.ico.chek_p {width:37px; height:30px; background-position:-162px -63px}
+.ico.zoom_p {width:28px; height:26px; background-position:-45px -66px}
+.ico.zoom_g {overflow:hidden;width:38px; height:40px; background-position:-176px -104px}
+.ico.dwarr {width:30px; height:24px; background-position:0 -272px}
+.ico.page_prev {width:18px; height:20px; background-position:-3px -69px}
+.ico.page_next {width:18px; height:20px; background-position:-22px -69px}
+
+.ico.sns {width:56px; height:56px;}
+.ico.sns.cacaot {background-position:0 0}
+.ico.sns.twt {background-position:-57px 0}
+.ico.sns.febk {background-position:-114px 0}
+.ico.sns.m2d {background-position:-171px 0}
+.ico.sns.cyw {background-position:-228px 0}
+
+.ico.carte {width:64px; height:71px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/ico_carte.png") no-repeat}
+.ico.home {display:inline-block; width:62px; height:62px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/cat_home.png") no-repeat}
+.ico.carte.i1 {background-position:-128px 0}/* 패션의류 */
+.ico.carte.i2 {background-position:-256px 0}/* 잡화명품 */
+.ico.carte.i3 {background-position:-320px 0}/* 화장품 */
+.ico.carte.i4 {background-position:-384px 0}/* 유아동/문화 */
+.ico.carte.i5 {background-position:-448px 0}/* 식품/주방 */
+.ico.carte.i6 {background-position:-192px 0}/* 스포츠/여행 */
+.ico.carte.i7 {background-position:-64px 0}/* 가구/생활 */
+.ico.carte.i8 {background-position:0 0}/* 가전/컴퓨터 */
+
+/* bages */
+.bages {display:inline-block; color:#656565; padding:6px 8px; border:2px solid #ccc; border-radius:5px}
+.bages.c_gold{color:#cda24e}
+.bages.c_pink{color:#fb715e}
+.bages.type3 {color:#fff;border-color:#ff8314; padding:4px 8px; background:#f25640}
+.bages_type2 {display:inline-block; padding-left:4px;height:30px; line-height:30px; color:#fff; border:2px solid #fff; border-radius:5px}
+.bages_type2 em {font-style:normal; display:inline-block; padding-right:4px; font-size:1.1em;}
+
+.bages_type2.c_blue{border-color:#75a2cf; background:#9dbedf}
+.bages_type2.c_blue em{}
+.bages_type2.c_green{border-color:#8cae49; background:#b7cb71}
+.bages_type2.c_green em{}
+.bages_type2.c_orenge{border-color:#ff8314; background:#ffa414}
+.bages_type2.c_orenge em{}
+.bages_type2.c_gray{border-color:#8c8c8c; background:#aeaeae}
+.bages_type2.c_gray em{}
+.bages_type2.c_red{border-color:#ed1c24; background:#f26c4f}
+.bages_type2.c_red em{}
+
+/* tabs */
+.tabs {}
+.tabs .tabs_a {color:#565960; height:58px; display:block; padding-left:10px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/tabs.png") no-repeat 0 0}
+.tabs .tabs_a span {height:58px; line-height:58px; display:block; padding-right:10px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/tabs.png") no-repeat right 0}
+.tabs .on {z-index:5; border-color:#909199}
+
+.tabs ul li {position:relative; text-align:center; float:left; width:33%; margin-left:-2px;}
+.tabs ul li:first-child {border:0; width:32%; margin-left:0;}
+.tabs ul li:last-child {border:0; width:32%}
+
+.tabs ul li.on .tabs_a {background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/tabs.png") no-repeat 0 -58px}
+.tabs ul li.on .tabs_a span  {background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/tabs.png") no-repeat right -58px}
+
+.tabs ul li:first-child .tabs_a {background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/tabs.png") no-repeat 0 -116px}
+.tabs ul li:first-child .tabs_a span {background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/tabs.png") no-repeat right -116px}
+.tabs ul li:last-child .tabs_a  {background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/tabs.png") no-repeat 0 -232px}
+.tabs ul li:last-child .tabs_a span  {background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/tabs.png") no-repeat right -348px}
+
+.tabs ul li.fc.on .tabs_a {background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/tabs.png") no-repeat 0 -174px}
+.tabs ul li.fc.on .tabs_a span  {background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/tabs.png") no-repeat right -174px}
+.tabs ul li.lc.on .tabs_a {background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/tabs.png") no-repeat 0 -290px}
+.tabs ul li.lc.on .tabs_a span  {background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/tabs.png") no-repeat right -406px}
+
+/* acodian */
+.acodian_box {overflow:hidden; height:auto}
+.acodian_box.acd_off {visibility:visible; height:0}
+
+/* star_point */
+.btns .star_point,
+.star_point {display:inline-block; vertical-align:middle; height:29px; width:174px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/star_point.png") no-repeat 0 0; background-size:100% 174px}
+.star_point.type144 {width:144px; height:24px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/star_point144.png") no-repeat 0 0; background-size:100% auto}
+.star_point.type117 {width:117px; height:20px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/star_point117.png") no-repeat 0 0; background-size:100% auto}
+
+.star_point span {text-indent:-9999em; display:inline-block; width:0; height:0;}
+.star_point.star1 {background-position:0 -29px}
+.star_point.star2 {background-position:0 -59px}
+.star_point.star3 {background-position:0 -86px}
+.star_point.star4 {background-position:0 -115px}
+.star_point.star5 {background-position:0 -144px}
+
+.star_point.type144.star1 {background-position:0 -24px}
+.star_point.type144.star2 {background-position:0 -48px}
+.star_point.type144.star3 {background-position:0 -72px}
+.star_point.type144.star4 {background-position:0 -96px}
+.star_point.type144.star5 {background-position:0 -120px}
+
+.star_point.type117.star1 {background-position:0 -20px}
+.star_point.type117.star2 {background-position:0 -39px}
+.star_point.type117.star3 {background-position:0 -59px}
+.star_point.type117.star4 {background-position:0 -78px}
+.star_point.type117.star5 {background-position:0 -98px}
+
+/* list_align -상품 목록 정렬 방식 */
+.list_align {padding:6px 20px; background:#f9f9f9; /* border-top:1px solid #a7a7a7; */ border-bottom:1px solid #cacaca;}
+.list_align a {display:inline-block; width:56px; height:56px;}
+.list_align a span{text-indent:-9999em; font-size:0;}
+
+.list_align .selects {width:65%; font-size:20px;}
+.list_align .listtpye {background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/porduct_list_btn.png") no-repeat; background-position:0 -56px; margin:0 0 0 20px;}
+.list_align .imgtpye {background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/porduct_list_btn.png") no-repeat; background-position:-64px -56px;}
+.list_align .slidetpye {background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/porduct_list_btn.png") no-repeat; background-position:-128px -56px;}
+.list_align .listtpye.on {background-position:0 0;}
+.list_align .imgtpye.on {background-position:-64px 0;}
+.list_align .slidetpye.on {background-position:-128px 0;}
+
+/* etc */
+.tibdr1 {padding:4px; border:2px solid #dcdcdc}
+.tibdr2 {padding:8px; border:2px solid #dedede}
+.tibdr3 {padding:10px; border:2px solid #dedede}
+
+.stt {color:#9c9c9c; text-decoration:line-through}
+
+.float_l {float:left}
+.float_r {float:right}
+
+.margin_t0 {margin-top:0px !important}
+.margin_t5 {margin-top:5px !important}
+.margin_t10 {margin-top:10px !important}
+.margin_t15 {margin-top:15px !important}
+.margin_t20 {margin-top:20px !important}
+.margin_t25 {margin-top:25px !important}
+.margin_t30 {margin-top:30px !important}
+.margin_t35 {margin-top:35px !important}
+.margin_t40 {margin-top:40px !important}
+.margin_t50 {margin-top:50px !important}
+.margin_t60 {margin-top:60px !important}
+.margin_t70 {margin-top:70px !important}
+.margin_t80 {margin-top:80px !important}
+.margin_t90 {margin-top:90px !important}
+.margin_t100 {margin-top:100px !important}
+
+.margin_b0 {margin-bottom:0px !important}
+.margin_b5 {margin-bottom:5px !important}
+.margin_b10 {margin-bottom:10px !important}
+.margin_b15 {margin-bottom:15px !important}
+.margin_b20 {margin-bottom:20px !important}
+.margin_b25 {margin-bottom:25px !important}
+.margin_b30 {margin-bottom:30px !important}
+.margin_b35 {margin-bottom:35px !important}
+.margin_b40 {margin-bottom:40px !important}
+.margin_b50 {margin-bottom:50px !important}
+.margin_b60 {margin-bottom:60px !important}
+.margin_b70 {margin-bottom:70px !important}
+.margin_b80 {margin-bottom:80px !important}
+.margin_b90 {margin-bottom:90px !important}
+.margin_b100 {margin-bottom:100px !important}
+.margin_l180 {margin-left:180px !important}
+
+.margin_l0 {margin-left:0px !important}
+.margin_l5 {margin-left:5px !important}
+.margin_l10 {margin-left:10px !important}
+.margin_l15 {margin-left:15px !important}
+.margin_l20 {margin-left:20px !important}
+.margin_l25 {margin-left:25px !important}
+.margin_l30 {margin-left:30px !important}
+.margin_l35 {margin-left:35px !important}
+.margin_l40 {margin-left:40px !important}
+.margin_l50 {margin-left:50px !important}
+.margin_l60 {margin-left:60px !important}
+.margin_l70 {margin-left:70px !important}
+.margin_l80 {margin-left:80px !important}
+.margin_l90 {margin-left:90px !important}
+.margin_l100 {margin-left:100px !important}
+
+.margin_r0 {margin-right:0px !important}
+.margin_r5 {margin-right:5px !important}
+.margin_r10 {margin-right:10px !important}
+.margin_r15 {margin-right:15px !important}
+.margin_r20 {margin-right:20px !important}
+.margin_r25 {margin-right:25px !important}
+.margin_r30 {margin-right:30px !important}
+.margin_r35 {margin-right:35px !important}
+.margin_r40 {margin-right:40px !important}
+.margin_r50 {margin-right:50px !important}
+.margin_r60 {margin-right:60px !important}
+.margin_r70 {margin-right:70px !important}
+.margin_r80 {margin-right:80px !important}
+.margin_r90 {margin-right:90px !important}
+.margin_r100 {margin-right:100px !important}
+
+.padding_t5 {padding-top:5px !important}
+.padding_t10 {padding-top:10px !important}
+.padding_t15 {padding-top:15px !important}
+.padding_t20 {padding-top:20px !important}
+.padding_t25 {padding-top:25px !important}
+.padding_t30 {padding-top:30px !important}
+.padding_t35 {padding-top:35px !important}
+.padding_t40 {padding-top:40px !important}
+.padding_t50 {padding-top:50px !important}
+.padding_t60 {padding-top:60px !important}
+.padding_t70 {padding-top:70px !important}
+.padding_t80 {padding-top:80px !important}
+.padding_t90 {padding-top:90px !important}
+.padding_t100 {padding-top:100px !important}
+
+.padding_b5 {padding-bottom:5px !important}
+.padding_b10 {padding-bottom:10px !important}
+.padding_b15 {padding-bottom:15px !important}
+.padding_b20 {padding-bottom:20px !important}
+.padding_b25 {padding-bottom:25px !important}
+.padding_b30 {padding-bottom:30px !important}
+.padding_b35 {padding-bottom:35px !important}
+.padding_b40 {padding-bottom:40px !important}
+.padding_b50 {padding-bottom:50px !important}
+.padding_b60 {padding-bottom:60px !important}
+.padding_b70 {padding-bottom:70px !important}
+.padding_b80 {padding-bottom:80px !important}
+.padding_b90 {padding-bottom:90px !important}
+.padding_b100 {padding-bottom:100px !important}
+
+.padding_l5 {padding-left:5px !important}
+.padding_l10 {padding-left:10px !important}
+.padding_l15 {padding-left:15px !important}
+.padding_l20 {padding-left:20px !important}
+.padding_l25 {padding-left:25px !important}
+.padding_l30 {padding-left:30px !important}
+.padding_l35 {padding-left:35px !important}
+.padding_l40 {padding-left:40px !important}
+.padding_l50 {padding-left:50px !important}
+.padding_l60 {padding-left:60px !important}
+.padding_l70 {padding-left:70px !important}
+.padding_l80 {padding-left:80px !important}
+.padding_l90 {padding-left:90px !important}
+.padding_l100 {padding-left:100px !important}
+
+.padding_r5 {padding-right:5px !important}
+.padding_r10 {padding-right:10px !important}
+.padding_r15 {padding-right:15px !important}
+.padding_r20 {padding-right:20px !important}
+.padding_r25 {padding-right:25px !important}
+.padding_r30 {padding-right:30px !important}
+.padding_r35 {padding-right:35px !important}
+.padding_r40 {padding-right:40px !important}
+.padding_r45 {padding-right:45px !important}
+.padding_r50 {padding-right:50px !important}
+.padding_r60 {padding-right:60px !important}
+.padding_r70 {padding-right:70px !important}
+.padding_r80 {padding-right:80px !important}
+.padding_r90 {padding-right:90px !important}
+.padding_r100 {padding-right:100px !important}
+
+.c_f37763{color:#f37763 !important}
+.c_f25640{color:#f25640 !important}
+.c_e36b5a{color:#e36b5a !important}
+.c_18adcd{color:#18ADCD !important}
+
+.loading {height:260px !important;}
+.loading,
+.is_load {background:url("http://image.hyundaihmall.com/static/smart/2013/img/loading.gif") no-repeat center center; padding:20px 0 0 0;}
+
+/* slide_set */
+.slide_set {position:relative;}
+.slide_set .thum {position:relative;}
+.slide_set .thum div {display:block; width:360px;max-width:360px; margin:0 auto;}
+.slide_set .thum div a {display:block}
+.slide_set .thum div a img {max-width:360px; max-height:360px;}
+.slide_set .thum > a {position:absolute; bottom:8px;}
+.slide_set .thum .btn_play {left:150px}
+.slide_set .thum .btn_zoom {right:150px}
+
+.flex-control-nav {text-align:center;}
+.flex-control-nav li {display:inline-block; width:20px; text-align:center;}
+.flex-control-nav li a {overflow:hidden; text-indent:-1000%; display:inline-block; width:10px; height:10px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/on_off_btn.png") no-repeat 0 -10px;}
+.flex-control-nav li a.flex-active {background-position:0 0}
+
+.flex-direction-nav li {position:absolute; top:40%;}
+.flex-direction-nav li:first-child {left:10px}
+.flex-direction-nav li:last-child {right:10px;}
+.flex-direction-nav li a {overflow:hidden; text-indent:-1000%;width:33px; height:47px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/side_arrow.png") no-repeat}
+.flex-direction-nav li a.flex-prev {background-position:0 0}
+.flex-direction-nav li a.flex-next {background-position:-36px 0}
+
+/* slide_set2 */
+.in_tb1,
+.isb_body1 {display:none;}
+.swiper-slide {float:left}
+.in_mid_nav {text-align:center;}
+.in_mid_nav .swiper-pagination-switch {display:inline-block; width:10px; height:10px; border-radius:10px; background:#b4b4b4; margin:0 3px;}
+.in_mid_nav .swiper-active-switch {background: #f25454}
+
+/* img_slide */
+.contanier.imgzoom {padding:0;}
+.contanier.imgzoom .list_align {overflow:hidden; margin-left:0; width:auto}
+.contanier.imgzoom .list_align > span {display:inline-block; height:60px; line-height:60px; font-size:24px; vertical-align:middle}
+.contanier.imgzoom .list_align .btns {float:right; line-height:60px; height:60px;}
+
+.imgzoom .h_slide {position:relative;}
+.imgzoom .h_slide .list_align {}
+.imgzoom .h_slide .slide_set {position:relative;padding:20% 0 40%;}
+.imgzoom .h_slide .slide_set #slider {}
+.imgzoom .h_slide .slide_set #slider .slides {text-align:center; }
+.imgzoom .h_slide .slide_set #slider .slides li a {line-height:0; display:inline-block; width:430px; padding:8px; border:2px solid #eee}
+.imgzoom .h_slide .slide_set #slider .slides li a img {min-width:100%; border:0; padding:0; max-width:100%}
+
+.imgzoom .h_slide .slide_set #carousel .flex-direction-nav {}
+.imgzoom .h_slide .slide_set #carousel .flex-direction-nav li {top:34%}
+.imgzoom .h_slide .slide_set #carousel .flex-direction-nav li a {overflow:hidden; text-indent:-1000%; width:31px; height:45px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/side_arrow2.png") no-repeat;}
+.imgzoom .h_slide .slide_set #carousel .flex-direction-nav .flex-prev {background-position:0 0}
+.imgzoom .h_slide .slide_set #carousel .flex-direction-nav .flex-next {background-position:-32px 0}
+
+.imgzoom .h_slide .slide_set #carousel {position:absolute; bottom:0; left:0; width:100%; padding:23px 0 27px; overflow:hidden; text-align:center; background:#424242}
+.imgzoom .h_slide .slide_set #carousel .flex-viewport {width:540px; margin:0 auto}
+.imgzoom .h_slide .slide_set #carousel .slides {}
+.imgzoom .h_slide .slide_set #carousel .slides li {display:inline-block; margin:0 10px; width:100px; height:92px; border:4px solid #fff; font-size:0;}
+.imgzoom .h_slide .slide_set #carousel .slides li img {width:100%}
+.imgzoom .h_slide .slide_set #carousel .slides li.flex-active-slide {border-color:#f56c59}
+
+/*index_special*/
+.index_special {width:640px; margin: 0 auto;}
+
+/* file form */
+.file_input_button{width:100%; height:36px; line-height:36px; font-size:1em; text-align:center; display:inline-block; border-radius:10px; color:#000; font-weight:bold; border:1px solid #7f7f7f; background: linear-gradient(#f5f5f5,#ddd); background: -webkit-linear-gradient(#f5f5f5,#ddd);}
+.file_input_hidden{font-size:45px; width:0; position:absolute; left: 0px; top: 0px; opacity:0;}
+.file_input_div{position: relative; width: 100%; height:40px;}

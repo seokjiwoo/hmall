@@ -1,0 +1,240 @@
+<!doctype html>
+<html><head>
+<title> 현대 Hmall </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no" />
+<link href="../css/base.css" rel="stylesheet" type="text/css" />
+<link href="../css/hmall.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/hmall.js"></script>
+</head><body>
+	<article id="wrap">
+
+		<!-- 왼쪽 사이드 나의 쇼핑정보 -->
+		<section id="left_side" class="side_set">
+			<h2><img src="../img/common/h2_myshopping.jpg" alt="나의 쇼핑정보" /></h2>
+			<div class="bg_note">
+				ㅎㅎㅎ<br/>
+			</div>
+		</section>
+		<!-- //왼쪽 사이드 나의 쇼핑정보 -->
+
+			<section id="container">
+					<!-- header -->
+					<div class="dim"></div>
+					<header>
+						<section class="gnb_area">
+							<h1><a href="#"><img src="../img/common/logo.png " alt="현대 H Mall" /></a></h1>
+							<!-- gnb -->
+							<nav class="gnb">
+								<a href="#"><img src="../img/common/btn_gnb1.png" alt="카테고리" /></a>
+								<a href="#"><img src="../img/common/btn_gnb2.png" alt="주문/배송" /></a>
+								<a href="#"><img src="../img/common/btn_gnb3.png" alt="쿠폰/" /></a>
+							</nav>
+							<!-- //gnb -->
+							<!-- 검색, 사이드버튼 -->
+							<div class="bot">
+								<a href="#left_side" class="lt_on">나의 쇼핑정보</a>
+								<div class="search_area">
+									<span class="inputs txt">
+										<input type="text" title="검색어를 입력하세요." />
+										<a href="#"><i class="ico zoom_g">검색</i></a>
+									</span>
+								</div>
+								<a href="#right_side" class="rt_on">전체 메뉴</a>
+							</div>
+							<!-- //검색, 사이드버튼 -->
+						</section>
+						<section class="top_event_area">
+							<a class="sample" href="#">최대 20% 혜택! <span class="setp">5% 깜작할인</span> + <span class="setp">15% 다운쿠폰</span></a>
+						</section>
+					</header>
+					<!-- //header -->
+
+					<!-- SB0066 -->
+					<section class="contanier custormer proposal_1">
+						<header>
+							<h2><i class="ico round1_p"></i>1:1 고객상담 신청</h2>
+						</header>
+
+						<div class="write_box1">
+							<ul>
+								<li>
+									<p>문의분야</p>
+									<p>취소문의</p>
+								</li>
+								<li>
+									<p>핸드폰번호</p>
+									<p>
+										<span class="selects">
+										<select>
+										<option>010</option>
+										<option>011</option>
+										</select>
+										</span>
+										<span class="inputs txt"><input type="text" title="" /></span> -
+										<span class="inputs txt"><input type="text" title="" /></span>
+									</p>
+								</li>
+								<li>
+									<p>이메일</p>
+									<p><span class="inputs txt" style="width:310px;"><input type="text" title="" /></span></p>
+								</li>
+								<li>
+									<p>세부문의분야</p>
+									<p>
+										<span class="selects sel_1">
+										<select>
+										<option>문의분야를 선택하세요</option>
+										<option>취소</option>
+										<option>교환</option>
+										</select>
+										</span>
+									</p>
+								</li>
+								<li>
+									<strong>·답변처리가 완료된 시점에 위에 보이는 핸드폰 번호로 문자메세지를 보내드립니다.</strong>
+								</li>
+							</ul>
+							<table>
+								<colgroup>
+									<col width="20%" />
+									<col />
+									<col width="20%" />
+								</colgroup>
+								<tr>
+									<td>주문번호/주문일</td>
+									<td>상품명/주문상태/수량</td>
+									<td>주문금액</td>
+								</tr>
+								<tr>
+									<td>20121115075265 <br /> 2012.11.15</td>
+									<td>플라스틱아일랜드 겨울자켓 4종 택1 / 주문접수 / 1개</td>
+									<td>300,000</td>
+								</tr>
+							</table>
+						</div>
+						<div class="contents_tit">
+							<h3>내용입력</h3>
+						</div>
+						<div class="write_box2">
+							<ul>
+								<li>
+									<p>환불방법</p>
+									<div class="radio_group1">
+									<span class="inputs radio"><input type="radio" name="sampleradio1" id="sr1" /><label for="sr1">1</label><label for="sr1">계좌환불</label></span>
+									<span class="inputs radio"><input type="radio" name="sampleradio1" id="sr2" checked="checked" /><label for="sr2">2</label><label for="sr2">예치금환불</label></span>
+									</div>
+<!-- ============================================================================================================= -->
+									<script type="text/javascript">
+										$('.radio_group1').click(function(){
+											if ($('.write_box2 .inputs.radio:eq(1)').hasClass('ked')) {
+												$('.write_box2 > ul > li:eq(1)').css('display','none');
+											} else {
+												$('.write_box2 > ul > li:eq(1)').css('display','block');
+											}
+										})
+									</script>
+<!-- ============================================================================================================= -->
+								</li>
+								<li>
+									<p>예금주</p>
+									<p><span class="inputs txt"><input type="text" title="" /></span></p>
+								</li>
+								<li>
+									<p>계좌번호</p>
+									<p><span class="inputs txt"><input type="text" title="" /></span></p>
+								</li>
+								<li>
+									<strong>·현금 입금시, 환불받으실 계좌번호 / 예금주명을 필히 입력 해주세요</strong>
+								</li>
+								<li>
+									<p>택배사</p>
+									<p>
+									<span class="selects">
+									<select>
+									<option>택배사를 선택하세요</option>
+									<option>우체국</option>
+									<option>대한통운</option>
+									</select>
+									</span>
+									</p>
+								</li>
+								<li>
+									<p>운송장번호</p>
+									<p><span class="inputs txt"><input type="text" title="" /></span></p>
+								</li>
+								<li>
+									<strong>·택배사를 통하여 상품을 반품하신경우, 운송장번호 입력시 반품/환불 처리가 빠르게 진행됩니다.</strong>
+								</li>
+							</ul>
+							<div class="text_input">
+								<p>
+									<span>내용을 입력하세요.</span>
+									<span class="text_check">글자수 체크: <em>0</em></span>
+								</p>
+								<p><textarea cols="30" rows="10"></textarea></p>
+								<p>내용은 영문 1000자(한글 500자 이내)로 입력하세요.</p>
+							</div>
+							<div class="principle">
+								<ul>
+									<li>·16:00 이전 접수문의는 당일 처리/답변을 원칙으로 하며, 16:00 이후 접수 문의는 익일 처리됩니다.</li>
+									<li>·주말이나 휴일은 처리가 다소 지연될 수 있사오니 양해해 주시기 바랍니다.</li>
+									<li>·이메일과 긴급연락처를 변경하여 입력하실 경우에는 회원정보도 함께 변경됩니다</li>
+								</ul>
+							</div>
+							<div class="counsel_btn">
+								<a class="btns w70" href="#"><span>취소</span></a>
+								<a class="btns p70 colorf" href="#"><span>확인</span></a>
+							</div>
+						</div>
+
+					</section>
+					<!-- //SB0066 -->
+
+					<footer>
+						<nav>
+							<ul>
+								<li><a href="#"><img src="../img/common/btn_footer_event.gif" alt="이벤트" /></a></li>
+								<li><a href="#"><img src="../img/common/btn_footer_hcodi.gif" alt="H코디" /></a></li>
+								<li><a href="#"><img src="../img/common/btn_footer_cust.gif" alt="고객센터" /></a></li>
+								<li><a href="tel:080-000-0000"><img src="../img/common/btn_footer_call.gif" alt="전화문의하기" /></a></li>
+							</ul>
+						</nav>
+						<ul>
+							<li><a href="#"><img src="../img/common/btn_verpc.gif" alt="PC 버전" /></a></li>
+							<li><a href="#"><img src="../img/common/btn_appdw.gif" alt="APP 다운로드" /></a></li>
+							<li><a href="#"><img src="../img/common/btn_footer_login.gif" alt="로그인" /></a></li>
+						</ul>
+						<address>
+							<p>현대 홈쇼핑 | 서울특별시 강동구 천호동 454-2 | 대표이사 김인권</p>
+							<p>사업자등록번호 : <span>211</span>-86<span>-</span>76540 | 통신판매업신고 : 제25-3133호</p>
+							<p>부가통신 신고번호 : 3787 | 개인정보 관리책임 : CCM</p>
+							<p>최고고객책임자 박민희 | <a href="mailto:webmaster@hyundaihmall.com">메일 문의</a></p>
+						</address>
+					</footer>
+			</section>
+
+			<!-- 오른쪽 사이드 카테고리 -->
+			<section id="right_side" class="side_set">
+				<h2><img src="../img/common/h2_cartegory.jpg" alt="전체메뉴" /></h2>
+				<div class="bg_note">
+					<h3 class="on"><a href="#"><img src="../img/common/btn_car_1.jpg" alt="매장" /></a></h3>
+					<ul>
+						<li><a href="#">클릭 카탈로그</a></li>
+						<li><a href="#">기획전</a></li>
+						<li><a href="#">TV쇼핑</a></li>
+						<li><a href="#">패밀리존</a></li>
+						<li><a href="#">백화점</a></li>
+					</ul>
+
+					<h3><a href="#"><img src="../img/common/btn_car_2.jpg" alt="주간 BEST" /></a></h3>
+					<ul>
+						<li><a href="#">고객맞춤 BEST</a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- // 오른쪽 사이드 카테고리 -->
+
+		</article>
+</body></html>

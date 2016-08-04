@@ -1,0 +1,1469 @@
+@charset 'utf-8';
+@import url(hmall2.css);
+@import url(hmall3.css);
+
+/* order - 주문 및 결제 */
+.order.orderaddr header{margin:0;}
+.order.orderaddr .tabs {overflow:hidden; margin:20px 0; padding:0 20px}
+.order.orderaddr .tabs ul li {width:34%}
+.order.orderaddr .tabs ul li:first-child {width:33%}
+.order.orderaddr .tabs ul li:last-child {width:33%}
+
+.order.orderaddr .addrbody {padding:0 20px}
+.order.orderaddr table {width:100%}
+.order.orderaddr table tr td {vertical-align:top; height:74px; line-height:74px}
+.order.orderaddr table tr td:first-child {font-size:1.6em}
+.order.orderaddr table td label {color:#656565}
+.order.orderaddr table td .inputs.text {width:95%}
+.order.orderaddr table td .selects {width:115px}
+.order.orderaddr table td .selects select {width:100%}
+.order.orderaddr table td .inputs.number {width:115px; margin:0 0 0 2px}
+.order.orderaddr table td.addr .inputs.number {width:100px}
+.order.orderaddr table td .inputs input {width:94%}
+.order.orderaddr table td.addr .btns {margin:0 0 0 8px}
+.order.orderaddr table td textarea {display:block; width:90%; margin:0 0 20px;min-height:82px; padding:20px; border:2px solid #bab9be; border-radius:5px;}
+.order.orderaddr table tr td .btns span {padding-right:14px}
+
+.order.orderaddr div.btn_list {text-align:center}
+.order.orderaddr div.btn_list a.btns.ak {width:30%}
+.order.orderaddr div.btn_list a.btns.ak span {display:block}
+.order.orderaddr .addrlist {display:none; clear:both; padding:20px;}
+.order.orderaddr .addrlist.on {display:block}
+.order.orderaddr .addrlist table {border:1px solid #ededf0}
+.order.orderaddr .addrlist table tr td {line-height:150%; vertical-align:middle}
+.order.orderaddr .addrlist table tr:nth-child(even) td {background:#f6f7f7}
+.order.orderaddr .addrlist table tr td:first-child {color:#20232c; text-align:center}
+.order.orderaddr .addrlist table tr td:last-child {text-align:center}
+
+.order.postnumber header{margin:0;}
+.order.postnumber h2{border-bottom:2px solid #a7a7a7; width:100%; padding:6px 20px; margin-left:-20px;}
+.order.postnumber p{text-align:center; font-size:1.2em; margin:20px 0;}
+.order.postnumber p > span{color:#8c8c8c;}
+.order.postnumber .post_head {padding:20px; border-top:2px solid #ababab; border-bottom:2px solid #ababab; background:#fff4ea;}
+.order.postnumber .post_head .area_name{font-size:28px; line-height:60px; height:60px; vertical-align:middle; display:inline-block}
+.order.postnumber .post_head .inputs {margin:0 10px; vertical-align:middle}
+.order.postnumber .post_head .inputs input{font-size:28px; width:300px; height:60px; line-height:60px}
+.order.postnumber .post_head div{margin:10px 0 0; font-size:1.2em; color:#707070;}
+.order.postnumber {background:#fff; border:2px solid #ababab; padding:0 0 20px;}
+.order.postnumber ul{border-top:0}
+.order.postnumber ul > li{border-bottom:2px solid #ababab; background:#fff;}
+.order.postnumber ul > li > .btns span{width:80px;}
+.order.postnumber ul > li a {padding:20px; display:block}
+.order.postnumber p:last-child span{width:80px;}
+
+.order.complete {padding:0 0 30px;}
+.order.complete h2{border-bottom:2px solid #a7a7a7; width:100%; }
+.order.complete .order_number{font-size:1.3em; border:5px solid #8d8d8d; text-align:center; padding-top:40px; margin:10px 0;}
+.order.complete .order_number p{background:#8d8d8d; padding:16px 0; margin:40px 0 0 0;}
+.order.complete .order_number p > span:first-child{color:#cfcbcb;}
+.order.complete .order_number p > span:last-child{color:#fff;}
+.order.complete table{border:2px solid #c3c3c3; margin:20px 0; width:100%;}
+.order.complete tbody th, .order.complete tbody td{padding:10px; font-size:1.6em; border-bottom:2px solid #c3c3c3;}
+.order.complete table th{text-align:left; color:#656565; background:#f1f1f1;}
+.order.complete table td{color:#000; letter-spacing:-1px; border-left:2px solid #c3c3c3;}
+.order.complete .sale_info li{border-bottom:1px solid #e1e1e1; padding:20px; font-size:1.4em;}
+.order.complete .sale_info li span{display:inline-block; width:49%;}
+.order.complete .sale_info li span:last-child{text-align:right;}
+.order.complete .mileage li{border-bottom:1px solid #e1e1e1; padding:20px; font-size:1.4em;}
+.order.complete .mileage li span{display:inline-block; width:49%;}
+.order.complete .mileage li span:last-child{text-align:right;}
+.order.complete .sale_total{font-size:1.4em; overflow:hidden; background:#f5f5f5; padding:20px 10px;}
+.order.complete .sale_total div{float:right}
+.order.complete .sale_total div:first-child{float:left}
+.order.complete .total_price{border:3px solid #fc8888; background:#fff4ea; margin:26px 0; padding:26px 20px; overflow:hidden;}
+.order.complete .total_price p{float:left; font-size:1.8em;}
+.order.complete .total_price ul{float:right;}
+.order.complete .total_price ul > li:first-child{color:#ff5959; font-size:2.5em;}
+.order.complete .total_price ul > li:last-child{color:#8e8e8e; text-align:right;}
+.order.complete .order_msg{text-align:center; padding:20px 0; margin:0 0 20px; border-bottom:1px solid #cacaca;}
+.order.complete .order_btn {text-align:center;}
+.order.complete .order_btn .btns {width:28%; margin:0 16px 0 0;}
+.order.complete .order_btn .btns span{width:100%;}
+.basket_tip{padding:20px;}
+
+/* detail - 상품목록 */
+.detail_list .list_body.type1 .listbox {overflow:hidden; padding:0 20px 20px; margin:20px 0 0; border-bottom:2px solid #dbdbdb;}
+.detail_list .list_body.type1 .listbox .thum {min-width:185px; float:left;}
+.detail_list .list_body.type1 .listbox .thum a {width:100%;}
+.detail_list .list_body.type1 .listbox .thum img {min-width:100%; width:100%}
+.detail_list .list_body.type1 .listbox .rightbox {padding-top:5px; width:62%; float:right;}
+.detail_list .list_body.type1 .listbox .rightbox p{margin:0 0 20px; padding-right:20px}
+.detail_list .list_body.type1 .listbox .rightbox div{margin:0 0 20px;}
+.detail_list .list_body.type1 .listbox .rightbox .price span:last-child{float:right; font-size:1.5em; color:#18adcd;}
+.detail_list .list_body.type1 .listbox .rightbox .benprice span:last-child{float:right; font-size:1.8em; color:#e36b5a;}
+.detail_list .list_body.type1 .listbox .rightbox .price,
+.detail_list .list_body.type1 .listbox .rightbox .benprice {padding-right:20px}
+.detail_list .list_body.type1 .paly{position:relative; top:-126px; opacity:0.8; margin:0 auto; display:block; overflow:hidden; width:120px !important; height:36px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/tv/play_btn.png) no-repeat 0 0; background-size:100% auto;}
+.detail_list .list_body.type1 .listbox .rightbox .bagesbox2 {margin:0;}
+.detail_list .list_body.type2 {width:100%; overflow:hidden;}
+.detail_list .list_body.type2 .listbox {text-align:center; vertical-align:top; width:41%; display:inline-block; padding:0 20px 20px 20px; margin:20px 0 0;}
+.detail_list .list_body.type2 .listbox .thum {width:100%; display:inline-block; padding:0 18px 0 0}
+.detail_list .list_body.type2 .listbox .thum a,
+.detail_list .list_body.type2 .listbox .thum a img {display:block;}
+.detail_list .list_body.type2 .listbox .pro_name {overflow:hidden; max-height:200px;text-align:left; width:262px; margin:10px 0 8px 0; font-size:1.2em;}
+.detail_list .list_body.type2 .listbox .price {text-align:left; margin:0 0 5px; color:#37b8d4; font-size:1.5em;}
+.detail_list .list_body.type2 .listbox .benprice {text-align:left; color:#e36b5a; font-size:1.5em; display:inline-block; margin:0 0 0 8px;}
+.detail_list .list_body.type2 .listbox p:last-child {text-align:left}
+.detail_list .list_body.type2 + .pagenation {width:100%; padding:20px 10px 0; margin-left:-20px;border-top:2px solid #dedede}
+
+.detail.detail_list header {padding:0 20px;}
+.detail.detail_list .detail_slide {}
+.detail.detail_list .detail_slide .listbox {font-size:1.8em; background:#F9F9F9; width:100%; border-bottom:2px solid #dbdbdb; height:70px; line-height:70px}
+.detail.detail_list .detail_slide .listbox > span {float:left; margin:0 0 0 20px;}
+.detail.detail_list .detail_slide .listbox a.btns {float:right; margin:5px 20px 0 0;}
+.detail.detail_list .detail_slide .listbox .btns .ico {margin:-10px 0 0}
+.detail.detail_list .detail_slide .listbox a.btns span {text-align:center; width:40px}
+.detail_slide {position:relative;}
+.detail_slide div.slide_set {width:640px; margin:0 auto !important}
+.detail_slide .detail_slide_btn{position:absolute; top:280px}
+.detail.detail_list .flex-control-nav{display:none}
+.detail.detail_list .flex-direction-nav li{top:30%;}
+.detail.detail_list .flex-direction-nav li a{display:inline-block}
+
+.de_slide_box {position:relative; width:100%; height:695px; margin:78px 0 20px;}
+.de_slide_box .slides {height:695px;}
+.de_slide_box .slides .de_slide_item {text-align:center; width:640px; margin:0 0 15px; display:inline-block;float:left}
+.de_slide_box .slides .de_slide_item > a {display:block}
+.de_slide_box .slides .de_slide_item > a > img {margin:0 auto 80px; display:block}
+.de_slide_box .slides .de_slide_item span {text-align:left; background:#f9f9f9; display:block; padding:6px 20px 35px;}
+
+.detail.detail_list .detail_slide .slide_nation {width:100%; padding:6px 0 6px 20px; margin:0 0 80px -20px; text-align:center;}
+.detail.detail_list .detail_slide .slide_nation p {padding:0 10px; font-size:1.4em; display:inline-block;}
+.detail.detail_list .detail_slide .slide_nation p span {padding:2px;}
+.detail.detail_list .detail_slide .left_arr , .detail_slide .right_arr {position:absolute; top:200px; display:inline-block; width:32px; height:47px; text-indent:-9999em;}
+.detail.detail_list .detail_slide .left_arr {left:15px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/side_arrow.png") no-repeat 0 0}
+.detail.detail_list .detail_slide .right_arr {right:15px;background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/side_arrow.png") no-repeat -34px 0}
+
+.detail.detail_list .detail_slide .pro_name {overflow:hidden; text-overflow:ellipsis; width:100%; height:60px; max-height:60px; line-height:34px; padding:23px 20px 31px;}
+.detail.detail_list .detail_slide .benprice {color:#e36b5a; font-size:1.5em; display:inline-block; margin:0 0 0 5px;}
+
+.detail.ratingcomplete .complete_box{text-align:center; margin:80px 0 80px;}
+.detail.ratingcomplete .complete_box p{font-size:25px;}
+.detail.ratingcomplete .complete_box p span{padding:0 26px 0 0; background:url(http://image.hyundaihmall.com/static/smart/2013/img/detail/rating_icon.png) no-repeat 0 65%;}
+.detail.ratingcomplete .complete_box .btns{width:20%; margin:10px 0 0;}
+
+/* shop - 모바일특가  */
+.shop.mobile .pagenation{clear:both;}
+.shop.mobile header p {width:100%; padding:0 20px; margin-left:-20px; border-top:2px solid #a7a7a7; border-bottom:2px solid #a7a7a7; text-align:center;}
+.shop.mobile header {padding:0 20px;}
+.shop.mobile header p img{vertical-align:top; margin-left:-20px;}
+
+.sale_flag{position:absolute; left:4px; top:0;}
+.sale_flag .sale_p {text-align:center; font-style:normal; color:#fff; font-size:1.4em; width:88px; position:absolute; top:10px; left:0; display:block; z-index:5}
+.shop.mobile .list_body.type1{padding:0 20px;}
+.shop.mobile .list_body.type1 .listbox {overflow:hidden; width:100%; padding:0 20px; margin:20px 0 0 -20px; border-bottom:2px solid #dbdbdb;}
+.shop.mobile .list_body.type1 .listbox .thum {float:left; position:relative; padding-top:6px; margin:0 0 20px 0;}
+.shop.mobile .list_body.type1 .listbox .thum > a > img {min-width:168px; width:188px;}
+.shop.mobile .list_body.type1 .listbox .rightbox {padding-top:5px;width:62%; float:right;}
+.shop.mobile .list_body.type1 .listbox .rightbox p{margin:0 0 20px;}
+.shop.mobile .list_body.type1 .listbox .rightbox div{margin:0 0 20px;}
+.shop.mobile .list_body.type1 .listbox .rightbox .price span:last-child{float:right; font-size:1.5em; color:#18adcd;}
+.shop.mobile .list_body.type1 .listbox .rightbox .benprice span:last-child{float:right; font-size:1.8em; color:#e36b5a;}
+
+/* shop - 클릭_H  */
+.shop.click_h {padding:0 0 30px}
+.shop.click_h header{padding:0 20px;}
+.click_h .pagenation{clear:both;}
+.click_h .click_h_banner {position:relative; width:100%; height:157px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/shop/click_hbg.jpg) no-repeat 50% 0; border-top:2px solid #a7a7a7; border-bottom:2px solid #a7a7a7;}
+.click_h .click_h_banner .time{position:absolute; left:48%; top:90px; font-size:24px; font-weight:bold; color:#fff;}
+.click_h .click_h_banner .time span{display:inline-block; margin:0 28px 0 0;}
+.click_h .click_h_banner a {width:100%;}
+.click_h .click_h_banner img {max-width:100%;vertical-align:top;}
+.click_h .click_h_banner + div {margin:15px 0;text-align:center;}
+.click_h .click_h_name{background:#efefef;}
+.click_h .click_h_name p:first-child{padding:20px 0; font-size:20px;}
+
+.click_count {width:252px; margin:10px 0 0 20px;}
+.click_count span{display:inline-block; height:36px; line-height:36px; margin:0 0 0 6px;}
+.click_count span:first-child{padding-left:46px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/shop/clickh_count.png") no-repeat 0 0;}
+.click_count span:nth-child(2){width:2px; height:10px; background:#b3b3b3;}
+
+.click_h .list_body.type1{padding:0 20px;}
+.click_h .list_body.type1 .listbox {position:relative; overflow:hidden; width:100%; padding:0 20px 10px; margin:20px 0 0 -20px; border-bottom:2px solid #dbdbdb;}
+.click_h .list_body.type1 .listbox .thum {position:absolute; left:10px; top:0; padding-top:6px;}
+.click_h .list_body.type1 .listbox .thum > a > img {min-width:168px; width:188px;}
+.click_h .list_body.type1 .listbox .rightbox {padding-top:5px; width:62%; float:right;}
+.click_h .list_body.type1 .listbox .rightbox p{margin:0 0 20px;}
+.click_h .list_body.type1 .listbox .rightbox div{margin:0 0 20px;}
+.click_h .list_body.type1 .listbox .rightbox .price span:last-child{float:right; font-size:1.5em; color:#18adcd;}
+.click_h .list_body.type1 .listbox .rightbox .benprice span:last-child{float:right; font-size:1.8em; color:#e36b5a;}
+
+/* event - 이벤트 */
+.event.event_main {padding:0 0 30px}
+.event.event_main .event_box {text-align:center; padding:35px 0 20px;}
+.event.event_main .event_box a {display:inline-block; padding:0 10px; margin:0 0 0 25px}
+.event.event_main .event_box a:first-child {margin:0}
+.event.event_main .event_box a img {display:block; margin:0 0 10px}
+.event.event_main > ul {width:100%;}
+.event.event_main ul li{border-bottom:1px solid #ccc;}
+.event.event_main > ul > li > a {display:block; line-height:12px}
+.event.event_main > ul > li > a img {width:100%}
+.event.event_main .pdborder{padding:2px; border:2px solid #ccc; border-radius:6px;}
+
+
+/* shop - 기획전  */
+.cat_list {background:#eee; overflow:hidden; padding:20px; font-size:1.5em;}
+.cat_list ul li { vertical-align:middle; float:left; height:32px; line-height:0; margin:0 0 10px; padding:0 20px; border-left:2px solid #999}
+.cat_list ul li:first-child {border:0; padding-left:0;}
+.cat_list ul li a {display:inline-block; height:32px; line-height:32px; vertical-align:middle; color:#000;}
+
+.planning_type1 header h2{padding:10px 20px}
+.planning_type1 header p {border-top:2px solid #a7a7a7; border-bottom:2px solid #a7a7a7; text-align:center;}
+.planning_type1 header p img{vertical-align:top;}
+.planning_type1 .planning_title{padding:10px 20px 0; text-align:center;}
+.planning_type1 .planning_tit2 {display:block; overflow:hidden; padding:15px 20px; margin:20px 0; background:url("http://image.hyundaihmall.com/static/smart/2013/img/shop/planning_bg.gif") repeat-x 0 0;}
+.planning_type1 .planning_tit2 span{vertical-align:middle; height:58px; line-height:58px; font-size:28px;display:inline-block;}
+.planning_type1 .planning_tit2 span:first-child{overflow:hidden; white-space:nowrap; text-overflow:ellipsis; width:86%; float:left}
+.planning_type1 .planning_tit2 span:last-child{float:right; line-height:0; font-size:0 }
+.planning_type1 .planning_tit2 span:last-child a {height:58px}
+.planning_type1 .list_body.type2 {width:100%;}
+.planning_type1 .list_body.type2 .listbox {text-align:center; padding:0 0 20px; margin:10px 0 0;}
+.planning_type1 .list_body.type2 .listbox:first-child {margin:0;}
+.planning_type1 .list_body.type2 .listbox ul{overflow:hidden;}
+.planning_type1 .list_body.type2 .listbox ul li {width:47%; float:left; margin:0 5px 15px;}
+.planning_type1 .list_body.type2 .listbox ul li:first-child{margin:0 0 0 16px;}
+
+.planning_type1 .list_body.type2 .listbox ul li .thum {display:inline-block; padding:0 18px 0 0;}
+.planning_type1 .list_body.type2 .listbox ul li .thum a,
+.planning_type1 .list_body.type2 .listbox ul li .thum a img {display:block;}
+.planning_type1 .list_body.type2 .listbox .pro_name{text-align:left; width:100%; margin:10px 0 8px 0; font-size:1.2em;}
+.planning_type1 .list_body.type2 .listbox .price{text-align:left; margin:0 0 5px; color:#37b8d4; font-size:1.5em;}
+.planning_type1 .list_body.type2 .listbox .benprice{text-align:left; color:#e36b5a; font-size:1.5em; display:inline-block; margin:0 0 0 8px;}
+.planning_type1 .list_body.type2 .listbox ul li .price,
+.planning_type1 .list_body.type2 .listbox ul li .price + p {text-align:left}
+.planning_type1 .text_l{text-align:left;}
+
+.planning_type2 header h2 {padding:10px 20px}
+.planning_type2 header p {border-top:2px solid #a7a7a7; border-bottom:2px solid #a7a7a7; text-align:center;}
+.planning_type2 header p img{vertical-align:top;}
+.planning_type2 .planning_listbox {display:block; overflow:hidden; width:95%; margin:20px auto;}
+.planning_type2 .planning_listbox li {display:inline-block; width:32%; vertical-align:top; margin:0 0 20px;}
+.planning_type2 .planning_listbox p{width:160px; margin:10px 0 10px; color:#959595;}
+.planning_type2 .planning_listbox span{text-align:center; display:block;}
+.planning_type2 .planning_listbox span strong{font-size:22px; color:#f25641;}
+.planning_type2 .pagenation {clear:both}
+
+.planning_type3 header{padding:0 20px; border-bottom:1px solid #a7a7a7;}
+.planning_type3 header p img{vertical-align:top;}
+.planning_type3 .planning_bnr{border-bottom:2px solid #a7a7a7; text-align:center;}
+.planning_type3 .list_body.type1 .listbox {overflow:hidden; padding:0 20px; margin:20px 0 0; border-bottom:2px solid #dbdbdb;}
+.planning_type3 .list_body.type1 .listbox .thum{float:left;}
+.planning_type3 .list_body.type1 .listbox .thum img {}
+.planning_type3 .list_body.type1 .listbox .rightbox {padding-top:5px; width:62%; float:right;}
+.planning_type3 .list_body.type1 .listbox .rightbox p{margin:0 0 20px;}
+.planning_type3 .list_body.type1 .listbox .rightbox div{margin:0 0 20px;}
+.planning_type3 .list_body.type1 .listbox .rightbox .price span:last-child{float:right; font-size:1.5em; color:#18adcd;}
+.planning_type3 .list_body.type1 .listbox .rightbox .benprice span:last-child{float:right; font-size:1.8em; color:#e36b5a;}
+
+/* search - 검색  */
+.research{padding:0 30px; margin:20px 0;}
+.research .btns{width:23%;}
+.research > span:first-child{font-size:1.2em; display:inline-block; padding:20px 0 20px 40px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/search/search_icon.gif") no-repeat 0 50%;}
+.research input[type="text"]{width:230px;}
+
+.search.type1 header{padding:0 20px;}
+.search.type1 .search_info {text-align:center; padding:40px 0; line-height:150%; font-size:24px}
+
+.search.result header{margin:0;}
+.search.result .detail_search {padding:10px 20px; background:#f9f9f9}
+.search.result .detail_search.firstc {padding-top:20px; margin-top:20px; border-top:2px solid #a7a7a7}
+.search.result .detail_search.lastc {padding-bottom:20px; margin-bottom:20px; border-bottom:2px solid #a7a7a7}
+.search.result .detail_search > .btns.swch.setblock {position:relative; z-index:5;}
+.search.result .detail_search .search_box ul{overflow:hidden;}
+.search.result .detail_search .search_box ul li{float:left; width:50%; border-bottom:2px solid #f2f2f2;}
+.search.result .detail_search .search_box ul li:nth-child(odd) div{padding:10px 0 10px 10px; border-right:2px solid #f2f2f2;}
+.search.result .detail_search .search_box ul li:nth-child(even) div{padding:10px 0 10px 10px; border-right:0;}
+.search.result .detail_search > div > p {overflow:hidden; border-bottom:1px solid #a7a7a7;}
+.search.result .detail_search > div > p > span {float:left; display:block; font-size:1.2em; margin:20px 0;}
+.search.result .detail_search .favor_title{display:block; font-size:1.2em; margin:10px 0 0 0;}
+.search.result .detail_search .favor {margin:10px 0;}
+.search.result .detail_search .favor a {text-align:center; margin:0 -4px; border:2px solid #848484; display:inline-block; padding:16px 0; width:92px; border-right:2px solid #a7a7a7;}
+.search.result .detail_search .favor a:last-child {border-top-right-radius:5px; border-bottom-right-radius:5px}
+.search.result .detail_search .favor a:first-child {border-top-left-radius:5px; border-bottom-left-radius:5px}
+.search.result .detail_search .favor a.on {background:#dedede}
+
+.search.result .detail_search_btn {padding:10px 0;border-top:2px solid #888; text-align:center;}
+.search.result .detail_search_btn .btns {width:150px}
+.search.result .detail_search_btn .btns span {display:block}
+
+.search_box {background:#fff; width:99%; padding-top:10px; margin-top:-14px; border:2px solid #888; border-bottom-left-radius:5px; border-bottom-right-radius:5px}
+.search_box.acd_off {padding:0; margin:0; border:0;}
+
+/* hcodi - 코디 리스트  */
+.codi_list header {padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.codi_list .pagenation{margin:20px 0;}
+.codi_list .app_down{margin:30px 0 0 0; text-align:center;}
+.codi_list .codi_list_box{overflow:hidden; margin:20px 0 0; padding:0 0 20px 10px; border-bottom:2px dashed #ccc;}
+.codi_list .codi_list_box .left{width:28%; display:inline-block; margin:0 20px 0 0; position:relative;}
+.codi_list .codi_list_box .left a img {width:177px; height:177px;}
+.codi_list .codi_list_box .left .codi_number{position:absolute; left:138px; bottom:12px; padding:6px 10px; color:#fff; background:#f25640; border:1px solid #f25640; border-radius:5px;}
+.codi_list .codi_list_box .right{width:64%; display:inline-block; vertical-align:top;}
+.codi_list .codi_list_box .right > p {margin:0 0 16px; padding:0 0 0 5px;}
+.codi_list .codi_list_box .right > p:first-child strong {font-size:24px}
+.codi_list .codi_list_box .right > p:first-child strong:first-child {color:#72c2bb}
+.codi_list .codi_list_box .right > p:first-child strong:last-child {float:right; color:#f47864}
+.codi_list .codi_list_box .right > p:nth-child(2) {font-size:26px; color:#656565}
+.codi_list .codi_list_box .right > p:last-child strong {color:#acacac; float:left; font-size:22px}
+.codi_list .codi_list_box .right > p:last-child strong + em {float:right; font-style:normal}
+.codi_list .codi_list_box .right > p:last-child em span + span {padding:0 0 0 10px; display:inline-block; vertical-align:middle; font-size:22px; float:right; color:#f25640; height:24px; line-height:24px}
+
+.hcodi.codi_list .codi_tabmenu + ul {clear:both}
+.codi_tabmenu .tab_title {padding-top:5px; display:inline-block; width:100%; background:url("http://image.hyundaihmall.com/static/smart/2013/img/hcodi/bg_hcodi_tab.png") repeat-x}
+.codi_tabmenu .tab_title li {float:left; width:50%;}
+.codi_tabmenu .tab_title li a {height:67px; display:block; line-height:67px; text-align:center;}
+.codi_tabmenu .tab_title li a span {display:block; height:67px; line-height:67px;}
+.codi_tabmenu .tab_title li.on a {padding:0 0 0 13px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/hcodi/bg_hcodi_tab_left.png") no-repeat 0 0}
+.codi_tabmenu .tab_title li.on a span {padding:0 14px 0 0; background:url("http://image.hyundaihmall.com/static/smart/2013/img/hcodi/bg_hcodi_tab_right.png") no-repeat right 0,url("http://image.hyundaihmall.com/static/smart/2013/img/hcodi/bg_hcodi_tab_center.png") repeat-x}
+
+/* hcodi - 뷰 */
+.codi_type1{padding:0 0 30px;}
+.codi_type1 header{border-bottom:2px solid #a7a7a7; }
+.codi_type1 header h2{padding:20px;}
+.codi_type1_box{margin:10px 0 10px 0;}
+.codi_type1 .codi_view{overflow:hidden; margin:0 0 4px;}
+.codi_type1 .codi_view .left{float:left; margin:0 0 0 20px;}
+.codi_type1 .codi_view .right{float:left; margin:0 0 0 20px; width:400px;}
+.codi_type1 .codi_view .right .codi_point{width:200px;}
+.codi_type1 .codi_view .right .codi_point span{color:#f25640;}
+.codi_type1 .codi_view .right p:first-child{margin:0 0 10px; font-size:24px;}
+.codi_type1 .codi_view .right p:nth-child(2){color:#f5816e; font-size:16px;}
+.codi_type1 .codi_view .right .codi_inbox{display:inline-block; margin:30px 0 0;}
+.codi_type1 .codi_view .right .btns{display:inline-block; margin:30px 0 0 60px; vertical-align:top;}
+
+.codi_type1 .rating_box {margin:20px auto; border:2px solid #888; border-radius:5px; background:#f9f9f9; text-align:center; padding:20px;}
+.codi_type1 .rating_box .selects {display:block}
+.codi_type1 .rating_box select {width:100%}
+.codi_type1 .rating_box textarea {width:95%; height:200px; padding:10px; border:2px solid #888; border-radius:5px; margin:20px 0;}
+.codi_type1 .rating_box + p {padding:0 20px}
+
+.codi_type1 .comment_box {text-align:center; background:#f9f9f9; border-bottom:1px solid #dbdbdb; padding:0 0 20px;}
+.codi_type1 .comment_box textarea {width:90%; padding:10px;  border:2px solid #888; border-radius:5px; margin:20px 0;}
+.codi_type1 .comment_list div {display:inline-block;}
+.codi_type1 .comment_list li {padding:10px; border-bottom:1px solid #dbdbdb; vertical-align:top;}
+.codi_type1 .comment_list li > span {display:inline-block; margin:0 6px 0 0;}
+.codi_type1 .comment_list li > span:nth-child(2) {width:1px; height:8px; background:#656565;}
+
+.list_body.type1{border-top:1px solid #ccc;}
+.list_body.type1 .listbox {overflow:hidden; padding:4px 20px 0; margin:20px 0 0;}
+.list_body.type1 .listbox .thum {width:180px; float:left;}
+.list_body.type1 .listbox .thum img {}
+.list_body.type1 .listbox .rightbox {padding-top:5px; width:62%; float:right;}
+.list_body.type1 .listbox .rightbox p {font-size:1.4em; margin:0 0 20px;}
+.list_body.type1 .listbox .rightbox a {font-size:1.2em; color:#333; margin:0 0 20px;}
+.list_body.type1 .listbox .rightbox div{margin:0 0 20px;}
+.list_body.type1 .listbox .rightbox .price span,
+.list_body.type1 .listbox .rightbox .benprice span {font-size:1.2em}
+.list_body.type1 .listbox .rightbox .price span:last-child{float:right; font-size:1.5em;}
+.list_body.type1 .listbox .rightbox .price .stt {font-size:1.3em}
+.list_body.type1 .listbox .rightbox .price .stt1 {color:#18adcd;}
+.list_body.type1 .listbox .rightbox .benprice span:last-child{float:right; font-size:1.8em; color:#e36b5a;}
+
+.codi_type1 .app_down {text-align:center}
+.codi_type1 .app_down img {}
+
+/* weekbest - 위키베스트 */
+.weekbest header h2 {padding-left:20px}
+.weekbest .week_tab {background:#ececec; line-height: 0;}
+.weekbest .week_tab p {padding:36px 0 0 0; text-align:center;}
+.weekbest .week_tab ul {display:inline-block; width:100%; height:65px; border-bottom:2px solid #bababa; margin:14px 0 0 0; position:relative;}
+.weekbest .week_tab ul li > span {width:2px; height:10px; line-height:10px; background:#aaa; display:inline-block; position:absolute; top:30px; left:0;}
+.weekbest .week_tab ul li {position:relative; float:left; width:33%; font-size:20px;}
+.weekbest .week_tab ul li a {height:67px; line-height:67px; display:block; text-align:center;}
+.weekbest .week_tab ul li a span {display:block; height:67px; line-height:67px;}
+.weekbest .week_tab ul li.on a {padding:0 0 0 16px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/weekbest/week_tab_left.gif") no-repeat 0 0; color:#000;}
+.weekbest .week_tab ul li.on a span {padding:0 16px 0 0; background:url("http://image.hyundaihmall.com/static/smart/2013/img/weekbest/week_tab_right.gif") no-repeat right 0, url("http://image.hyundaihmall.com/static/smart/2013/img/weekbest/week_tab_center.gif") repeat-x;}
+.weekbest .week_tab ul li.on > span,
+.weekbest .week_tab ul li.on + li > span {display:none}
+
+.weekbest .thum {position:relative; height:220px;}
+.weekbest .thum .star_point {position:absolute; top:200px; left:36px;}
+.weekbest .sale_flag {position:absolute; left:10px; top:-4px;}
+.weekbest .sale_flag .sale_p {text-align:center; font-style:normal; color:#fff; font-size:1.4em; width:53px; position:absolute; top:10px; left:0; display:block; z-index:5}
+.weekbest .week_comment {color:#656565; font-size:18px; padding:20px 20px 20px 248px; background:#f7f7f7; text-align:left;}
+.weekbest .week_comment span {display:inline-block; overflow:hidden; height:22px; line-height:22px; margin:0 10px 0 0}
+.weekbest .week_comment span:first-child {padding:0 0 0 30px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/weekbest/comment_icon.png") no-repeat 0 0;}
+.weekbest .week_comment span:nth-child(3) {padding:0 0 0 30px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/weekbest/comment_icon.png") no-repeat 0 -22px;}
+.weekbest .week_comment p {padding:5px 0 0}
+
+.weekbest.allbest .list_body,
+.weekbest.searchbest .listbox,
+.weekbest.custombest .listbox {border-bottom:2px solid #dbdbdb;}
+.weekbest.allbest .listbox:last-child,
+.weekbest.searchbest .listbox:last-child,
+.weekbest.custombest .listbox:last-child {border-bottom:0}
+
+.weekbest.searchbest .thum{position:relative; height:220px;}
+.weekbest.searchbest .thum .star_point{position:absolute; top:200px; left:36px;}
+.weekbest.searchbest .weeksearch_list{background:#ececec; padding:30px 0 30px 0;}
+.weekbest.searchbest .weeksearch_list ul{width:600px; overflow:hidden; border:1px solid #b0b0b0; border-bottom:0; margin:0 auto;}
+.weekbest.searchbest .weeksearch_list li{font-size:20px; float:left; width:299px; background:#fff; border-bottom:1px solid #b0b0b0;}
+.weekbest.searchbest .weeksearch_list li a{height:54px; line-height:54px; display:block; padding:0 0 0 10px;}
+.weekbest.searchbest .weeksearch_list li strong{color:#f98878; display:inline-block; width:30px; margin:0 5px 0 0}
+.weekbest.searchbest .weeksearch_list li:nth-child(odd){border-right:1px solid #b0b0b0;}
+.weekbest.searchbest .weeksearch_list li.on a,
+.weekbest.searchbest .weeksearch_list li.on a strong{background:#f98878; color:#fff;}
+.weekbest.searchbest .weeksearch_title {height:86px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/weekbest/week_par_bg.gif") repeat-x 0 0; overflow:hidden;}
+.weekbest.searchbest .weeksearch_title span{display:inline-block; height:86px; line-height:86px;}
+.weekbest.searchbest .weeksearch_title span:first-child{float:left; margin:0 0 0 20px; font-size:20px;}
+.weekbest.searchbest .weeksearch_title span:last-child{float:right; margin:0 20px 0 0; color:#656565; font-size:20px;}
+
+.weekbest.custombest .thum{position:relative; height:220px;}
+.weekbest.custombest .thum .star_point{position:absolute; top:194px; left:36px;}
+.weekbest.custombest .custombest_list{background:#ececec;  border-bottom:2px solid #c7c7c7; padding:20px 0;}
+.weekbest.custombest .custombest_list p {margin:10px 0 10px 20px; font-size:20px}
+.weekbest.custombest .custombest_list p {padding:0 0 0 45px; height:36px; line-height:36px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/weekbest/week_blt.png") no-repeat 0 center;}
+.weekbest.custombest .custombest_list p span,
+.weekbest.custombest .custombest_list p span {color:#656565; height:36px; line-height:36px; display:inline-block}
+
+.weekbest {padding:0 0 0;}
+
+.weekbest div.bestselect {text-align:center; padding:10px 0}
+.weekbest div.bestselect .selects select {width:320px}
+.weekbest div.bestselect .selects:first-child select {width:400px}
+.weekbest div.bestselect.other .selects select {width:610px}
+
+.week_title_tab {overflow:hidden; height:152px; border-top:2px solid #a7a7a7; background:url("http://image.hyundaihmall.com/static/smart/2013/img/weekbest/week_show_bg.gif") repeat-x 0 bottom;}
+.week_title_tab li{float:left; width:20%; text-align:center;}
+.week_title_tab li:last-child{border-right:0;}
+.week_title_tab li a {font-size:22px; display:block; height:120px; font-weight:bold; color:#000; border-right:1px solid #efefef;}
+.week_title_tab li a span{padding:30px 0 0 0; display:inline-block;}
+.week_title_tab li a.on span{position:relative; z-index:5; width:132px; height:126px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/weekbest/week_tab_on.png") no-repeat 0 0; color:#fff;}
+
+/* myhmall - 찜리스트 + 최근본상품 */
+.myhmall {padding:0 0 30px}
+.myhmall.wishlatest header {border-bottom:2px solid #a7a7a7}
+.wishlatest .wishlatest_contl {text-align:center; padding:6px 10px; background:#f9f9f9; border-bottom:1px solid #cacaca;}
+.wishlatest .wishlatest_contl .btns span {padding:0 24px 0 14px;}
+.wishlatest .wishlatest_contl .btns {margin:0 0 0 5px}
+.wishlatest .wishlatest_contl .btns:first-child {margin:0 0 0 10px}
+.wishlatest .list_body.type1 .listbox {padding-bottom:20px; border-bottom:2px solid #dbdbdb}
+.wishlatest .list_body.type1 .listbox .thum {position:relative; width:180px; padding:10px 0 0 30px; }
+.wishlatest .list_body.type1 .listbox .thum .inputs.chek {position:absolute; top:0; left:0; z-index:15}
+.wishlatest .list_body.type1 .listbox .rightbox {width:55%;}
+.wishlatest .list_body.type1 .listbox .rightbox div {margin:0 0 10px}
+.wishlatest .list_body.type1 .listbox .rightbox .benprice span {vertical-align:bottom}
+.wishlatest .list_body.type1 .listbox .rightbox .bagesbox2 {margin:0 0 10px}
+.wishlatest .list_body.type1 .listbox .rightbox .bagesbox2 .bages {padding:2px 6px;background:#f1f1f1; border-radius:0; border:2px solid #e9e9e9}
+.wishlatest .list_body.type1 .listbox .rightbox .bagesbox2 .bages.c_gold {color:#a67c51}
+.wishlatest .list_body.type1 .listbox .rightbox .bagesbox2 .bages.c_pink {color:#ff7200}
+
+/* myhmall - 내쿠폰보기 */
+.myhmall.mycoupon{padding:0 0 30px;}
+.myhmall.mycoupon .coupon_level{background:#f1f1f1; border:1px solid #cacaca; padding:20px;}
+.myhmall.mycoupon .coupon_level table td p {font-size:20px}
+.myhmall.mycoupon .coupon_tip{margin:30px 0 0 20px; color:#e36b5a; padding:0 0 0 12px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/my_coupon_blt.gif") no-repeat 0 50%;}
+.myhmall.mycoupon .coupon_list li{padding:20px;}
+.myhmall.mycoupon .coupon_list li table td {font-size:20px;}
+.myhmall.mycoupon .coupon_list li table td span {display:inline-block; vertical-align:middle}
+.myhmall.mycoupon .coupon_list li tr td:first-child {font-weight:bold; background:#f1f1f1}
+.myhmall.mycoupon .coupon_list li.coupon_live tr td:first-child {background:#fef4ea}
+.myhmall.mycoupon .no_coupon{float:right; display:inline-block; overflow:hidden; width:158px; height:40px; vertical-align:middle; background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/mycoupon.png") no-repeat 0 0;}
+.myhmall.mycoupon .yes_coupon{float:right;  display:inline-block; overflow:hidden; width:158px; height:40px; vertical-align:middle; background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/mycoupon.png") no-repeat 0 -40px;}
+.text_center{text-align:center;}
+.tables{width:100%; border-collapse:collapse;}
+.tables td{border:2px solid #c3c3c3; padding:16px; background:#fff;}
+.tables_box{padding:16px;}
+
+/* 주문상태별조회 , 주문기간별조회  진행중*/
+.myhmall.mytransit{width:100%;}
+.myhmall.mytransit header {padding:0 20px; }
+.myhmall .mytransit_tab {height:60px; padding:0 20px; border-bottom:2px solid #f17e6e}
+.myhmall .mytransit_tab li {vertical-align:top; display:inline-block; margin:0 0 0 -7px; width:49%; border:1px solid #ccc; border-bottom:0;}
+.myhmall .mytransit_tab li:first-child {margin:0}
+.myhmall .mytransit_tab li.on {position:relative; z-index:5; border:2px solid #f17e6e; border-bottom:0}
+.myhmall .mytransit_tab li a {display:inline-block; width:100%; text-align:center; height:59px; line-height:59px; font-size:24px; color:#656565;}
+.myhmall .mytransit_tab li.on a{border-bottom:2px solid #fff; height:58px; line-height:58px; color:#df6353}
+
+.order_cancel{background:#8d8d8d; height:60px; line-height:60px; padding:5px 10px; overflow:hidden; border-top:1px solid #e3e7e9;}
+.order_cancel p{float:left; margin:0 10px 0 0; font-size:20px;}
+.order_cancel p:first-child{padding:0 10px 0 0; background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_line_bg.gif") no-repeat right 55%; /* color:#cfcbca; */}
+.order_date{background:#f9f9f9; border-bottom:1px solid #cacaca; height:60px; line-height:60px; padding:5px 10px; overflow:hidden;}
+.order_date p{font-size:20px; float:left; margin:0 10px 0 0;}
+.order_date p:first-child{padding:0 10px 0 0; color:#656565; background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_line_bg.gif") no-repeat right 55%;}
+.order_date p:last-child{color:#8c8c8c;}
+
+.myhmall.mytransit .views_list {width:100%; padding:15px 0 10px; overflow:hidden;  text-align:center; background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_tab_bg.gif") repeat-x 0 0;}
+.myhmall.mytransit .views_list li {display:inline-block; width:23%}
+.myhmall.mytransit .views_list li a {display:block; width:142px; height:63px;}
+.myhmall.mytransit .views_list li a span{font-size:24px;}
+.order_sebtn1{background:url(http://image.hyundaihmall.com/static/smart/2013/img/myhmall/order_searchbtn.gif) no-repeat 0 0;}
+.order_sebtn2{background:url(http://image.hyundaihmall.com/static/smart/2013/img/myhmall/order_searchbtn.gif) no-repeat -153px 0;}
+.order_sebtn3{background:url(http://image.hyundaihmall.com/static/smart/2013/img/myhmall/order_searchbtn.gif) no-repeat -306px 0;}
+.order_sebtn4{background:url(http://image.hyundaihmall.com/static/smart/2013/img/myhmall/order_searchbtn.gif) no-repeat -459px 0;}
+.myhmall.mytransit .order_cancel .btns{float:right;}
+.myhmall.mytransit .mytransit_list{background:#f9f9f9; border-bottom:1px solid #cacaca; border-top:1px solid #cacaca; height:80px; line-height:80px; overflow:hidden; font-size:1.4em;}
+.myhmall.mytransit .mytransit_list li{float:left; width:33%; text-align:center; background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_line_bg.gif") no-repeat right 55%;}
+.myhmall.mytransit .mytransit_list li:last-child{background:none;}
+.myhmall.mytransit .view_details{height:76px; line-height:76px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_bottom_bg.gif") repeat-x 0 0;}
+.myhmall.mytransit .view_details a{font-size:18px; margin:0 auto; width:160px; padding:0 0 0 40px; display:block; background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_check.png") no-repeat 0 55%;}
+.myhmall .now_cen{text-align:center; display:block; float:right; width:111px; height:57px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/myhmall/now_cen.png) no-repeat 0 0;}
+.now_cen1{text-align:center; display:inline-block; width:111px; height:57px; line-height:57px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/myhmall/now_cen.png) no-repeat 0 0;}
+
+/* 주문상태별 */
+.myhmall.mytransit .views_list_stat {width:100%; overflow:hidden; background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_tab_bg.gif") repeat-x 0 0;}
+.myhmall.mytransit .views_list_stat li {float:left; width:25%; text-align:center; background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_tab_right_bg4x120.gif") no-repeat 0 0; }
+.myhmall.mytransit .views_list_stat li:first-child,
+.myhmall.mytransit .views_list_stat li.on,
+.myhmall.mytransit .views_list_stat li.on + li {background-image:none;}
+.myhmall.mytransit .views_list_stat li a {display:block; height:112px;}
+.myhmall.mytransit .views_list_stat li a strong{display:block; padding:30px 0 10px; font-size:18px; color:#000;}
+.myhmall.mytransit .views_list_stat li a span{font-size:18px; color:#ec4e3a; font-weight:bold;}
+.myhmall.mytransit .views_list_stat li.on a {background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_tab_on.png") no-repeat 0 0; background-size:100% auto}
+.myhmall.mytransit .views_list_stat li.on a span,
+.myhmall.mytransit .views_list_stat li.on a strong {color:#fff;}
+
+/* 주문내역 상세조회 */
+.myhmall.myorderhistory {padding:0 0 30px;}
+.myhmall.myorderhistory .contents_tit{margin:30px 0; color:#454444;}
+.myhmall.myorderhistory .tables tr td:first-child{background:#f1f1f1; color:#656565;}
+.myhmall.myorderhistory .tables tr td:last-child{color:#000;}
+.myhmall.myorderhistory .tables tr td{font-size:20px; font-weight:bold;}
+.myhmall.myorderhistory .tables tr td ul{color:#8c8c8c;}
+.myhmall.myorderhistory .rightbox{color:#656565;}
+
+/* 주문배송 목록조회 */
+.myhmall.affairs .contents_tit{overflow:hidden;}
+.myhmall.affairs .contents_tit h3{float:left;}
+.myhmall.affairs .contents_tit p{float:right;}
+.myhmall.affairs .affairs_list{width:100%; overflow:hidden; background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_tab_gr_bg.gif") repeat-x 0 0;}
+.myhmall.affairs .affairs_list li {float:left; width:25%; height:183px; text-align:center; background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_tab_right_bg.gif") no-repeat right 0;}
+.myhmall.affairs .affairs_list li a{display:block;}
+.myhmall.affairs .affairs_list li a strong{display:block; margin:0 0 10px; color:#000; font-size:1.1em;}
+.myhmall.affairs .affairs_list li a span{color:#ec4e3a; font-size:26px; display:block;}
+.myhmall.affairs .affairs_list li a i{margin:30px auto 10px; width:60px; height:52px; display:block; overflow:hidden;}
+.myhmall.affairs .affairs_list li:last-child {background-image:none}
+.myhmall.affairs .affairs_list .ico1{background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_icon.png") no-repeat 14px 0;}
+.myhmall.affairs .affairs_list .ico2{background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_icon.png") no-repeat -117px 0;}
+.myhmall.affairs .affairs_list .ico3{background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_icon.png") no-repeat -244px 0;}
+.myhmall.affairs .affairs_list .ico4{background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_icon.png") no-repeat -375px 0;}
+.myhmall.affairs .affairs_list .ico5{background:url("http://image.hyundaihmall.com/static/smart/2013/img/myhmall/transit_icon.png") no-repeat -499px 0;}
+.myhmall.affairs .affairs_list a.on .ico1{background-position:14px -56px;}
+.myhmall.affairs .affairs_list a.on .ico2{background-position:-117px -56px;}
+.myhmall.affairs .affairs_list a.on .ico3{background-position:-244px -56px;}
+.myhmall.affairs .affairs_list a.on .ico4{background-position:-375px -56px;}
+.myhmall.affairs .affairs_list a.on .ico5{background-position:-375px -56px;}
+.myhmall.affairs .none_order{text-align:center; font-size:1.5em; padding:100px 0;}
+
+/* cartegory - 카테고리 */
+.common_cartegory {padding:0;}
+.common_cartegory header {padding:0 20px;}
+.common_cartegory .cartegory_list {}
+.cartegory_list {width:100%; border-top:2px solid #a7a7a7;  border-bottom:2px solid #a7a7a7;}
+.cartegory_list .cate_set a {color:#454444; padding:0 0 0 29px; font-size:23px; display:block; height:71px; line-height:71px; background:#f9f9f9; border-top:1px solid #fff}
+.cartegory_list .cate_set > a i.ico {margin:0 10px 0 0}
+.cartegory_list.type1 .cate_set > a {background:#f9f9f9}
+.cartegory_list.type1 .cate_set {border-top:2px solid #e4e4e4}
+.cartegory_list.type1 .cate_set:first-child {border-top:0}
+.cartegory_list.type2 {border:0}
+.cartegory_list.type1 .cate_set a {background:#fff url("http://image.hyundaihmall.com/static/smart/2013/img/common/carte_right_arr.gif") no-repeat right 50%}
+.cartegory_list.type2 .cate_set {border-top:2px solid #e4e4e4; padding:0 0 0 20px;}
+.cartegory_list.type2 .cate_set a {background:#fff url("http://image.hyundaihmall.com/static/smart/2013/img/common/carte_right_arr.gif") no-repeat right 50%}
+.cartegory_list.type3 {border-top-color:#e4e4e4}
+.cartegory_list.type3 .cate_set a {background:#d9d9d9; font-size:25px;}
+.cartegory_list.location {background:#f9f9f9; font-size:25px;}
+.cartegory_list.location .cate_set > a {display:inline-block; padding:0; margin:0 10px}
+.cartegory_list.location .gt {display:inline-block; vertical-align:middle; width:10px; height:26px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/common/carte_gt_arr.gif") no-repeat 0 50%;}
+.cartegory_list.location.hstore .gt {height:18px; background-position:0 -32px}
+.cartegory_list.location .cate_set  {color:#454444;}
+
+/* 마이페이지 메인 */
+.myhmall.main header{padding:0 20px; overflow:hidden;}
+.myhmall.main header .btns{float:right; margin:10px 0;}
+.myhmall.main header .btns span{font-size:20px; font-weight:bold;}
+.myhmall.main header .btns em{font-style:normal; color:#f17e6e;}
+.myhmall.main header h2{float:left;}
+.myhmall.main header .mypage_menu {display:none}
+.myhmall.main header.on .mypage_menu{display:block}
+.myhmall.main .mypage_menu{clear:both;}
+.myhmall.main .mypage_menu{background:#f9f9f9; margin:0 0 10px; padding:20px 20px 20px 20px;}
+.myhmall.main .mypage_menu ul{border:2px solid #b3b3b3; background:#fff; overflow:hidden;}
+.myhmall.main .mypage_menu ul li{float:left; width:50%; border-bottom:1px solid #f2f2f2;}
+.myhmall.main .mypage_menu ul li:nth-child(odd) a{border-right:1px solid #f2f2f2;}
+.myhmall.main .mypage_menu ul li a{display:block; padding:20px 0 20px 10px; font-size:1.2em;}
+.myhmall.main .mypage_menu p {overflow:hidden;}
+.myhmall.main .mypage_menu p > a{display:block; float:right; margin:15px 0 0 0; font-size:20px;}
+.myhmall.main .mypage_menu p .ico{margin:0 10px 0 0;}
+.myhmall.main .contents_tit h3 {color:#8f8f8f;}
+.myhmall.main .contents_tit h3 span{font-size:30px; color:#000;}
+.myhmall.main .shopping_info{overflow:hidden; border-top:2px solid #d2d2d2;}
+.myhmall.main .shopping_info div{float:left; padding:12px 0; width:39%; text-align:center; border-right:4px solid #e9e9e9;}
+.myhmall.main .shopping_info .level{margin:10px 0; font-size:25px; color:#656565;}
+.myhmall.main .shopping_info ul{float:left; width:60%;}
+.myhmall.main .shopping_info ul li{overflow:hidden; padding:14px 10px 10px 10px; border-bottom:4px solid #e9e9e9;}
+.myhmall.main .shopping_info ul li:last-child{border:0;}
+.myhmall.main .shopping_info ul li span{display:block; font-size:20px;}
+.myhmall.main .shopping_info ul li span:first-child{float:left; color:#656565;}
+.myhmall.main .shopping_info ul li span:last-child{float:right; font-weight:bold;}
+
+/* 취소 교환 반품내역 */
+.myhmall.cancelhistory{padding:0 0 30px; width:100%;}
+.myhmall.cancelhistory header {padding:0 20px; overflow:hidden; border-bottom:2px solid #a7a7a7; margin:0 0 20px;}
+.myhmall.cancelhistory header h2{float:left; margin:10px 0;}
+.myhmall.cancelhistory header .btns{float:right; margin:10px 0; position:relative;}
+.myhmall.cancelhistory header .btns .bottom_arrow{display:block; width:17px; height:11px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/myhmall/bottom_arrow.png) no-repeat 0 0; position:absolute; left:104px; top:57px}
+.myhmall.cancelhistory header .btns em{font-style:normal; color:#f17e6e;}
+.myhmall.cancelhistory .history_btn{margin:10px 0; padding:0 0 0 10px;}
+.myhmall.cancelhistory .history_btn .btns{width:22%;}
+.myhmall.cancelhistory .mytransit_tab {height:60px; padding:0 20px; border-bottom:2px solid #f17e6e; text-align:center}
+.myhmall.cancelhistory .mytransit_tab li {vertical-align:top; display:inline-block; margin:0 0 0 -7px; width:32%; border:1px solid #ccc; border-bottom:0;}
+.myhmall.cancelhistory .mytransit_tab li:first-child {margin:0}
+.myhmall.cancelhistory .mytransit_tab li.on {position:relative; z-index:5; border:2px solid #f17e6e; border-bottom:0}
+.myhmall.cancelhistory .mytransit_tab li a {display:inline-block; width:100%; text-align:center; height:59px; line-height:59px; font-size:24px; color:#656565;}
+.myhmall.cancelhistory .mytransit_tab li.on a{border-bottom:2px solid #fff; height:58px; line-height:58px; color:#df6353}
+
+/* 즉시 취소 신청 */
+.myhmall.nowcancel{padding:0 0 30px; width:100%;}
+.myhmall.nowcancel header {padding:0 20px; overflow:hidden; border-bottom:2px solid #a7a7a7;}
+.myhmall.nowcancel header h2{float:left; margin:10px 0;}
+.myhmall.nowcancel header .btns{float:right; margin:10px 0; position:relative;}
+.myhmall.nowcancel header .btns .bottom_arrow{display:block; width:17px; height:11px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/myhmall/bottom_arrow.png) no-repeat 0 0; position:absolute; left:104px; top:57px}
+.myhmall.nowcancel header .btns em{font-style:normal; color:#f17e6e;}
+.myhmall.nowcancel .cancel_list{padding:24px;}
+.myhmall.nowcancel .cancel_list .tables{border-top:4px solid #c3c3c3; font-size:20px;}
+.first_color1 tr td:nth-child(1){border-right:0; position:relative;}
+.myhmall.nowcancel .cancel_list .first_color1 tr td:nth-child(2){border-left:0; position:relative;}
+.myhmall.nowcancel .cancel_list .first_color1 tr td:nth-child(1) span{display:block; width:2px; height:16px; background:#ccc; position:absolute; right:0; top:40%;}
+.myhmall.nowcancel .cancel_list .first_color1 tr:first-child > td {background:#fef4ea;}
+.myhmall.nowcancel .cancel_list .first_color2{border-top:0px;}
+.myhmall.nowcancel .cancel_list .first_color2 tr td:first-child{background:#f1f1f1;}
+.myhmall.nowcancel .total_list{padding:24px;}
+.myhmall.nowcancel .total_list_btn{text-align:center; margin:20px 0 0 0;}
+.myhmall.nowcancel .total_list .first_color2 tr td:first-child{background:#f1f1f1;}
+.myhmall.nowcancel .cancel_box{text-align:center; padding:100px 0;}
+.myhmall.nowcancel .cancel_box p{margin:0 0 20px;}
+.myhmall.nowcancel .cancel_box p strong{font-size:26px;}
+
+/* 적립금 받기,적립금 현황 & 예치금리스트,포인트리스트 */
+.myhmall.mileage header {padding:0 20px; overflow:hidden; border-bottom:2px solid #a7a7a7;}
+.myhmall.mileage .mytransit_tab {height:59px; padding:0 20px; border-bottom:2px solid #f17e6e}
+.myhmall.mileage .mytransit_tab li {vertical-align:top; background:#fff; display:inline-block; margin:0 0 0 -7px; width:49%; border:1px solid #ccc; border-bottom:0;}
+.myhmall.mileage .mytransit_tab li:first-child {margin:0}
+.myhmall.mileage .mytransit_tab li.on {position:relative; z-index:5; border:2px solid #f17e6e; border-bottom:0}
+.myhmall.mileage .mytransit_tab li a {display:inline-block; width:100%; text-align:center; height:59px; line-height:59px; font-size:24px; color:#656565;}
+.myhmall.mileage .mytransit_tab li.on a{border-bottom:2px solid #fff; height:58px; line-height:58px; color:#df6353}
+.myhmall.mileage .mileage_text{text-align:center; margin:36px; font-size:24px; color:#4e4e4e;}
+.myhmall.mileage .mileage_list{padding:24px; font-size:20px;}
+.myhmall.mileage .mileage_list .tables tr:first-child td{background:#fff4ea;}
+.myhmall.mileage .mileage_list .tables tr td:last-child{text-align:center; color:#000; font-weight:bold;}
+.myhmall.mileage .use_mileage{height:87px; line-height:87px; vertical-align:middle; background:url(http://image.hyundaihmall.com/static/smart/2013/img/myhmall/mileage_top_bg.gif) repeat-x 0 0; text-align:center; margin:0 0 30px;}
+.myhmall.mileage .use_mileage p{display:inline-block; padding:0 10px 0 0; width:225px; height:57px; line-height:57px; color:#fefbde; font-size:30px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/myhmall/mileage_box_bg.png) no-repeat 0 0;}
+.myhmall.mileage .use_mileage span{display:inline-block; font-size:20px;}
+.myhmall.mileage .mileage_list table.tables tr.mileage_box td {color:#ababab}
+.myhmall.mileage .mileage_list .tables .mileage_box.acd_off {display:none}
+.myhmall.mileage .mileage_list .tables .mileage_box ul {margin:10px 0 0;}
+.myhmall.mileage .mileage_list .tables .mileage_box ul li {float:left; width:50%;text-align:center;}
+.myhmall.mileage .mileage_list .tables .mileage_box ul li .btns {width:80%}
+.myhmall.mileage .mileage_list .tables .mileage_box ul li .btns span {font-size:18px; color:#666}
+.myhmall.mileage .mileage_list .tables .mileage_box ul li .btns.color_f span {color:#fff}
+
+/* 구매만족도 평가 */
+.myhmall.satis header {padding:0 20px; border-bottom:2px solid #a7a7a7}
+.myhmall.satis ol {}
+.myhmall.satis ol li{border-bottom:1px solid #c3c3c3; padding:0 20px;}
+.myhmall.satis ol li p {font-size:20px; margin:20px 0 20px; font-weight:bold; color:#656565;}
+.myhmall.satis ol li div {margin:0 0 20px}
+.myhmall.satis ol li div .inputs.radio {margin:5px 10px 5px 0}
+.myhmall.satis ol li div .inputs.radio label + label {font-size:18px; margin:0 0 0 5px}
+.myhmall.satis ol li:last-child{border:0;}
+.myhmall.satis ol li:last-child .satis_text{width:100%; height:130px;}
+.myhmall.satis .satis_title{border-bottom:1px solid #cacaca; font-size:20px; color:#656565;}
+.myhmall.satis .satis_title p{border-bottom:1px solid #cacaca; padding:20px;}
+.myhmall.satis .satis_title .satis_tables{padding:20px;}
+.myhmall.satis .satis_title table{border:2px solid #c3c3c3; width:100%;}
+.myhmall.satis .satis_title table tr:first-child{border-bottom:2px solid #cacaca;}
+.myhmall.satis .satis_title table tr:first-child td{background:#f1f1f1;}
+.myhmall.satis .satis_title table tr:last-child td{color:#f37864;}
+.myhmall.satis .satis_title table tr td{padding:14px;}
+.myhmall.satis .satis_btn{margin:20px 0 0; border-top:1px solid #c3c3c3; text-align:center; padding:20px;}
+.myhmall.satis .satis_btn p{font-size:20px; color:#656565;}
+.myhmall.satis .satis_btn .btns{margin:20px 0 0 0; width:30%;}
+
+/* 배송추적 */
+.myhmall.ordertracking .tracking_info{padding:24px;}
+.myhmall.ordertracking .tables{margin:20px 0;}
+.myhmall.ordertracking .tables tr td:first-child{background:#f1f1f1;}
+.myhmall.ordertracking .first_color1{text-align:center;}
+.myhmall.ordertracking .first_color1 tr:first-child td{background:#fef4ea;}
+
+/* 고객센터 메인 */
+.custormer.main header{padding:0 20px; overflow:hidden; border-bottom:2px solid #a7a7a7;}
+.custormer.main .custormer_text{text-align:center; margin:36px; font-size:24px; color:#4e4e4e;}
+.custormer.main .mytransit_tab {height:60px; padding:0 20px; border-bottom:2px solid #f17e6e}
+.custormer.main .mytransit_tab li {vertical-align:top; display:inline-block; margin:0 0 0 -7px; width:49%; border:1px solid #ccc; border-bottom:0;}
+.custormer.main .mytransit_tab li:first-child {margin:0}
+.custormer.main .mytransit_tab li.on {position:relative; z-index:5; border:2px solid #f17e6e; border-bottom:0}
+.custormer.main .mytransit_tab li a {display:inline-block; width:100%; text-align:center; height:59px; line-height:59px; font-size:24px; color:#656565;}
+.custormer.main .mytransit_tab li.on a{border-bottom:2px solid #fff; height:58px; line-height:58px; color:#df6353}
+.custormer.main .select_list li{padding:8px 16px; overflow:hidden; border-bottom:2px solid #d5d5d5;}
+.custormer.main .select_list li a{font-size:1.2em; display:block; float:left; height:36px; line-height:36px; margin:0 0 0 10px;}
+.custormer.main .select_list li span{display:block; float:right; color:#aeaeae; height:36px; line-height:36px;}
+.custormer.main .select_list li em{font-style:normal; border:2px solid #656565; background:#848484; color:#fff; text-align:center; display:block; float:left; width:32px; height:32px; line-height:36px; overflow:hidden;}
+.custormer.main .custormer_bnr{overflow:hidden; text-align:center; border-top:2px solid #c1c1c1; margin:20px 0;}
+.custormer.main .custormer_bnr li{width:50%; float:left; border-bottom:2px solid #c1c1c1;}
+.custormer.main .custormer_bnr li a{display:block; height:104px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/custormer/custormer_bnr_bg.gif) repeat-x 0 0; font-size:22px; font-weight:bold; color:#555;}
+.custormer.main .custormer_bnr li:nth-child(odd) a{border-right:2px solid #c1c1c1;}
+.custormer.main .custormer_bnr li:nth-child(1),
+.custormer.main .custormer_bnr li:nth-child(2),
+.custormer.main .custormer_bnr li:nth-child(4){line-height:104px;}
+.custormer.main .custormer_bnr li:nth-child(3) a span {display:block; padding:8px 0 0 0;}
+.custormer.main .custormer_bnr li:nth-child(3) em{font-style:normal; font-size:16px; color:#969595;}
+.custormer.main .select_list + p {padding:0 20px}
+.custormer.main i.ico_rarr {display:inline-block; vertical-align:middle; width:22px; height:21px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/custormer/ico_arrow.png") no-repeat 0 0}
+.custormer.main .sms{text-align:center;}
+
+/* 로그인 */
+.login.login {padding:0 0 30px; width:100%;}
+.login.login header {padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.login.login .out_box{padding:20px;}
+.login.login .login_box{background:#f6f6f6; border:2px solid #dfdfdf; border-radius:5px; padding:20px; text-align: center;}
+
+.login.login .inside_box .inputs.txt{width:266px; height:58px; font-size:1.4em;}
+.login.login .check_box{font-size:20px;}
+.login.login .check_box span:first-child{margin:0 40px 0 0;}
+.login.login .inside_box{overflow:hidden; margin:0 auto;}
+.login.login .inside_box ul{display:inline-block;}
+.login.login .inside_box ul li:first-child{margin-bottom:20px;}
+.login.login .inside_box .ligin_btn{vertical-align:top; margin:0 0 0 30px; display:inline-block;width:167px; height:146px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/login/login_btn.png) no-repeat 0 0;}
+.login.login .check_box {margin:30px 0 0 0; padding:20px 0 0 0; border-top:2px solid #dfdfdf;}
+.login.login .login_twobtn{text-align:center; vertical-align:top;}
+.login.login .login_twobtn .btns{width:33%;}
+.login.login .login_twobtn .btns span{font-size:20px; font-weight:bold;}
+.login.login .login_twobtn .login_bt{display:inline-block; width:200px; height:57px; line-height:57px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/login/login_btnbg.png) no-repeat 0 0;}
+.login.login .bottom_box{margin:40px 0 0 0; padding:20px;}
+.login.login .bottom_box div{background:#f6f6f6; border:2px solid #dfdfdf; border-radius:5px; padding:20px; overflow:hidden;}
+.login.login .bottom_box div p{float:left; width:60%; margin:0 16px 0 0;}
+.login.login .bottom_box div strong{font-size:20px; color:#6f6f6f;}
+.login.login .bottom_box div .bnts{float:right; width:30%;}
+.login.login .bottom_box .nomber_btn{float:right; display:inline-block; overflow:hidden; width:150px; height:100px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/login/nomber_btn.png) no-repeat 0 0;}
+.login.login .bottom_box .nomber_btn1{float:right; display:inline-block; overflow:hidden; width:150px; height:100px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/login/nomber_search_btn.png) no-repeat 0 0;}
+
+/* 아이디/비밀번호 찾기 */
+.login.idsearsh{padding:0 0 30px; width:100%;}
+.login.idsearsh header {padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.login.idsearsh .contents_tit{border-top:0;}
+.login.idsearsh .idseach_input{padding:20px;}
+.login.idsearsh .idseach_input ul li{font-size:20px; overflow:hidden; padding:0 20px;}
+.login.idsearsh .idseach_input ul li:first-child{margin:0 0 20px;}
+.login.idsearsh .idseach_input ul li em{font-style:normal; font-weight:bold; color:#656565; display:inline-block; float:left;}
+.login.idsearsh .idseach_input ul li span{float:right;}
+.login.idsearsh .idseach_input ul li:first-child input[type="text"]{width:369px; height:58px;}
+.login.idsearsh .idseach_input ul li:nth-child(2) input[type="text"],
+.login.idsearsh .idseach_input ul li:nth-child(2) input[type="password"]{width:171px; height:58px;}
+.login.idsearsh .idseach_input .center_line{padding:0 8px; display:inline-block; height:50px; line-height:50px;}
+.login.idsearsh .idseach_btn{text-align:center; margin:60px;}
+.login.idsearsh .idseach_btn .btns{width:30%;}
+
+.login.idsearsh .idseach_output{padding:20px;}
+.login.idsearsh .idseach_output p{color:#656565; font-size:18px; font-weight:bold;}
+.login.idsearsh .idseach_output p:first-child{margin:0 0 20px;}
+.login.idsearsh .idseach_output p:first-child span{font-size:28px; color:#f37763;}
+.login.idsearsh .pwsearch_link{overflow:hidden; background:#f6f6f6; border:2px solid #dfdfdf; border-radius:5px; margin:60px 0 0 0; padding:20px;}
+.login.idsearsh .pwsearch_link span{display:inline-block; font-size:20px; color:#656565; font-weight:bold; float:left;}
+.login.idsearsh .pwsearch_link .btns{float:right;}
+
+.login.pwsearsh .pwseach_input{padding:20px;}
+.login.pwsearsh .contents_tit{border-top:0;}
+.login.pwsearsh .pwseach_input ul li{font-size:20px; overflow:hidden; padding:0 20px;}
+.login.pwsearsh .pwseach_input ul li:first-child,
+.login.pwsearsh .pwseach_input ul li:nth-child(2){margin:0 0 20px;}
+.login.pwsearsh .pwseach_input ul li em{font-style:normal; font-weight:bold; color:#656565; display:inline-block; float:left;}
+.login.pwsearsh .pwseach_input ul li span{float:right;}
+.login.pwsearsh .pwseach_input ul li:first-child input[type="text"],
+.login.pwsearsh .pwseach_input ul li:nth-child(2) input[type="text"]{width:369px; height:58px;}
+.login.pwsearsh .pwseach_input .center_line{padding:0 8px;}
+.login.pwsearsh .pwseach_input ul li:nth-child(3) input[type="text"],
+.login.pwsearsh .pwseach_input ul li:nth-child(3) input[type="password"]{width:171px; height:58px;}
+.login.pwsearsh .pw_btn{text-align:center; margin:60px;}
+.login.pwsearsh .pw_btn .btns{width:30%;}
+
+.login.pwsearsh_1 .pwseach_input p{font-size:20px;  font-weight:bold; color:#656565; overflow:hidden; margin:0 0 16px;}
+.login.pwsearsh_1 .pwseach_input p:nth-child(2) input[type="text"]{width:369px; height:58px}
+.login.pwsearsh_1 .pwseach_input p:nth-child(3){text-align:right; padding:0 45px 0 0; color:#a6a6a6;}
+.login.pwsearsh_1 .pwseach_input p em{font-style:normal; display:inline-block; margin:0 30px 0 0;}
+.login.pwsearsh_1 .pwseach_input p span{font-style:normal; display:inline-block;}
+.login.pwsearsh_1 .pwseach_input .myinfo{color:#c8643d; vertical-align:top;}
+.login.pwsearsh_1 .select_pwseach{background:#f6f6f6; border:2px solid #dfdfdf; border-radius:5px; padding:20px;}
+.login.pwsearsh_1 .select_pwseach div{text-align:center;}
+
+.login.pwsearsh_2 .pwseach_input p input[type="password"]{width:356px; height:58px;}
+.login.pwsearsh_3 .pwseach_input > p:first-child{text-align:center; margin:40px 0;}
+.login.pwsearsh_3 .pwseach_input p:first-child span{color:#f37763; font-size:24px;}
+
+/* 약관동의 */
+.member.terms{padding:0 0 30px; width:100%;}
+.member.terms header {padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.member.terms .contents_tit h3{font-size:24px; color:#454444;}
+.member.terms .contents_tit.top{border-top:0;}
+.member.terms .contents_tit.bottom{line-height:34px;}
+.member.terms .contents_tit.bottom p{font-size:14px;}
+.member.terms .text_box{padding:20px; line-height:150%;}
+.member.terms .text_box .tables{text-align:center;}
+.member.terms .text_box .member_confirm{}
+.member.terms .text_box .member_confirm tr td{padding:4px 0;}
+.member.terms .text_box .member_confirm tr td:first-child{font-size:15px;}
+.member.terms .text_box .member_confirm tr:first-child td input{width:448px;}
+.member.terms .text_box .member_confirm tr:nth-child(2) td input{width:100%;}
+.member.terms .text_box .member_confirm_btn{text-align:center; margin:20px 0 0 0;}
+.member.terms .text_box .member_confirm_btn p{margin:10px 0 0 0; color:#a6a6a6; font-weight:bold;}
+.member.terms .text_box ul{padding:20px; margin:40px 0 0 0;}
+.member.terms .radio_box{border-top:1px solid #cacaca; font-size:18px; font-weight:bold; color:#8e8e8e; text-align:center; padding:0 0 80px;}
+.member.terms .radio_box p{padding:20px;}
+.member.terms .radio_box .radio_group1 span:first-child{margin:0 60px 0 0;}
+.member .member_step1 {position:relative;}
+.member .member_step1 .layer_member {display:none; width:89%; text-align:center; margin:0 0 0 -48%; background:#f6f6f6; border:2px solid #dfdfdf; border-radius:5px; padding:105px 20px; position:absolute; top:18px; left:50%; z-index:5}
+.member .member_step1 .layer_member p {font-size:22px; margin:0 0 20px}
+.member .member_step1 .layer_member.on {display:block}
+
+/* 회원가입 */
+.member.join{padding:0 0 30px; width:100%;}
+.member.join header {padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.join_box{padding:12px;}
+.join_tables {width:100%;}
+.join_tables tr{border-bottom:1px solid #e6e6e6;}
+.join_tables tr td{padding:12px;}
+.join_tables tr td .inputs{margin:0 6px 0 0;}
+.join_tables tr td p{margin:0 0 8px;}
+.join_tables tr td div{margin:0 0 10px;}
+.join_tables tr td em{display:inline-block; font-style:normal;}
+.join_tables tr td:first-child{font-weight:bold;}
+.join_box .join_btn{text-align:center; margin:30px 0 0;}
+.join_box .join_btn .btns{width:30%;}
+.join_tables tr:nth-child(3) td input[type="text"]{width:200px;}
+.join_tables tr:nth-child(4) td input[type="password"],
+.join_tables tr:nth-child(5) td input[type="password"]{width:280px;}
+.join_tables tr:nth-child(7) td .address input[type="text"]{width:70px;}
+.join_tables tr:nth-child(7) td .address1 input[type="text"]{width:380px;}
+.join_tables tr:nth-child(8) td.tel input[type="text"],
+.join_tables tr:nth-child(9) td.hp input[type="text"]{width:70px;}
+.join_tables tr:nth-child(11) td .radio_group1 em{margin:0 80px 0 0;}
+.join_tables tr:nth-child(11) td .radio_group2 em{margin:0 9px 0 0;}
+.join_tables tr:nth-child(11) td .radio_group3 em{margin:0 96px 0 0;}
+.join_tables tr:nth-child(12) td p strong,
+.join_tables tr:nth-child(13) td p strong{color:#f56c59;}
+
+/* 회원가입완료 */
+.member.joincomplete{padding:0 0 30px; width:100%;}
+.member.joincomplete header {padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.member.joincomplete .complete_box{text-align:center; margin:50px 0 0 0; padding:20px;}
+.member.joincomplete .complete_box p{margin:0 0 40px;}
+.member.joincomplete .complete_box p strong{font-size:26px; color:#f37863;}
+.member.joincomplete .complete_btn{text-align:center;}
+.member.joincomplete .complete_btn .btns{width:30%;}
+
+/* 비회원주문 */
+.member.nomemberorder{padding:0 0 30px; width:100%;}
+.member.nomemberorder header {padding:0 20px;}
+.member.nomemberorder .nomemberorder_box{padding:20px;}
+.member.nomemberorder .radio_box{padding:20px; border-top:1px solid #cacaca; margin:0 0 30px;}
+.member.nomemberorder .radio_box p{margin:0 0 20px;}
+.member.nomemberorder .radio_box .inputs.radio{margin:0 0 0 80px;}
+.member.nomemberorder .nomemberorder_table{padding:20px; background:#f9f9f9; border-top:1px solid #cacaca; border-bottom:1px solid #cacaca;}
+.member.nomemberorder .nomemberorder_table table {width:100%;}
+.member.nomemberorder .nomemberorder_table table tr td{padding:8px 12px;}
+.member.nomemberorder .nomemberorder_table table tr td:first-child{margin:0 5px 0 0;}
+.member.nomemberorder .nomemberorder_table table tr:first-child td .inputs.txt{width:250px;}
+.member.nomemberorder .nomemberorder_table table tr:nth-child(2) td input[type="text"]{width:120px;}
+.member.nomemberorder .nomemberorder_table table tr:nth-child(3) td input[type="text"]{width:70px;}
+.member.nomemberorder .nomemberorder_table table tr:nth-child(4) td input[type="text"]{width:100px;}
+.member.nomemberorder .nomemberorder_btn{text-align:center; margin:20px 0 0 0;}
+.member.nomemberorder .nomemberorder_btn .btns{width:30%;}
+
+/* 주문서작성 */
+.order.ordersheet{padding:0 0 30px; width:100%;}
+.order.ordersheet header {padding:0 20px;}
+.order.ordersheet .sheet_box1{font-size:24px;}
+.order.ordersheet .sheet_box1 ul li{padding:20px;}
+.order.ordersheet .sheet_box1 ul li:first-child{background:#fafafa; border-bottom:1px solid #ededed;}
+.order.ordersheet .sheet_box1 ul li:last-child p{margin:0 0 20px;}
+.order.ordersheet .sheet_box1 ul li:last-child textarea{width:100%; height:100px; max-width:100%; max-height:100px;}
+.order.ordersheet .sheet_box1 ul li span{display:inline-block;}
+.order.ordersheet .sheet_box1 ul li span:first-child{width:110px; margin:0 40px 0 0; color:#656565;}
+.order.ordersheet .sheet_box1 ul li span:nth-child(2){margin:0 30px 0 0; color:#000;}
+.order.ordersheet .sheet_box1 ul li span.sheet_address {display:block; margin:10px 0 0;}
+.order.ordersheet .sheet_box2{font-size:24px;}
+.order.ordersheet .sheet_box2 .packing_list{padding:20px;}
+.order.ordersheet .sheet_box2 .packing_list li{margin:0 0 20px;}
+.order.ordersheet .sheet_box2 .packing_list li img{border:1px solid #dedede;}
+.order.ordersheet .sheet_box2 .packing_list li p{display:inline-block;}
+.order.ordersheet .sheet_box2 .packing_list li p:last-child{width:75%; margin:0 0 0 30px; vertical-align:top; color:#656565;}
+.order.ordersheet .sheet_box2 .packing_option{padding:20px;}
+.order.ordersheet .sheet_box2 .packing_option li{margin:0 0 20px; color:#656565;}
+.order.ordersheet .sheet_box2 .packing_option li span{display:inline-block;}
+.order.ordersheet .sheet_box2 .packing_option li div{display:inline-block; margin:0 0 0 30px;}
+.order.ordersheet .sheet_box2 .packing_option em{font-style:normal; color:#e36b5a;}
+.order.ordersheet .sheet_box2 .packing_option li textarea{width:75%; height:100px; max-width:75%; max-height:100px; vertical-align:middle;}
+.order.ordersheet .sheet_box2 .packing_option li .selects{width:75%;margin:0 0 0 8px;}
+.order.ordersheet .wsize{font-size:12px;}
+
+.order.ordersheet .sheet_box3{padding:10px; font-size:24px; color:#656565;}
+.order.ordersheet .sheet_box3 .sale_box{border:1px solid #a7a7a7;}
+.order.ordersheet .sheet_box3 .sale_list{padding:10px;}
+.order.ordersheet .sheet_box3 .sale_list p{display:inline-block; margin:0 0 10px;}
+.order.ordersheet .sheet_box3 .sale_list div{display:inline-block; width:60%; margin:0 0 0 4%; vertical-align:top;}
+.order.ordersheet .sheet_box3 .sale_list div p:last-child{display:inline-block; font-size:30px; color:#e15c48; font-weight:bold; text-align:right; width:100%;}
+.order.ordersheet .sheet_box3 .sale_list div p span{color:#e36b5a;}
+.order.ordersheet .sheet_box3 .sale_list div p em{font-style:normal;}
+
+.order.ordersheet .sheet_box3 .sale_option1 li{background:#f9f9f9; padding:16px 0; border-bottom:1px solid #e8e8e8; overflow:hidden;}
+.order.ordersheet .sheet_box3 .sale_option1 li span{display:inline-block;}
+.order.ordersheet .sheet_box3 .sale_option1 li a{display:inline-block; width:32px; height:32px; margin:0 0 0 20px; }
+.order.ordersheet .sheet_box3 .sale_option1 li p {vertical-align:middle; float:left; width:390px; overflow:hidden; padding:0 0 0 50px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/order/order_arrow.png) no-repeat 10px 0;}
+.order.ordersheet .sheet_box3 .sale_option1 li p em{font-style:normal;}
+.order.ordersheet .sheet_box3 .sale_option1 .price{vertical-align:middle; float:right; color:#f97522; padding:0 10px 0 0;}
+
+.order.ordersheet .sheet_box3 .sale_option2{padding:12px;}
+.order.ordersheet .sheet_box3 .sale_option2 li{padding:10px 0;}
+.order.ordersheet .sheet_box3 .sale_option2 li > span{display:inline-block;}
+.order.ordersheet .sheet_box3 .sale_option2 li > span:first-child{margin:0 20px 0 0; width:30%;}
+.order.ordersheet .sheet_box3 .sale_option2 li > span:last-child{width:60%;}
+.order.ordersheet .sheet_box3 .sale_option2 li:nth-child(odd){color:#999;}
+.order.ordersheet .sheet_box3 .sale_option2 li:first-child{color:#666;}
+.order.ordersheet .sheet_box3 .sale_option2 .price{color:#18adcd; text-align:right;}
+
+.order.ordersheet .sale_chek{margin:20px 0 0; padding:12px; border-bottom:2px dashed #d5d5d5; font-size:24px; color:#656565;}
+.order.ordersheet .sale_chek li{margin:0 0 10px;}
+.order.ordersheet .sale_chek li span{display:inline-block;}
+.order.ordersheet .sale_chek li span:first-child{width:48%;}
+.order.ordersheet .sale_chek li span:last-child{text-align:right; width:46%;}
+.order.ordersheet .sale_chek li .price{color:#e15c48;}
+
+.order.ordersheet .mileage_use{margin:20px 0 0; padding:12px; font-size:24px; color:#656565;}
+.order.ordersheet .mileage_use table{width:100%;}
+.order.ordersheet .mileage_use table tr td{padding:8px 8px 8px 4px;}
+.order.ordersheet .mileage_use table tr td a.btns span {font-size:18px}
+.order.ordersheet .mileage_use table tr td > span{display:inline-block; margin:0 5px 0 0;}
+.order.ordersheet .mileage_use table tr td em{font-style:normal; color:#e36b5a;}
+.order.ordersheet .mileage_use table tr td:last-child{text-align:right;}
+.order.ordersheet .mileage_use table tr:last-child{background:#f5f5f5; border-top:2px solid #f1f1f1;}
+.order.ordersheet .mileage_use table tr:last-child td {padding:20px 0;}
+.order.ordersheet .mileage_use table tr:last-child td > span{width:48%; text-align:left;}
+.order.ordersheet .mileage_use table tr:last-child td .price{text-align:right; font-size:30px; font-weight:bold; color:#e15c48;}
+
+.order.ordersheet .mileage_use table tr td .inputs {width:40%; margin:0}
+.order.ordersheet .mileage_use table tr td .inputs + span {margin:0 10px}
+.order.ordersheet .mileage_use table tr td .inputs input {text-align:right}
+
+.order.ordersheet .total_sale{margin:20px 0 0; font-size:24px; color:#656565;}
+.order.ordersheet .total_sale ul li{border-top:1px solid #e1e1e1; padding:16px 0 16px 16px;}
+.order.ordersheet .total_sale ul li span{display:inline-block; width:48%;}
+.order.ordersheet .total_sale ul li span:last-child{text-align:right;}
+.order.ordersheet .total_sale ul li em{font-style:normal;}
+.order.ordersheet .total_sale ul li .total_saleprice{font-size:28px; color:#e15c48;}
+.order.ordersheet .total_sale ul li .saving{color:#82d0e1;}
+.order.ordersheet .total_sale ul li.sumpoint {background:#f5f5f5;}
+.order.ordersheet .total_sale ul li.sumpoint span{vertical-align:middle;}
+.order.ordersheet .total_sale ul li div{border:4px solid #fc8888; background:#fff4ea; padding:20px}
+.order.ordersheet .total_sale ul li div p{display:inline-block; width:48%; vertical-align:middle;}
+.order.ordersheet .total_sale ul li div strong{font-size:32px; color:#ff5959;}
+.order.ordersheet .total_sale ul li div p:last-child{text-align:right;}
+.order.ordersheet .total_sale ul li:nth-child(1),
+.order.ordersheet .total_sale ul li:nth-child(4),
+.order.ordersheet .total_sale ul li:nth-child(5){color:#e15c48;}
+
+.order.ordersheet .order_consent{margin:20px 0 0; padding:12px; font-size:24px; color:#656565;}
+.order.ordersheet .order_consent p{margin:0 0 10px;}
+.order.ordersheet .order_consent p:last-child{margin:20px 0 0; border-top:1px solid #cacaca; padding:20px 0 0; text-align:center;}
+.order.ordersheet .order_consent p:last-child .btns{width:28%;}
+.order.ordersheet .order_consent em{font-style:normal; font-size:20px; color:#8c8c8c;}
+
+.order.ordersheet .paymenthow{padding:10px; font-size:20px; color:#656565;}
+.order.ordersheet .paymenthow .tabs{overflow:hidden; margin:0 0 20px;}
+.order.ordersheet .paymenthow .card_option{clear:both;}
+.order.ordersheet .paymenthow .card_option li{margin:0 0 10px;}
+.order.ordersheet .paymenthow .card_option li p{display:inline-block;}
+.order.ordersheet .paymenthow .card_option li p .selects{width:100%;}
+.order.ordersheet .paymenthow .card_option li p:first-child{width:30%;}
+.order.ordersheet .paymenthow .card_option li p:last-child{width:65%;}
+.order.ordersheet .paymenthow .card_option li div{display:inline-block; width:55%;}
+
+.order.ordersheet .paymenthow .hooper_option{clear:both;}
+.order.ordersheet .paymenthow .hooper_option li{margin:0 0 10px;}
+.order.ordersheet .paymenthow .hooper_option li p{display:inline-block;}
+.order.ordersheet .paymenthow .hooper_option li p:first-child{width:30%;}
+.order.ordersheet .paymenthow .hooper_option li p:last-child{width:65%;}
+.order.ordersheet .paymenthow .hooper_option li p .selects{width:100%;}
+.order.ordersheet .paymenthow .hooper_option li p .inputs.txt{width:96%;}
+.order.ordersheet .paymenthow .hooper_option li p:last-child input[type="text"]{width:100%;}.order.ordersheet .paymenthow .hooper_option .receipt{border:1px solid #c3c3c3; padding:10px;}
+.order.ordersheet .paymenthow .hooper_option .receipt strong{display:block; border-bottom:1px solid #e8e8e8; padding:10px 0;}
+.order.ordersheet .paymenthow .hooper_option .receipt em{display:block; font-style:normal; font-size:18px; color:#868686; margin:10px 0 20px;}
+.order.ordersheet .paymenthow .hooper_option .receipt label{margin:0 0 0 10px;}
+.order.ordersheet .paymenthow .hooper_option .mobile{}
+.order.ordersheet .paymenthow .hooper_option .mobile span{display:inline-block;}
+.order.ordersheet .paymenthow .hooper_option .mobile span:first-child{width:30%;}
+.order.ordersheet .paymenthow .hooper_option .mobile .inputs{width:80px;}
+.order.ordersheet .paymenthow .hooper_option .mobile strong{display:block; margin:10px 0 0; color:#e36b5a;}
+.order.ordersheet .paymenthow .hooper_option .business .inputs{width:18%; margin:0 5px 0 0;}
+.order.ordersheet .paymenthow .hooper_option .business strong{display:block; margin:10px 0 0; color:#e36b5a;}
+
+.order.ordersheet .paymenthow .mobile_option{clear:both;}
+.order.ordersheet .paymenthow .mobile_option li{margin:0 0 25px;}
+.order.ordersheet .paymenthow .mobile_option li p{display:inline-block;}
+.order.ordersheet .paymenthow .mobile_option li div{display:inline-block;}
+.order.ordersheet .paymenthow .mobile_option li div label{margin:0 0 0 10px;}
+.order.ordersheet .paymenthow .mobile_option li p:first-child{width:30%;}
+.order.ordersheet .paymenthow .mobile_option li p:last-child{width:65%;}
+.order.ordersheet .paymenthow .mobile_option li p:last-child .inputs.txt{width:22%;}
+.order.ordersheet .paymenthow .mobile_option li:last-child ul{border:1px solid red; padding:10px;}
+.order.ordersheet .paymenthow .mobile_option strong{color:#e15c48;}
+.order.ordersheet .paymenthow .mobile_option .minutes{margin:0 10px;}
+
+.order.giftcon .transit_info{padding:12px; font-size:24px; color:#656565;}
+.order.giftcon .transit_info .send_num p{display:inline-block;}
+.order.giftcon .transit_info .send_num p:first-child{width:30%;}
+.order.giftcon .transit_info .send_num p:last-child{width:60%;}
+.order.giftcon .transit_info .send_num p .inputs.txt{width:100px;}
+.order.giftcon .gift_conlist{margin:30px 0 0;}
+.order.giftcon .gift_conlist p{width:30%; display:inline-block; vertical-align:top; margin:0 20px 0 0;}
+.order.giftcon .gift_conlist div{width:60%; display:inline-block;}
+.order.giftcon .gift_conlist div span{display:block;}
+.order.giftcon .gift_conlist div span:first-child{color:#f96c13;}
+.order.giftcon .gift_conlist div em{font-style:normal; color:#e36b5a;}
+.order.giftcon .total_order_price{background:#f5f5f5;}
+.order.giftcon .total_order_price p{display:inline-block; padding:20px 0;}
+.order.giftcon .total_order_price p:first-child{width:30%;}
+.order.giftcon .total_order_price p:last-child{width:60%; text-align:right; font-size:30px; color:#e15c48;}
+
+.order.giftcon .subject{padding:12px; font-size:24px; color:#656565;}
+.order.giftcon .subject ul{border:1px solid #c3c3c3; padding:12px;}
+.order.giftcon .subject ul li{margin:0 0 10px;}
+.order.giftcon .subject ul li span{display:inline-block;}
+.order.giftcon .subject ul li span:first-child{width:30%; vertical-align:top;}
+.order.giftcon .subject ul li span:last-child{width:60%;}
+.order.giftcon .subject ul li p{display:inline-block; width:60%;}
+.order.giftcon .subject ul li p .inputs.txt{width:100px;}
+.order.giftcon .subject ul li textarea{width:100%; height:120px;}
+.order.giftcon .subject ul li em{font-style:normal; color:#e36b5a;}
+.order.giftcon .subject ul .del {text-align:right;}
+
+/* 패밀리존 */
+.shop.familyzone{padding:0 0 30px; width:100%;}
+.shop.familyzone header {padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.shop.familyzone .mytransit_tab {height:60px; padding:0 20px; border-bottom:2px solid #f17e6e}
+.shop.familyzone .mytransit_tab li {vertical-align:top; background:#fff; display:inline-block; margin:0 0 0 -7px; width:49%; border:1px solid #ccc; border-bottom:0;}
+.shop.familyzone .mytransit_tab li:first-child {margin:0}
+.shop.familyzone .mytransit_tab li.on {position:relative; z-index:5; border:2px solid #f17e6e; border-bottom:0}
+.shop.familyzone .mytransit_tab li a {display:inline-block; width:100%; text-align:center; height:59px; line-height:59px; font-size:24px; color:#656565;}
+.shop.familyzone .mytransit_tab li.on a {border-bottom:2px solid #fff; height:58px; line-height:58px; color:#df6353}
+.shop.familyzone .family_info {padding:10px; font-size:20px; color:#656565;}
+.shop.familyzone .family_info table {width:100%; border:2px solid #c0c0c0;}
+.shop.familyzone .family_info table tr {border-bottom:2px solid #c0c0c0;}
+.shop.familyzone .family_info table tr:first-child td {text-align:center; background:#fff4ea;}
+.shop.familyzone .family_info table tr td {padding:20px;}
+.shop.familyzone .family_info table tr td:first-child {text-align:center; border-right:1px solid #eaeaea;}
+.shop.familyzone .family_info table tr td:last-child {vertical-align:middle;}
+.shop.familyzone .family_info .caution {margin:30px 0 0 ;}
+.shop.familyzone .family_info .caution strong {font-size:22px; color:#333}
+.shop.familyzone .family_info .caution span {display:inline-block; font-weight:bold}
+.shop.familyzone .family_info .caution li {margin:0 0 10px;}
+.shop.familyzone .family_info table tr td span {display:block; width:84px; margin:0 auto;}
+.shop.familyzone .family_info table tr td span:first-child{height:81px;}
+.shop.familyzone .family_info table tr td:nth-child(3) span{width:100%; height:70px;}
+.shop.familyzone .family_info .level1 {background:url(http://image.hyundaihmall.com/static/smart/2013/img/shop/member_level.png) no-repeat 0 0;}
+.shop.familyzone .family_info .level2 {background:url(http://image.hyundaihmall.com/static/smart/2013/img/shop/member_level.png) no-repeat 0 -139px;}
+.shop.familyzone .family_info .level3 {background:url(http://image.hyundaihmall.com/static/smart/2013/img/shop/member_level.png) no-repeat 0 -280px;}
+.shop.familyzone .family_info .level4 {background:url(http://image.hyundaihmall.com/static/smart/2013/img/shop/member_level.png) no-repeat 0 -419px;}
+.shop.familyzone .family_info .level5 {background:url(http://image.hyundaihmall.com/static/smart/2013/img/shop/member_level.png) no-repeat 0 -560px;}
+.shop.familyzone .family_info .level6 {background:url(http://image.hyundaihmall.com/static/smart/2013/img/shop/member_level.png) no-repeat 0 -699px;}
+.shop.familyzone .vip_btn {text-align:center; margin:20px 0 0;}
+
+/* 1:1 고객상담 신청 */
+.custormer.proposal header{padding:0 20px}
+.custormer.proposal .proposal_title{font-size:20px; color:#656565; text-align:center; padding:20px 0; background:#ffffff; border-top:2px solid #a7a7a7 ; border-bottom:1px solid #e1e1e1;}
+.custormer.proposal .custormer_menu {font-size:18px; color:#656565; margin:0 0 10px; text-align:center;}
+.custormer.proposal .faq_cate_onoff{display:block; text-align:center}
+.custormer.proposal a.faq_cate_onoff {color:#666; font-size:22px; height:66px; line-height:66px; background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#f1f1f1)); background: linear-gradient(#ffffff, #f1f1f1);}
+.custormer.proposal a.faq_cate_onoff span {display:inline-block;}
+.custormer.proposal a.faq_cate_onoff span i.ico.faqarrow {display:inline-block; width:23px; height:13px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/custormer/ico_up.png") no-repeat right 0}
+.custormer.proposal a.faq_cate_onoff.on span i.ico.faqarrow {background-position:right -17px}
+.custormer.proposal p.faq_cate_onoff {color:#666; font-size:22px; height:66px; line-height:66px}
+.custormer.proposal .custormer_menu.acd_off {display:none}
+.custormer.proposal .custormer_menu table {width:100%}
+.custormer.proposal .custormer_menu table tr td {height:85px; line-height:85px; border-bottom:4px solid #e9e9e9;border-left:4px solid #e9e9e9}
+.custormer.proposal .custormer_menu table tr td:first-child {border-left:0}
+.custormer.proposal .custormer_menu table tr td a {display:block; height:100%;}
+.custormer.proposal .custormer_menu table tr td.on a {height:81px; border:2px solid #be5646; Background: -webkit-linear-gradient(#f38172, #dd6151); background: linear-gradient(#f38172, #dd6151); color:#fff;}
+.custormer.proposal .custormer_menu table tr:last-child td {border-bottom:0}
+.custormer.proposal .custormer_menu .cust_cate_tb {border:4px solid #d2d2d2}
+.custormer.proposal .faq_box li{overflow:hidden; border-bottom:1px solid #d5d5d5; padding:20px;}
+.custormer.proposal .faq_box li div.quest {height:36px; line-height:36px;}
+.custormer.proposal .faq_box li div.quest span {float:left; display:inline-block; vertical-align:top;}
+.custormer.proposal .faq_box li div.quest span:first-child{margin:0 10px 0 0; font-size:22px; width:36px; height:36px; line-height:36px;}
+.custormer.proposal .faq_box li div.quest > span + span + span {float:right; text-align:right; font-size:18px; font-weight:bold; color:#aeaeae}
+.custormer.proposal .faq_box li .quest + div {margin:10px auto 0; border:1px solid #c3c3c3; padding:20px; clear:both}
+.custormer.proposal .faq_box li .quest + div.acd_off {display:none}
+.custormer.proposal .faq_box .faq1{background:url(http://image.hyundaihmall.com/static/smart/2013/img/custormer/custormer_pagebtn.gif) no-repeat 0 0;}
+.custormer.proposal .faq_box .faq2{background:url(http://image.hyundaihmall.com/static/smart/2013/img/custormer/custormer_pagebtn.gif) no-repeat -36px 0;}
+.custormer.proposal .faq_box .faq3{background:url(http://image.hyundaihmall.com/static/smart/2013/img/custormer/custormer_pagebtn.gif) no-repeat -72px 0;}
+.custormer.proposal .faq_box .faq4{background:url(http://image.hyundaihmall.com/static/smart/2013/img/custormer/custormer_pagebtn.gif) no-repeat -108px 0;}
+.custormer.proposal .faq_box .faq5{background:url(http://image.hyundaihmall.com/static/smart/2013/img/custormer/custormer_pagebtn.gif) no-repeat -144px 0;}
+.custormer.proposal .faq_box p {text-align:center; margin:10px 0 0;}
+.custormer.proposal .faq_box .btns{width:90%;}
+.custormer.proposal .product_list{padding:20px;}
+.custormer.proposal .product_list p{margin:0 0 20px; text-align:center; font-size:20px;}
+.custormer.proposal .product_list table{font-size:1.1em; border:2px solid #adadad; width:100%;}
+.custormer.proposal .product_list table tr td{padding:10px 10px; border-bottom:2px solid #bdbdbd; border-right:2px solid #bdbdbd;}
+.custormer.proposal .product_list table tr td:last-child{text-align:center;}
+.custormer.proposal .product_list table tr td:last-child .inputs.txt{width:100px;}
+.custormer.proposal .product_list table tr td:last-child .btns{font-size:10px;}
+.custormer.proposal .product_list table tr:first-child td{text-align:center; background:#fff4ea;}
+.custormer.proposal .acodian_box{background:#f9f9f9; padding:0 10px; line-height:150%;}
+.custormer.proposal .product_list table tr td .btns span {font-size:24px}
+.custormer.proposal .faq_btn{margin:20px 0 0; text-align:center;}
+.custormer.proposal .faq_btn .btns{display:inline-block; width:40%;}
+.custormer.proposal .pagenation a{margin:0 8px 0 0;}
+.custormer.proposal .faq_box .faq_point{}
+.custormer.proposal .faq_box .faq_point ul{margin:20px 0 0;}
+.custormer.proposal .faq_box .faq_point ul li:first-child{border-top:2px dashed #d5d5d5;}
+.custormer.proposal .faq_box .faq_point ul li:last-child{border:0;}
+.custormer.proposal .faq_box .faq_point ul li p{text-align:left; display:inline-block;}
+.custormer.proposal .faq_box .faq_point ul li p:first-child{width:25%; vertical-align:top;}
+.custormer.proposal .faq_box .faq_point ul li p + p {width:65%;}
+.custormer.proposal .faq_box .faq_point ul li p textarea{height:100px; width:100%; vertical-align:top; padding:6px;}
+.custormer.proposal .faq_box .faq_point ul li p .selects{width:300px;}
+.custormer.proposal .faq_box .faq_point ul li div{text-align:center; margin:30px 0 0 0;}
+.custormer.proposal .faq_box .faq_point ul li div .btns{width:20%;}
+
+.custormer.proposal_1 header{padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.custormer.proposal_1 .write_box1{padding:12px; font-size:20px; color:#656565; }
+.custormer.proposal_1 .write_box1 ul li{margin:0 0 10px;}
+.custormer.proposal_1 .write_box1 ul li p{display:inline-block;}
+.custormer.proposal_1 .write_box1 ul li p:first-child{width:30%; font-size:1.1em}
+.custormer.proposal_1 .write_box1 ul li p:last-child{width:60%;}
+.custormer.proposal_1 .write_box1 ul li p:last-child .inputs.txt{width:92px;}
+.custormer.proposal_1 .write_box1 ul li p:last-child .sel_1{width:318px;}
+.custormer.proposal_1 .write_box1 ul li strong{width:100%; margin:0 auto; display:block;}
+
+.custormer.proposal_1 .write_box1 table{width:100%; border:2px solid #adadad; margin:20px 0 0;}
+.custormer.proposal_1 .write_box1 table tr td{padding:10px; text-align:center;}
+.custormer.proposal_1 .write_box1 table tr td:first-child{border-right:2px solid #adadad;}
+.custormer.proposal_1 .write_box1 table tr:first-child{border-bottom:2px solid #adadad;}
+.custormer.proposal_1 .write_box1 table tr:first-child td{background:#fff4ea;}
+.custormer.proposal_1 .write_box2{padding:12px; font-size:20px; color:#656565;}
+.custormer.proposal_1 .write_box2 ul li{margin:0 0 16px;}
+.custormer.proposal_1 .write_box2 ul li p{display:inline-block;}
+.custormer.proposal_1 .write_box2 ul li p:first-child{width:30%}
+.custormer.proposal_1 .write_box2 ul li p:last-child{width:60%;}
+.custormer.proposal_1 .write_box2 ul li p:last-child .inputs.txt{width:300px;}
+.custormer.proposal_1 .write_box2 ul li div{display:inline-block;}
+.custormer.proposal_1 .write_box2 .text_input{margin:0 0 60px;}
+.custormer.proposal_1 .write_box2 .text_input span{display:inline-block; width:48%;}
+.custormer.proposal_1 .write_box2 .text_input .text_check{text-align:right;}
+.custormer.proposal_1 .write_box2 .text_input .text_check em{font-style:normal; color:#f56c59;}
+.custormer.proposal_1 .write_box2 .text_input p{margin:10px 0 0;}
+.custormer.proposal_1 .write_box2 .text_input textarea{width:97%; display:block; height:120px; padding:10px;}
+.custormer.proposal_1 .write_box2 .principle p:first-child{border-top:1px solid #c3c3c3; padding:20px 0 10px;}
+.custormer.proposal_1 .write_box2 .principle p + ul {padding:10px 0; margin:0 0 20px; border-bottom:1px solid #c3c3c3;}
+.custormer.proposal_1 .write_box2 .principle ul li:last-child{color:#f56c59;}
+.custormer.proposal_1 .write_box2 .principle ul li p{display:inline-block;}
+.custormer.proposal_1 .write_box2 .principle ul li p:first-child{width:30%;}
+.custormer.proposal_1 .write_box2 .principle ul li p:last-child{width:60%;}
+.custormer.proposal_1 .write_box2 .principle ul li p:last-child .btns{width:100%;}
+.custormer.proposal_1 .write_box2 .counsel_btn{margin:30px 0 0; padding:30px 0 0; text-align:center; border-top:1px solid #cacaca;}
+.custormer.proposal_1 .write_box2 .counsel_btn .btns{width:30%;}
+
+/* faq */
+.custormer.faq .faq_box li {padding:0 20px}
+.custormer.faq .custormer_menu {margin:0}
+.custormer.faq .custormer_menu + .custormer_faq_cate {padding:0 20px; font-weight:bold; font-size:24px; height:70px; line-height:70px; background:#f9f9f9; border-top:0; border-bottom:1px solid #cacaca}
+.custormer.faq .custormer_menu.acd_off + .custormer_faq_cate {display:block; color:#333; border-top:2px solid #A7A7A7}
+.custormer.faq .faq_box li div.faq_titit {font-size:1.2em; height:63px; line-height:63px; cursor:pointer}
+.custormer.faq .faq_box li div.faq_titit span {float:none;vertical-align:middle;}
+.custormer.faq .faq_numbers {text-align:center; color:#fff; border:2px solid #656565; background:#848484}
+.custormer.faq .faq_box li .quest_onononno,
+.custormer.faq .faq_box li .faq_point {display:none}
+.custormer.faq .faq_box li.faq_on .quest_onononno,
+.custormer.faq .faq_box li.faq_on .faq_point {display:block}
+.custormer.faq.proposal .faq_box li p {margin:5px 0}
+.custormer.faq.proposal .faq_box .faq_point ul li div{text-align:center; margin:15px 0;}
+
+/* 공지사항 */
+.custormer.notice header {padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.custormer.notice .notice_box li {overflow:hidden; border-bottom:1px solid #d5d5d5;}
+.custormer.notice .notice_box li div.quest {padding:20px 0; background:url("http://image.hyundaihmall.com/static/smart/2013/img/custormer/ico_up2-1.png") no-repeat right 50%}
+.custormer.notice .notice_box li div.quest.on {background:url("http://image.hyundaihmall.com/static/smart/2013/img/custormer/ico_up2-2.png") no-repeat right 50%}
+.custormer.notice .notice_box li div.quest a {display:block; padding:0 20px;}
+.custormer.notice .notice_box li div.quest a span {overflow:hidden; white-space:nowrap; word-break:break-all; text-overflow:ellipsis; width:450px; display:block; font-size:22px; font-weight:bold;}
+.custormer.notice .notice_box li div.quest a span + span {font-size:18px; color:#aeaeae}
+.custormer.notice .notice_box li .quest + div {font-size:1.2em; border-top:1px solid #c3c3c3; padding:20px; clear:both}
+.custormer.notice .notice_box li .quest + div.acd_off {display:none}
+.custormer.proposal .notice_box .notice_btn{text-align:center}
+.custormer.proposal .notice_box .notice_btn .btns {width:90%; display:inline-block;}
+.custormer.proposal i.ico_rarr {display:inline-block; vertical-align:middle; width:22px; height:21px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/custormer/bottom_arrow.png") no-repeat 0 0}
+.custormer.notice .faq_box1{display:none;}
+.custormer.notice .faq_box1.on{display:block;}
+
+/* 쿠폰받기 */
+.event.coupon header {padding:0 20px;}
+.event.coupon .coupon_img{text-align:center;}
+.event.coupon .coupon_img img{vertical-align:top;}
+.event.coupon .coupon_list {padding:0 0 0 4px; background:#f4f4f4;}
+.event.coupon .coupon_list ul {overflow:hidden; padding:20px 0 0; width:100%; margin:0 auto;}
+.event.coupon .coupon_list ul li {width:48%; float:left; margin:0 0 40px;}
+.event.coupon .coupon_list ul li:nth-child(odd) {margin:0 4px 0 4px;}
+.event.coupon .coupon_list ul li div {margin:0 auto; width:306px; text-align:center; position:relative; padding:5px 0 18px 10px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/event/coupon_bg.png) no-repeat 50% 0;}
+.event.coupon .coupon_list ul li div .inputs.chek {position:absolute; z-index:99; left:8%; top:30px;}
+.event.coupon .coupon_list ul li .coupon {padding:6px; margin:20px 0 36px 58px; font-size:22px; color:#767676; width:190px; height:56px; overflow:hidden; text-align:center;}
+.event.coupon .coupon_select_btn {padding:30px 0 0; border-top:1px solid #a7a7a7; text-align:center;}
+.event.coupon .coupon_img {text-align:center; border-top:2px solid #a7a7a7; padding:0; border-bottom:2px solid #a7a7a7;}
+
+/* 나의상품평 */
+.myhmall.rating header {padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.myhmall.rating .box2{padding:20px;}
+.myhmall.rating .box2 .comment_text{margin:30px 0;}
+.myhmall.rating .box2 .comment_box{margin:20px 0; overflow:hidden;}
+.myhmall.rating .box2 .comment_box .fl_l{float:left; width:25%; overflow:hidden;}
+.myhmall.rating .box2 .comment_box .fl_l span{display:block; margin:0 0 5px;}
+.myhmall.rating .box2 .comment_box .fl_l .star_point{margin:0 0 5px;}
+.myhmall.rating .box2 .comment_box .fl_l .bages{width:60%;}
+.myhmall.rating .box2 .comment_box .fl_r{float:right; width:65%; border:1px solid #a8aab2; border-radius:5px; padding:12px; position:relative;}
+.myhmall.rating .box2 .comment_box .fl_r .comment_arrow{position:absolute; top:10%; right:100%; width:12px; height:17px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/detail/comment_arrow.png) no-repeat 0 0;}
+.myhmall.rating .box2 .comment_box .fl_r .comment_img{position:relative; width:350px; height:211px;}
+.myhmall.rating .box2 .comment_box .fl_r .comment_img img{margin:10px 0;}
+.myhmall.rating .box2 .comment_box .fl_r .comment_img span{position:absolute; bottom:0; right:0; width:62px; height:62px; font-size:24px; color:#fff; line-height:62px; text-align:center; display:block; background:url(http://image.hyundaihmall.com/static/smart/2013/img/detail/comment_number.png) no-repeat 0 0;}
+
+/* 나의상품평 쓰기 */
+.myhmall.rating_write header {padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.myhmall.rating_write .write_box{padding:20px;}
+.myhmall.rating_write .write_box ul li{margin:0 0 10px; padding:0 0 10px; border-bottom:1px solid #c3c3c3;}
+.myhmall.rating_write .write_box ul li p{display:inline-block;}
+.myhmall.rating_write .write_box ul li p .inputs.txt{width:100%;}
+.myhmall.rating_write .write_box ul li p textarea{width:100%; vertical-align:top;}
+.myhmall.rating_write .write_box ul li p .btns{width:100%;}
+.myhmall.rating_write .write_box ul li p:first-child{width:30%;}
+.myhmall.rating_write .write_box ul li p:last-child{width:100%;}
+.myhmall.rating_write .file_list{margin:10px 0 0;}
+
+.myhmall.rating_write .write_box2{padding:0 20px;}
+.myhmall.rating_write .write_box2 .title{padding:20px 0; margin:0 0 20px; text-align:center; font-size:24px; background:#f5f6f7; border-top:2px solid #949494;}
+.myhmall.rating_write .write_box2 ul li{margin:0 0 10px; padding:0 0 10px; border-bottom:1px solid #c3c3c3;}
+.myhmall.rating_write .write_box2 ul li p{display:inline-block;}
+.myhmall.rating_write .write_box2 ul li p .selects{width:350px;}
+.myhmall.rating_write .write_box2 ul li p:first-child{width:30%;}
+.myhmall.rating_write .write_box2 ul li p:last-child{width:60%;}
+.myhmall.rating_write .write_box2 .write_btn{margin:20px 0 0; text-align:center;}
+.myhmall.rating_write .write_box2 .write_btn .btns{width:30%; margin-top:1px}
+
+/* 주문서 사은품 */
+.order.gift{font-size:20px; color:#656565;}
+.order.gift header {padding:0 20px;}
+.order.gift .gift_name p:first-child{padding:20px 10px; background:#f9f9f9; border-top:2px solid #a7a7a7; border-bottom:1px solid #cacaca; color:#000;}
+.order.gift .gift_name p:last-child{padding:20px 10px; border-bottom:1px solid #cacaca;}
+.order.gift .gift_list{margin:0 0 40px;}
+.order.gift .gift_box{border-bottom:1px solid #e1e1e1; padding:20px}
+.order.gift .gift_box .gift_img{display:inline-block; margin:0 20px 0 0; vertical-align:top;}
+.order.gift .gift_box div{display:inline-block;}
+.order.gift .gift_box div > p{margin:0 0 10px;}
+.order.gift .gift_box div .selects{width:256px;}
+.order.gift .next_btn{text-align:center; margin:20px 0 0 0;}
+.order.gift .next_btn .btns{width:20%;}
+
+/* 주문서 레이어 */
+.gift_card{padding:20px; border:2px solid #a7a7a7; border-radius:5px;}
+.gift_card hgroup{margin:0 0 30px;}
+.gift_card h2{margin:0 0 30px;}
+.gift_card ul{margin:0 0 20px;}
+.gift_card dl{padding:12px; background:#ffa6a6; margin:0 0 20px; border:1px solid #ff7b7b;}
+.gift_card dl dt{color:#fff;}
+.gift_card dl dd{color:#fff;}
+.gift_card ul li .address_text{padding:12px; border:2px solid #c3c3c3; background:#f9f9f9;}
+
+/* 비회원 주문배송조회 */
+.member.nomemberviews header{padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.member.nomemberviews .views_box{padding:20px; font-size:20px;}
+.member.nomemberviews .views_box .nomember_input{color:#656565; overflow:hidden; padding:10px; background:#f6f6f6; border:2px solid #dcdcdc; border-radius:5px;}
+.member.nomemberviews .views_box .nomember_input div{display:inline-block; vertical-align:top;}
+.member.nomemberviews .views_box .nomember_input div p{margin:0 0 30px;}
+.member.nomemberviews .views_box .nomember_input div .inputs{width:300px;}
+.member.nomemberviews .views_box .nomember_input a{display:inline-block; margin:0 0 0 25px;}
+.member.nomemberviews .views_box .nomember_input .views_text{clear:both; border-top:1px solid #dcdcdc; padding:20px 0 0 0}
+.member.nomemberviews .nomember_join{margin:30px 0 0; border:2px solid #dcdcdc; border-radius:5px; padding:20px; text-align:center;}
+.member.nomemberviews .nomember_join p{margin:0 0 20px;}
+.member.nomemberviews .nomember_join strong{color:#fd7f6d;}
+
+/* TV 베스트상품 */
+.tv.best header{padding:0 20px; overflow:hidden;}
+.tv.best header h2{float:left;}
+.tv.best header .btns{float:right; margin:10px 0; }
+.tv.best header .btns span{font-size:20px; font-weight:bold;}
+.tv.best .btns em{font-style:normal; color:#f17e6e;}
+.tv_title_tab {overflow:hidden; height:152px; border-top:2px solid #a7a7a7; background:url("http://image.hyundaihmall.com/static/smart/2013/img/weekbest/week_show_bg.gif") repeat-x 0 bottom;}
+.tv_title_tab li{float:left; width:33%; text-align:center;}
+.tv_title_tab li:last-child{border-right:0;}
+.tv_title_tab li a {font-size:22px; display:block; height:120px; font-weight:bold; color:#000; border-right:1px solid #efefef;}
+.tv_title_tab li a span{padding:30px 0 0 0; display:inline-block;}
+.tv_title_tab li a.on span{position:relative; z-index:5; width:216px; height:153px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/tv/tv_tab_on.png") no-repeat 0 0; color:#fff;}
+.tv_comment {color:#656565; font-size:18px; padding:0 20px 20px 220px; text-align:left;}
+.tv_comment span {display:inline-block; overflow:hidden; height:22px; line-height:22px; margin:0 10px 0 0}
+.tv_comment span:first-child {padding:0 0 0 30px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/weekbest/comment_icon.png") no-repeat 0 0;}
+.tv_comment span:nth-child(3) {padding:0 0 0 30px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/weekbest/comment_icon.png") no-repeat 0 -22px;}
+.tv_comment p {padding:5px 0 0}
+.tv_title_tab_2 {overflow:hidden; height:152px; border-top:2px solid #a7a7a7; background:url("http://image.hyundaihmall.com/static/smart/2013/img/weekbest/week_show_bg2.gif") repeat-x 0 bottom;}
+.tv_title_tab_2 li{float:left; width:33%; text-align:center;}
+.tv_title_tab_2 li:last-child{border-right:0;}
+.tv_title_tab_2 li a {font-size:22px; display:block; height:120px; font-weight:bold; color:#000; border-right:1px solid #efefef;}
+.tv_title_tab_2 li a span{padding:30px 0 0 0; display:inline-block;}
+.tv_title_tab_2 li a.on span{position:relative; z-index:5; width:216px; height:153px; background:url("http://image.hyundaihmall.com/static/smart/2013/img/tv/tv_tab_on.png") no-repeat 0 0; color:#fff;}
+
+/* TV 방송알림서비스 */
+.tv.apprise header{padding:0 20px; overflow:hidden; border-bottom:2px solid #a7a7a7;}
+.tv.apprise header h2{float:left;}
+.tv.apprise header .btns{float:right; margin:10px 0; }
+.tv.apprise header .btns span{font-size:20px; font-weight:bold;}
+.tv.apprise .btns em{font-style:normal; color:#f17e6e;}
+.apprise_tab {height:60px; padding:0 20px; border-bottom:2px solid #f17e6e; margin:20px 0;}
+.apprise_tab li {vertical-align:top; display:inline-block; margin:0 0 0 -7px; width:49%; border:1px solid #ccc; border-bottom:0;}
+.apprise_tab li:first-child {margin:0}
+.apprise_tab li.on {position:relative; z-index:5; border:2px solid #f17e6e; border-bottom:0}
+.apprise_tab li a {display:inline-block; width:100%; text-align:center; height:59px; line-height:59px; font-size:24px; color:#656565;}
+.apprise_tab li.on a{border-bottom:2px solid #fff; height:58px; line-height:58px; color:#df6353}
+.tv.apprise .apprise_box1{padding:20px; font-size:20px; color:#656565;}
+.tv.apprise .apprise_box1 .apprise_text{margin:0 0 20px;}
+.tv.apprise .apprise_box1 span:first-child{margin:0 20px 0 0;}
+.tv.apprise .apprise_box1 .apprise_search{margin:20px 0 0;}
+.tv.apprise .apprise_box1 .apprise_search .inputs{width:360px;}
+.tv.apprise .apprise_box1 .apprise_search .btns{width:30%;}
+.tv.apprise .apprise_box2{padding:20px; font-size:20px; color:#656565;}
+.tv.apprise .apprise_box2 ul {margin:0 0 20px}
+.tv.apprise .apprise_box2 ul li{margin:0 0 20px;}
+.tv.apprise .apprise_box2 ul li p em{display:inline-block; padding:0 10px 0 0; width:4px; height:4px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/tv/my_coupon_blt.gif) no-repeat 0 0;}
+.tv.apprise .apprise_box2 ul li p span{vertical-align:middle; font-size:1.2em;}
+.tv.apprise .apprise_box2 ul li p{display:inline-block;}
+/* .tv.apprise .apprise_box2 ul li p:first-child{width:10%; vertical-align:top;} */
+.tv.apprise .apprise_box2 ul li p:last-child{width:85%;}
+.tv.apprise .apprise_box2 .confirm_btn{margin:20px 0 0; text-align:center;}
+.tv.apprise .apprise_box2 .confirm_btn .btns{width:30%;}
+.tv.apprise .apprise_box3{font-size:20px; color:#656565;}
+.tv.apprise .apprise_box3 ul li{padding:20px; border-bottom:1px solid #cacaca; overflow:hidden; font-size:1.2em;}
+.tv.apprise .apprise_box3 ul li p{display:inline-block;}
+.tv.apprise .apprise_box3 ul li p:first-child{width:80%; float:left;}
+.tv.apprise .apprise_box3 ul li p:last-child{width:18%; text-align:right; float:right;}
+.tv.apprise .tx{font-size:1.2em;}
+
+.tv.appriselist1 header{padding:0 20px; overflow:hidden; border-bottom:2px solid #a7a7a7;}
+.tv.appriselist1 header h2{float:left;}
+.tv.appriselist1 header .btns{float:right; margin:10px 0; }
+.tv.appriselist1 header .btns span{font-size:20px; font-weight:bold;}
+.tv.appriselist1 .btns em{font-style:normal; color:#f17e6e;}
+.tv.appriselist1 .alarm_box{margin:0 0 60px;}
+.tv.appriselist1 .pro_name{padding:20px; border-bottom:2px solid #cacaca; border-top:2px solid #cacaca; font-size:20px; color:#8eaf33;}
+.tv.appriselist1 .register_list{padding:20px;}
+.tv.appriselist1 .register_list .register_info{border:2px solid #c3c3c3;}
+.tv.appriselist1 .register_list .register_info > li{border-bottom:1px solid #c3c3c3; padding:14px 10px;}
+.tv.appriselist1 .register_list .register_info > li:nth-child(1),
+.tv.appriselist1 .register_list .register_info > li:nth-child(2){color:#8eaf33; font-size:20px;}
+.tv.appriselist1 .register_list .register_info > li em{color:#656565; font-style:normal;}
+.tv.appriselist1 .register_list .register_info > li:last-child{text-align:center; background:#f1f1f1;}
+.tv.appriselist1 .register_list .register_info > li:last-child .btns{width:30%;}
+.tv.appriselist1 .register_list .register_info p{display:inline-block; vertical-align:middle; margin:0 6px 0 0;}
+.tv.appriselist1 .register_list .register_info div{display:inline-block; vertical-align:middle; font-size:1.2em;}
+.tv.appriselist1 .apprise_text2{padding:20px; font-size:20px;}
+.tv.apprise .apprise_box3 ul li p em{display:inline-block; font-style:normal; text-align:center; margin:0 10px 0 0; width:40px; height:40px; line-height:40px; background:#9ebe3c; border-radius:5px; color:#fff;}
+.tv.appriselist1 .apprise_text2{padding:20px; font-size: 20px; color:#656565;}
+
+.tv.appriselist2 header{padding:0 20px; overflow:hidden; border-bottom:2px solid #a7a7a7;}
+.tv.appriselist2 header h2{float:left;}
+.tv.appriselist2 header .btns{float:right; margin:10px 0; }
+.tv.appriselist2 header .btns span{font-size:20px; font-weight:bold;}
+.tv.appriselist2 .btns em{font-style:normal; color:#f17e6e;}
+.tv.appriselist2 .appr_text{padding:20px; margin:0 0 14px; font-size:20px; color:#656565;}
+.tv.appriselist2 .appr_list{padding:20px; text-align:center; font-size:20px; color:#656565;}
+.tv.appriselist2 .appr_list p{margin:20px 0 0;}
+
+/* TV 방송알람설정 */
+.tv.appriselistset{}
+.tv.appriselistset header{padding:0 20px; overflow:hidden;}
+.tv.appriselistset header h2{float:left;}
+.tv.appriselistset header .btns{float:right; margin:10px 0; }
+.tv.appriselistset header .btns span{font-size:20px; font-weight:bold;}
+.tv.appriselistset .btns em{font-style:normal; color:#f17e6e;}
+.tv.appriselistset .select_product{padding:20px; font-size:20px; color:#656565;}
+.tv.appriselistset .appriselist_chk{padding:20px; font-size:20px; color:#656565;}
+.tv.appriselistset .appriselist_time{padding:20px; font-size:20px; color:#656565;}
+.tv.appriselistset .appriselist_time p{display:inline-block;}
+.tv.appriselistset .appriselist_time .selects{width:250px;}
+.tv.appriselistset .appriselist_time_set{padding:20px; font-size:20px; color:#656565;}
+.tv.appriselistset .appriselist_time_set ul > li{margin:0 0 20px;}
+.tv.appriselistset .sms_time{padding:20px;}
+.tv.appriselistset .sms_time .selects{width:200px;}
+.tv.appriselistset .appriselist_info{padding:20px; font-size:20px; color:#656565;}
+.tv.appriselistset .appriselist_infotable{background:#f3f3f3; padding:20px; border:1px solid #a1a1a1; border-radius:5px;}
+.tv.appriselistset .appriselist_infotable table{margin:0 auto;}
+.tv.appriselistset .appriselist_infotable tr td{padding:10px 0;}
+.tv.appriselistset .appriselist_infotable tr td .inputs.radio{margin:0 10px 0 10px;}
+.tv.appriselistset .appriselist_infotable tr:nth-child(2) td .inputs.txt{width:400px;}
+.tv.appriselistset .appriselist_infotable tr:nth-child(4) td .inputs.txt{margin:0 10px 0 0; width:120px;}
+.tv.appriselistset .appriselist_infotable tr:last-child td{text-align:center;}
+.tv.appriselistset .appriselist_infotable tr:last-child td .btns{width:40%;}
+.tv.appriselistset .appriselistset_btn{margin:20px 0 0 0; text-align:center;}
+.tv.appriselistset .appriselistset_btn .btns{width:30%;}
+
+/* 생방송 경품 당첨확인 */
+.tv.winning header{padding:0 20px; overflow:hidden;}
+.tv.winning header h2{float:left;}
+.tv.winning header .btns{float:right; margin:10px 0; }
+.tv.winning header .btns span{font-size:20px; font-weight:bold;}
+.tv.winning .btns em{font-style:normal; color:#f17e6e;}
+.tv.winning .winning_tables{background:#f3f3f3; padding:10px;}
+.tv.winning .winning_tables p .inputs.txt{width:300px; margin:10px 16px 0 0;}
+.tv.winning .winning_tables p .btns{width:20%;}
+.tv.winning .winning_tables p{margin:0 0 20px;}
+.tv.winning .winning_tables table{width:100%; border:2px solid #a1a1a1; border-radius:5px;}
+.tv.winning .winning_tables table tr{border-bottom:1px solid #a1a1a1;}
+.tv.winning .winning_tables table tr td{padding:16px; text-align:center; background:#fff;}
+.tv.winning .winning_tables table tr:first-child td{background:#a1a1a1; color:#fff; font-weight:bold;}
+.tv.winning .allviews_btn{text-align:center; margin:20px 0 0 0;}
+.tv.winning .allviews_btn .btns{width:80%;}
+.tv.winning .winning_box{display:none;}
+.tv.winning .winning_box.on{display:block;}
+
+.tv .tvpage_menu{display:none; clear:both;}
+.tv .tvpage_menu.on {display:block}
+.tv .tvpage_menu{background:#f9f9f9; margin:0 0 10px; padding:20px 20px 20px 20px; border-bottom:2px solid #a7a7a7;}
+.tv .tvpage_menu ul{border:2px solid #b3b3b3; background:#fff; overflow:hidden; font-size:18px;}
+.tv .tvpage_menu ul li{float:left; width:50%; border-bottom:1px solid #f2f2f2;}
+.tv .tvpage_menu ul li:nth-child(odd) a{border-right:1px solid #f2f2f2;}
+.tv .tvpage_menu ul li a{display:block; padding:20px 0 20px 10px;}
+.tv .tvpage_menu p {overflow:hidden;}
+.tv .tvpage_menu p > a{display:block; float:right; margin:15px 0 0 0; font-size:20px;}
+.tv .tvpage_menu p .ico{margin:0 10px 0 0;}
+.tv header{overflow:hidden;}
+.tv header h2{width:60%;}
+.tv header a {font-size:18px; margin:10px 0 10px; float:right;}
+.tv header a strong {font-weight:normal; color:#e36b5a}
+
+/* 즐겨찾는 서비스 */
+.etc.favorites header{padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.etc.favorites header .btns{width:20%;}
+.etc.favorites .favorites_list{padding:20px;}
+.etc.favorites .favorites_list ul{overflow:hidden;}
+.etc.favorites .favorites_list ul li{float:left; width:25%; height:150px; text-align:center; margin:0 0 30px;}
+.etc.favorites .favorites_list ul li a{overflow:hidden; display:block;  height:110px;}
+.etc.favorites .favorites_list ul li span{text-align:center; display:block; margin:0 0 0; font-weight:bold;}
+.etc.favorites .chk_list{padding:20px;}
+.etc.favorites .chk_list ul{overflow:hidden;}
+.etc.favorites .chk_list ul li{float:left; width:25%; height:150px; text-align:center; margin:0 0 30px; padding:10px 0 10px 0; position:relative;}
+.etc.favorites .chk_list ul li a{overflow:hidden; display:block;  height:110px;}
+.etc.favorites .chk_list ul li span{text-align:center; display:block; margin:0 0 0; font-weight:bold;}
+.etc.favorites .chk_list ul li .inputs.chek{position:absolute; left:10px; top:0; z-index:99;}
+.etc.favorites .chk_list .sb_1{background:url(http://image.hyundaihmall.com/static/smart/2013/img/etc/favorites_icon.png) no-repeat -300px -648px;}
+.etc.favorites .favorites_btn{text-align:center; margin:20px 0 0 0;}
+.etc.favorites .favorites_btn .btns{width:23%;}
+.etc.favorites .mobile_app{margin:20px 0; padding:20px;}
+
+/* 방송편성표 */
+.tv.pairing header{padding:0 20px;}
+.tv.pairing .pairing_box{font-size:20px; color:#6f6f6f;}
+.tv.pairing .pairing_box p{padding:20px; border-bottom:2px solid #cacaca; background:#f6f5f5;}
+.tv.pairing .pairing_box p > span{color:#8eaf33; font-size:24px;}
+.tv.pairing .pairing_box ul > li{padding:20px; border-bottom:1px solid #cacaca; overflow:hidden;}
+.tv.pairing .pairing_box ul > li > a{width:75%; float:left; display:block; height:63px; line-height:63px;}
+.tv.pairing .pairing_box ul > li > span{width:20%; float:right; display:block; width:63px; height:63px; line-height:63px; background:url(http://image.hyundaihmall.com/static/smart/2013/img/tv/pairing_icon.png) no-repeat 0 0;}
+.tv.pairing .pairing_box ul > li > span > a{width:63px; height:63px;}
+
+/* 약관페이지 */
+.member.terms_1 header{padding:0 20px; border-bottom:2px solid #a7a7a7;}
+.member.terms_1 div{margin:20px 0 30px; padding:0 20px;}
+.member.terms_1 .terms_box p{margin:0 0 10px;}
+.member.terms_1 .terms_box ol{margin:0 0 10px;}
+.member.terms_1 table{width:100%; border:2px solid #ccc;}
+.member.terms_1 table tr td{padding:10px; border:2px solid #ccc; text-align:center;}

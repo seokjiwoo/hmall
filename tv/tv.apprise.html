@@ -1,0 +1,229 @@
+<!doctype html>
+<html><head>
+<title> 현대 Hmall </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no" />
+<link href="../css/base.css" rel="stylesheet" type="text/css" />
+<link href="../css/hmall.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/hmall.js"></script>
+<script type="text/javascript">
+	indexPage = true; //루트 폴더의 페이지표시
+</script>
+</head><body>
+	<article id="wrap">
+
+		<!-- 왼쪽 사이드 나의 쇼핑정보 -->
+		<section id="left_side" class="side_set">
+			<div>
+				<h2><img src="./img/common/h2_myshopping.jpg" alt="나의 쇼핑정보" /></h2>
+				<div class="bg_note">
+					ㅎㅎㅎ<br/>
+				</div>
+			</div>
+		</section>
+		<!-- //왼쪽 사이드 나의 쇼핑정보 -->
+
+		<section id="container">
+				<!-- header -->
+				<div class="dim"></div>
+				<header>
+					<section class="gnb_area">
+						<h1><a href="#"><img src="../img/common/logo.png " alt="현대 H Mall" /></a></h1>
+						<!-- gnb -->
+						<nav class="gnb">
+							<a href="#"><img src="../img/common/btn_gnb1.png" alt="카테고리" /></a>
+							<a href="#"><img src="../img/common/btn_gnb2.png" alt="주문/배송" /></a>
+							<a href="#"><img src="../img/common/btn_gnb3.png" alt="쿠폰/" /></a>
+						</nav>
+						<!-- //gnb -->
+						<!-- 검색, 사이드버튼 -->
+						<div class="bot">
+							<a href="#left_side" class="lt_on">나의 쇼핑정보</a>
+							<div class="search_area">
+								<span class="inputs txt">
+									<input type="text" title="검색어를 입력하세요." />
+									<a href="#"><i class="ico zoom_g">검색</i></a>
+								</span>
+							</div>
+							<a href="#right_side" class="rt_on">전체 메뉴</a>
+						</div>
+						<!-- //검색, 사이드버튼 -->
+					</section>
+				</header>
+				<!-- //header -->
+
+				<section class="top_event_area">
+					<a class="sample" href="#">최대 20% 혜택! <span class="setp">5% 깜작할인</span> + <span class="setp">15% 다운쿠폰</span></a>
+				</section>
+
+				<!-- SB0016 -->
+				<section class="contanier tv apprise">
+				<header>
+					<h2><i class="ico round1_g"></i>방송알림 서비스</h2>
+					<a href="#" class="btns2"><span>TV방송상품 <strong>메뉴보기</strong> <img src="../img/common/dw_arrw.png" alt="" /></span></a>
+					<script type="text/javascript">
+						$(document).ready(function(){
+							$('.tv header:eq(0) .btns2').click(function(){
+								if ($(this).hasClass('dw')) {
+									$(this).removeClass('dw')
+									$('.tvpage_menu').removeClass('on')
+									$(this).find('img').attr('src','../img/common/dw_arrw.png');
+								} else {
+									$('.tvpage_menu').addClass('on')
+									$(this).addClass('dw')
+									$(this).find('img').attr('src','../img/common/up_arrw.png');
+								}
+							})
+							$('.tvpage_menu > p > a').click(function(){
+								$('.tv_index .contents_tit:eq(0) .btns2').removeClass('dw')
+								$('.tvpage_menu').removeClass('on')
+								$('.tv_index .contents_tit:eq(0) .btns2 img').attr('src','../img/common/dw_arrw.png');
+							})
+						})
+					</script>
+				</header>
+				<div class="tvpage_menu">
+					<ul>
+						<li><a href="#">생방송</a></li>
+						<li><a href="#">지난방송</a></li>
+						<li><a href="#">미리주문</a></li>
+						<li><a href="#">방송편성표</a></li>
+						<li><a href="#">최근본상품</a></li>
+						<li><a href="#">BEST 상품</a></li>
+						<li><a href="#">내 쿠폰보기</a></li>
+						<li><a href="#">VOD 매장</a></li>
+					</ul>
+					<p><a href="#"><i class="ico x_g"></i>닫기</a></p>
+				</div>
+				<ul class="apprise_tab">
+					<li><a href="#">나의 알림 리스트 </a></li>
+					<li class="on"><a href="#">상품명 등록</a></li>
+				</ul>
+
+				<div class="apprise_box1">
+					<p class="apprise_text">원하는 상품을 검색하신 후 등록하시면 방송 알림 서비스를 제공받으실 수 있습니다.
+					30일간의 지난 방송상품에 한정하여 검색됩니다.</p>
+					<div class="radio_group1">
+					<span class="inputs radio"><input type="radio" name="sampleradio1" id="sr1" /><label for="sr1">1</label><label for="sr1" class="tx">상품명</label></span>
+					<span class="inputs radio ked"><input type="radio" name="sampleradio1" id="sr2" checked="checked" /><label for="sr2">2</label><label for="sr2" class="tx">쇼호스트명</label></span>
+					</div>
+					<p class="apprise_search"><span class="inputs txt"><input type="text" title="" /></span>
+					<a class="btns" href="#"><span>검색</span></a></p>
+				</div>
+
+				<div class="contents_tit"><h3>상품명 검색결과</h3></div>
+				<div class="apprise_box2">
+					<ul>
+						<li>
+							<p><em></em><span>스 부샤라 코튼벨벳 침구세트(퀸) 쇼호스트 : 오도희,김수연 (2014779316)</span></p>
+						</li>
+						<li>
+							<p><em></em><span>스 부샤라 코튼벨벳 침구세트(퀸) 쇼호스트 : 오도희,김수연 (2014779316)</span></p>
+						</li>
+						<li>
+							<p><em></em><span>스 부샤라 코튼벨벳 침구세트(퀸) 쇼호스트 : 오도희,김수연 (2014779316)</span></p>
+						</li>
+						<li>
+							<p><em></em><span>스 부샤라 코튼벨벳 침구세트(퀸) 쇼호스트 : 오도희,김수연 (2014779316)</span></p>
+						</li>
+					</ul>
+					<div class="confirm_btn"><a class="btns ak pink" href="#"><span>등록</span></a></div>
+				</div>
+
+				<div class="contents_tit"><h3>상품키워드 best 10</h3></div>
+				<div class="apprise_box3">
+					<ul>
+						<li>
+							<p><em>1</em>하유미의 하이드로겔 백금마스크시트 하유미의 하이드로겔 백금마스크시트 하유미의 하이드로겔 백금마스크시트</p>
+							<p><a class="btns" href="#"><span>등록</span></a></p>
+						</li>
+						<li>
+							<p><em>2</em>하유미의 하이드로겔 백금마스크시트</p>
+							<p><a class="btns" href="#"><span>등록</span></a></p>
+						</li>
+						<li>
+							<p><em>3</em>하유미의 하이드로겔 백금마스크시트</p>
+							<p><a class="btns" href="#"><span>등록</span></a></p>
+						</li>
+						<li>
+							<p><em>4</em>하유미의 하이드로겔 백금마스크시트</p>
+							<p><a class="btns" href="#"><span>등록</span></a></p>
+						</li>
+						<li>
+							<p><em>5</em>하유미의 하이드로겔 백금마스크시트</p>
+							<p><a class="btns" href="#"><span>등록</span></a></p>
+						</li>
+						<li>
+							<p><em>6</em>하유미의 하이드로겔 백금마스크시트</p>
+							<p><a class="btns" href="#"><span>등록</span></a></p>
+						</li>
+						<li>
+							<p><em>7</em>하유미의 하이드로겔 백금마스크시트</p>
+							<p><a class="btns" href="#"><span>등록</span></a></p>
+						</li>
+						<li>
+							<p><em>8</em>하유미의 하이드로겔 백금마스크시트</p>
+							<p><a class="btns" href="#"><span>등록</span></a></p>
+						</li>
+						<li>
+							<p><em>9</em>하유미의 하이드로겔 백금마스크시트</p>
+							<p><a class="btns" href="#"><span>등록</span></a></p>
+						</li>
+						<li>
+							<p><em>10</em>하유미의 하이드로겔 백금마스크시트</p>
+							<p><a class="btns" href="#"><span>등록</span></a></p>
+						</li>
+					</ul>
+				</div>
+
+				</section>
+				<!-- //SB0016 -->
+
+				<footer>
+					<nav>
+						<ul>
+							<li><a href="#"><img src="../img/common/btn_footer_event.gif" alt="이벤트" /></a></li>
+							<li><a href="#"><img src="../img/common/btn_footer_hcodi.gif" alt="H코디" /></a></li>
+							<li><a href="#"><img src="../img/common/btn_footer_cust.gif" alt="고객센터" /></a></li>
+							<li><a href="tel:080-000-0000"><img src="../img/common/btn_footer_call.gif" alt="전화문의하기" /></a></li>
+						</ul>
+					</nav>
+					<ul>
+						<li><a href="#"><img src="../img/common/btn_verpc.gif" alt="PC 버전" /></a></li>
+						<li><a href="#"><img src="../img/common/btn_appdw.gif" alt="APP 다운로드" /></a></li>
+						<li><a href="#"><img src="../img/common/btn_footer_login.gif" alt="로그인" /></a></li>
+					</ul>
+					<address>
+						<p>현대 홈쇼핑 | 서울특별시 강동구 천호동 454-2 | 대표이사 김인권</p>
+						<p>사업자등록번호 : <span>211</span>-86<span>-</span>76540 | 통신판매업신고 : 제25-3133호</p>
+						<p>부가통신 신고번호 : 3787 | 개인정보 관리책임 : CCM</p>
+						<p>최고고객책임자 박민희 | <a href="mailto:webmaster@hyundaihmall.com">메일 문의</a></p>
+					</address>
+				</footer>
+			</section>
+
+
+			<!-- 오른쪽 사이드 카테고리 -->
+			<section id="right_side" class="side_set">
+				<h2><img src="../img/common/h2_cartegory.jpg" alt="전체메뉴" /></h2>
+				<div class="bg_note">
+					<h3 class="on"><a href="#"><img src="../img/common/btn_car_1.jpg" alt="매장" /></a></h3>
+					<ul>
+						<li><a href="#">클릭 카탈로그</a></li>
+						<li><a href="#">기획전</a></li>
+						<li><a href="#">TV쇼핑</a></li>
+						<li><a href="#">패밀리존</a></li>
+						<li><a href="#">백화점</a></li>
+					</ul>
+
+					<h3><a href="#"><img src="../img/common/btn_car_2.jpg" alt="주간 BEST" /></a></h3>
+					<ul>
+						<li><a href="#">고객맞춤 BEST</a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- // 오른쪽 사이드 카테고리 -->
+
+		</article>
+</body></html>

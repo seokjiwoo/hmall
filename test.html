@@ -1,0 +1,355 @@
+<!doctype html>
+<html><head>
+<title> 현대 Hmall </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no" />
+<link href="./css/base.css" rel="stylesheet" type="text/css" />
+<link href="./css/hmall.css" rel="stylesheet" type="text/css" />
+<script src="./js/jquery-1.8.3.min.js"></script>
+<script src="./js/hmall.js"></script>
+<script type="text/javascript">
+	indexPage = true; //루트 폴더의 페이지표시
+</script>
+</head><body id="body">
+	<article id="wrap">
+
+		<!-- 왼쪽 사이드 나의 쇼핑정보 -->
+		<section id="left_side" class="side_set">
+			<h2><img src="./img/common/h2_myshopping.jpg" alt="나의 쇼핑정보" /></h2>
+			<div class="bg_note">
+				ㅎㅎㅎ<br/>
+			</div>
+		</section>
+		<!-- //왼쪽 사이드 나의 쇼핑정보 -->
+
+		<section id="container">
+
+			<!-- 스타일 컨테이너 -->
+			<section class="contanier index">
+				<header>
+					<!-- header -->
+					<div class="dim"></div>
+					<header>
+						<section class="gnb_area">
+							<h1><a href="#"><img src="./img/common/logo.png " alt="현대 H Mall" /></a></h1>
+							<!-- gnb -->
+							<nav class="gnb">
+								<a href="#"><img src="./img/common/btn_gnb1.png" alt="카테고리" /></a>
+								<a href="#"><img src="./img/common/btn_gnb2.png" alt="주문/배송" /></a>
+								<a href="#"><img src="./img/common/btn_gnb3.png" alt="쿠폰/" /></span></a>
+							</nav>
+							<!-- //gnb -->
+							<!-- 검색, 사이드버튼 -->
+							<div class="bot">
+								<a href="#left_side" class="lt_on">나의 쇼핑정보</a>
+								<div class="search_area">
+									<span class="inputs txt">
+										<input type="text" title="검색어를 입력하세요." />
+										<a href="#"><i class="ico zoom_g">검색</i></a>
+									</span>
+								</div>
+								<a href="#right_side" class="rt_on">전체 메뉴</a>
+							</div>
+							<!-- //검색, 사이드버튼 -->
+						</section>
+					</header>
+					<!-- //header -->
+
+					<section class="top_event_area">
+						<a class="sample" href="#">최대 20% 혜택! <span class="setp">5% 깜작할인</span> + <span class="setp">15% 다운쿠폰</span></a>
+					</section>
+
+					<!-- 스타일 컨테이너 -->
+					<section class="contanier padding_t30">
+						<!-- 구분용 그룹-->
+						<a class="btns ac swch" style="display:block" onclick="acodi('.chein_box')" href="#"><span style="display:block">체크 + 인풋 열닫</span></a>
+						<div class="acodian_box acd_off chein_box margin_b20">
+							<span class="inputs chek"><input type="checkbox" id="chek1_1" /><label for="chek1_1">1-1</label></span>
+
+							<span class="inputs chek ked"><input type="checkbox" id="chek1_2" checked="checked" /><label for="chek1_2">1-2</label></span>
+							<br /><br />
+							<span class="inputs chek nbdr"><input type="checkbox" id="chek2_1" /><label for="chek2_1">2-1</label></span>
+
+							<span class="inputs chek nbdr ked"><input type="checkbox" id="chek2_2" checked="checked" /><label for="chek2_2">2-2</label></span>
+							<br /><br />
+							<span class="inputs txt"><input type="text" title="" /></span>
+							<br /><br />
+							<span class="inputs number">
+								<a href="#" class="setting">빼기</a>
+								<input type="number" id="basket_option4" min='0'; />
+								<a href="#" class="setting">더하기</a>
+							</span>
+							<br /><br />
+							<span class="inputs txt"><input type="password" title="" /></span>
+							<br /><br />
+							<span class="textareas"><textarea>span.textareas&gt;textareas</textarea></span>
+						</div>
+						<!-- //구분용 그룹-->
+
+						<!-- 구분용 그룹-->
+						<a class="btns ac swch" style="display:block" onclick="acodi('.radio_box')" href="#"><span style="display:block">라디오열닫</span></a>
+						<div class="acodian_box acd_off radio_box margin_b20">
+							<div class="radio_group1">
+								<span class="inputs radio"><input type="radio" name="sampleradio1" id="sr1" /><label for="sr1">1</label></span>
+								<span class="inputs radio ked"><input type="radio" name="sampleradio1" id="sr2" checked="checked" /><label for="sr2">2</label></span>
+							</div>
+							<ul class="radio_group2">
+								<li>
+									<span class="inputs radio"><input type="radio" name="sampleradio2" id="sr3" /><label for="sr3">1</label></span>
+								</li>
+								<li>
+									<span class="inputs radio ked"><input type="radio" name="sampleradio2" id="sr4" checked="checked" /><label for="sr4">2</label></span>
+								</li>
+							</ul>
+						</div>
+						<!-- //구분용 그룹-->
+
+						<!-- 구분용 그룹-->
+						<div class="margin_b20">
+							<span class="selects">
+								<select style="width:500px" disabled="disabled">
+									<option>Select Box</option>
+									<option>EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</option>
+									<option>EEEEEEE EE EEEEEE EEEEEEE EE EEEE EEEE EE E E</option>
+									<option>한글한글한글한글한글한긇한글한갛ㄴ가흐ㅏㄴ가한</option>
+									<option>한글 한 글 한글한글한 글한긇 한 글한갛ㄴ 가흐</option>
+								</select>
+							</span>
+						</div>
+						<!-- //구분용 그룹-->
+
+						<!-- 구분용 그룹-->
+						<a class="btns ac swch" style="display:block" onclick="acodi('.targetclass')" href="#"><span style="display:block">버튼열닫</span></a>
+						<div class="acodian_box acd_off targetclass margin_b20">
+							<a class="btns_i type1" href="#"><span>알림</span></a>
+							<br />
+							a.btns_i.type1>span{}
+							<br /><br />
+							<a class="btns_i type2" href="#"><span>빼기</span></a>
+							<br />
+							a.btns_i.type2>span{}
+							<br /><br />
+							<a class="btns_i type3" href="#"><span>더하기</span></a>
+							<br />
+							a.btns_i.type3>span{}
+							<br /><br />
+							<a class="btns" href="#"><span>기본 H60px</span></a>
+							<br />
+							a.btns>span{}
+							<br /><br />
+							<a class="btns setblock" href="#"><span>기본-100% H60px ** 최대 길이 1024px</span></a>
+							<br />
+							a.btns.setblock>span{}
+							<br /><br />
+							<a class="btns w70" href="#"><span>흰색 H70px</span></a>
+							<br />
+							a.btns.w70>span{}
+							<br /><br />
+							<a class="btns p70 colorf" href="#"><span>핑크 H70px</span></a>
+							<br />
+							a.btns.p70.colorf>span{}
+							<br /><br />
+							<a class="btns b70 colorf" href="#"><span>블랙 H70px</span></a>
+							<br />
+							a.btns.b70.colorf>span{}
+							<br /><br />
+							<a class="btns b60 colorf" href="#"><span>블랙 H60px</span></a>
+							<br />
+							a.btns.b60.colorf>span{}
+							<br /><br />
+							<a class="btns swch" href="#"><span>토글 H60px</span></a>
+							<br />
+							a.btns.swch>span{}
+							<br /><br />
+							<a class="btns w70 swch" href="#"><span>토글 H70px</span></a>
+							<br />
+							a.btns.w70.swch>span{}
+							<br /><br />
+							<a class="btns swch on colorf" href="#"><span>토글 온 H60px</span></a>
+							<br />
+							a.btns.swch.on.colorf>span{}
+							<br /><br />
+							<a class="btns w70 swch on colorf" href="#"><span>토글 온 H70px</span></a>
+							<br />
+							a.btns.w70.swch.on.colorf>span{}
+							<br /><br />
+							<a class="btns p90 colorf" href="#"><span>핑크 H90px</span></a>
+							<br />
+							a.btns.p90.colorf>span{}
+							<br /><br />
+							<a class="btns ak" href="#"><span>ㅎㅎㅎ H72px</span></a>
+							<br />
+							a.btns.ak>span{}
+							<br /><br />
+							<a class="btns ak pink" href="#"><span>ㅎㅎㅎ 온 H72px</span></a>
+							<br />
+							a.btns.ak.pink>span{}
+							<br /><br />
+							<a class="btns ac swch" href="#"><span>미리 H72px</span></a>
+							<br />
+							a.btns.ac.swch>span{}
+							<br /><br />
+							<a class="btns ac swch colorf on" href="#"><span>미리 온 H72px</span></a>
+							<br />
+							a.btns.ac.swch.on>span{}
+							<br /><br />
+							<br /><br />
+							<a class="btns" href="#"><span><i class="ico question margin_r0">? 아이콘 버튼</i></span></a>
+							<br /><br />
+							<a class="btns p68 colorf" href="#"><span><i class="ico card_w"></i>카드 흰색 아이콘 버튼</span></a>
+							<br /><br />
+							<a class="btns p68 colorf" href="#"><span><i class="ico bag_w"></i>가방 흰색 아이콘 버튼</span></a>
+							<br /><br />
+							<a class="btns g68 colorf" href="#"><span><i class="ico chek_w"></i>체크 흰색 아이콘 버튼</span></a>
+							<br /><br />
+							<a class="btns g68 colorf" href="#"><span><i class="ico round1_w"></i>원1 흰색 아이콘 버튼</span></a>
+						</div>
+						<!-- //구분용 그룹-->
+
+						<!-- 구분용 그룹-->
+						<a class="btns ac swch" style="display:block" onclick="acodi('.ico_box')" href="#"><span style="display:block">아이콘열닫</span></a>
+						<div class="acodian_box acd_off ico_box margin_b20">
+							<i class="ico round1_p"></i>원1 분홍 아이콘 버튼
+						<br /><br />
+							<i class="ico round1_b"></i>원1 블루 아이콘 버튼
+						<br /><br />
+						<i class="ico round1_g"></i>원1 그린 아이콘 버튼
+						<br /><br />
+							<i class="ico zoom_p"></i>돋보기 분홍 아이콘 버튼
+						<br /><br />
+							<i class="ico x_g"></i>엑스 회색 아이콘 버튼
+						<br /><br />
+							<i class="ico question"></i>? 회색 아이콘 버튼
+						<br /><br />
+							<i class="ico minus"></i>- 회색 아이콘 버튼
+						<br /><br />
+							<i class="ico plus"></i>+ 회색 아이콘 버튼
+						<br /><br />
+							<i class="ico sns cacaot"></i>카카오 아이콘 버튼
+						<br /><br />
+							<i class="ico sns twt"></i>튓 아이콘 버튼
+						<br /><br />
+							<i class="ico sns febk"></i>페북 아이콘 버튼
+						<br /><br />
+							<i class="ico sns m2d"></i>미투 아이콘 버튼
+						<br /><br />
+							<i class="ico sns cyw"></i>싸이 아이콘 버튼
+						</div>
+						<!-- //구분용 그룹-->
+
+						<!-- 구분용 그룹-->
+						<a class="btns ac swch" style="display:block" onclick="acodi('.badge_box')" href="#"><span style="display:block">밷지열닫</span></a>
+						<div class="acodian_box acd_off badge_box margin_b20">
+							<span class="bages">기본</span>
+							<span class="bages c_gold">노랑</span>
+							<span class="bages c_pink">분홍</span>
+						<br /><br />
+							<span class="bages_type2 c_blue"><em>파랑</em></span>
+							<span class="bages_type2 c_green"><em>녹색</em></span>
+							<span class="bages_type2 c_orenge "><em>주황</em></span>
+							<span class="bages_type2 c_gray"><em>회색</em></span>
+							<span class="bages_type2 c_red"><em>깜짝</em></span>
+						<br /><br />
+							<span class="bages type3">강추</span>
+						</div>
+						<!-- //구분용 그룹-->
+
+						<!-- 구분용 그룹-->
+						<a class="btns ac swch" style="display:block" onclick="acodi('.star_point_box')" href="#"><span style="display:block">별표열닫</span></a>
+						<div class="acodian_box acd_off star_point_box margin_b20">
+							<div class="star_point"><span>0점</span></div>
+							<br/>
+							<div class="star_point star1"><span>1점</span></div>
+							<br/>
+							<div class="star_point type144 star2"><span>2점</span></div>
+							<br/>
+							<div class="star_point type144 star3"><span>3점</span></div>
+							<br/>
+							<div class="star_point type117 star4"><span>4점</span></div>
+							<br/>
+							<div class="star_point type117 star5"><span>5점</span></div>
+						</div>
+						<!-- //구분용 그룹-->
+
+						<!-- 구분용 그룹-->
+						<div class="margin_b20">
+							<div class="tabs">
+								<ul>
+									<li class="fc on"><a href="#" class="tabs_a"><span>기본배송주소</span></a></li>
+									<li><a href="#" class="tabs_a"><span>배송주소록</span></a></li>
+									<li class="lc"><a href="#" class="tabs_a"><span>새로쓰기</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- //구분용 그룹-->
+
+						<!-- 구분용 그룹-->
+						<div class="margin_b20" style="clear:both">
+							<nav class="pagenation">
+								<a href="#" class="btns type_page"><i class="ico page_prev">이전 페이지</i></a>
+								<a href="#" class="btns type_page nowpage"><span>1</span></a>
+								<a href="#" class="btns type_page"><span>22</span></a>
+								<a href="#" class="btns type_page"><span>333</span></a>
+								<a href="#" class="btns type_page"><i class="ico page_next">다음 페이지</i></a>
+							</nav>
+						</div>
+						<!-- //구분용 그룹-->
+
+						<!-- 구분용 그룹-->
+						<div class="margin_b20" style="clear:both">
+							<img src="./img/@main_thum.gif" alt="" class="tibdr1" />
+							<img src="./img/@main_thum.gif" alt="" class="tibdr2" />
+						</div>
+						<!-- //구분용 그룹-->
+
+					</section>
+					<!-- //스타일 컨테이너 -->
+
+					<footer>
+						<nav>
+							<ul>
+								<li><a href="#"><img src="./img/common/btn_footer_event.gif" alt="이벤트" /></a></li>
+								<li><a href="#"><img src="./img/common/btn_footer_hcodi.gif" alt="H코디" /></a></li>
+								<li><a href="#"><img src="./img/common/btn_footer_cust.gif" alt="고객센터" /></a></li>
+								<li><a href="tel:080-000-0000"><img src="./img/common/btn_footer_call.gif" alt="전화문의하기" /></a></li>
+							</ul>
+						</nav>
+						<ul>
+							<li><a href="#"><img src="./img/common/btn_verpc.gif" alt="PC 버전" /></a></li>
+							<li><a href="#"><img src="./img/common/btn_appdw.gif" alt="APP 다운로드" /></a></li>
+							<li><a href="#"><img src="./img/common/btn_footer_login.gif" alt="로그인" /></a></li>
+						</ul>
+						<address>
+							<p>현대 홈쇼핑 | 서울특별시 강동구 천호동 454-2 | 대표이사 김인권</p>
+							<p>사업자등록번호 : 211-86-76540 | 통신판매업신고 : 제25-3133호</p>
+							<p>부가통신 신고번호 : 3787 | 개인정보 관리책임 : CCM</p>
+							<p>최고고객책임자 박민희 | <a href="mailto:webmaster@hyundaihmall.com">메일 문의</a></p>
+						</address>
+					</footer>
+			</section>
+
+			<!-- 오른쪽 사이드 카테고리 -->
+			<section id="right_side" class="side_set">
+				<div>
+					<h2><img src="./img/common/h2_cartegory.jpg" alt="전체메뉴" /></h2>
+					<div class="bg_note">
+						<h3 class="on"><a href="#"><img src="./img/common/btn_car_1.jpg" alt="매장" /></a></h3>
+						<ul>
+							<li><a href="#">클릭 카탈로그</a></li>
+							<li><a href="#">기획전</a></li>
+							<li><a href="#">TV쇼핑</a></li>
+							<li><a href="#">패밀리존</a></li>
+							<li><a href="#">백화점</a></li>
+						</ul>
+
+						<h3><a href="#"><img src="./img/common/btn_car_2.jpg" alt="주간 BEST" /></a></h3>
+						<ul>
+							<li><a href="#">고객맞춤 BEST</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- // 오른쪽 사이드 카테고리 -->
+
+		</article>
+</body></html>

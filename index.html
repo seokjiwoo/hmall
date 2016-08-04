@@ -1,0 +1,825 @@
+<!doctype html>
+<html><head>
+<title> 현대 Hmall </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no" />
+<link href="./css/base.css" rel="stylesheet" type="text/css" />
+<link href="./css/hmall.css" rel="stylesheet" type="text/css" />
+<script src="./js/jquery-1.8.3.min.js"></script>
+<script src="./js/hmall.js"></script>
+<script type="text/javascript">
+	indexPage = true; //루트 폴더의 페이지표시
+</script>
+</head>
+<body id="body">
+	<article id="wrap">
+
+		<!-- 왼쪽 사이드 나의 쇼핑정보 -->
+		<section id="left_side" class="side_set">
+			<div>
+				<h2><img src="./img/common/h2_myshopping.jpg" alt="나의 쇼핑정보" /><a href="#" class="colse" style="font-size:40px; position:absolute; top:18px; right:10px;"></a></h2>
+				<div class="bg_note">
+					<!-- 로그인 X -->
+					<div class="login_box no">
+						<p>로그인하고 이용하세요.</p>
+						<div>
+							<a href="#" class="btns2"><span>로그인</span></a>
+							<a href="#" class="btns2"><span>회원가입</span></a>
+						</div>
+					</div>
+					<!-- //로그인 X -->
+					<!-- 로그인 O -->
+					<div class="login_box login">
+						<span>
+							<img src="./img/common/level_sliver.png" alt="" />
+						</span>
+						<div>
+							<p>김은혜</p>
+							<ul>
+								<li><strong>쿠폰</strong><a href="#">7장</a></li>
+								<li><strong>적립금</strong><a href="#">1,600원</a></li>
+								<li><strong>감</strong><a href="#">50개</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- //로그인 O -->
+
+					<div class="left_box num1">
+						<a href="#" class="anchor_line">
+							<strong>장바구니</strong>
+							<strong>1개</strong>
+						</a>
+					</div>
+					<div class="left_box num2">
+						<a href="#" class="anchor_line">
+							<strong>찜한 상품</strong>
+							<strong>3개</strong>
+						</a>
+					</div>
+					<div class="left_box num3">
+						<a href="#" class="anchor_line">
+							<strong>최근 본 상품</strong>
+							<strong>4개</strong>
+						</a>
+						<ul>
+							<li><a href="#"><img src="./img/@main_thum5.gif" alt="상품명" /></a></li>
+							<li><a href="#"><img src="./img/@main_thum5.gif" alt="상품명" /></a></li>
+							<li><a href="#"><img src="./img/@main_thum5.gif" alt="상품명" /></a></li>
+							<li><a href="#"><img src="./img/@main_thum5.gif" alt="상품명" /></a></li>
+						</ul>
+					</div>
+					<div class="left_box num4">
+						<a href="#" class="anchor_line">
+							<strong>즐겨찾는 서비스</strong>
+						</a>
+						<div class="left_4_list">
+							<div class="l4l_wrap">
+								<ul class="slides">
+									<li><a href="#">
+										<span><img src="./img/etc/fav_1.png" alt="서비스" /></span><span>가나다AAA22</span>
+									</a></li>
+									<li><a href="#">
+										<span><img src="./img/etc/fav_2.png" alt="서비스" /></span><span>가나다다</span>
+									</a></li>
+									<li><a href="#">
+										<span><img src="./img/etc/fav_3.png" alt="서비스" /></span><span>가나다 BEST</span>
+									</a></li>
+									<li><a href="#">
+										<span><img src="./img/etc/fav_4.png" alt="서비스" /></span><span>가나다 AAA22</span>
+									</a></li>
+									<li><a href="#">
+										<span><img src="./img/etc/fav_5.png" alt="서비스" /></span><span>가나다 AAA22</span>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="left_box num5">
+						<a href="#" class="anchor_line">
+							<strong>고객맞춤 BEST</strong>
+						</a>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="./img/@main_thum1.gif" alt="" />
+									<span>
+										[브랜드]가나다라다나나가다라다다
+									</span>
+									<span>
+										<span class="bages_type2 c_blue"><em>무 5</em></span>
+										<span class="bages_type2 c_orenge "><em>쿠폰20%</em></span>
+									</span>
+									<span><strike>30,000원</strike><strong>26,000원</strong></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./img/@main_thum1.gif" alt="" />
+									<span>
+										[브랜드]가나다라다나나가다라다다
+									</span>
+									<span>
+										<span class="bages_type2 c_blue"><em>무 5</em></span>
+										<span class="bages_type2 c_orenge "><em>쿠폰20%</em></span>
+									</span>
+									<span><strike>30,000원</strike><strong>26,000원</strong></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./img/@main_thum1.gif" alt="" />
+									<span>
+										[브랜드]가나다라다나나가다라다다
+									</span>
+									<span>
+										<span class="bages_type2 c_blue"><em>무 5</em></span>
+										<span class="bages_type2 c_orenge "><em>쿠폰20%</em></span>
+									</span>
+									<span><strike>30,000원</strike><strong>26,000원</strong></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //왼쪽 사이드 나의 쇼핑정보 -->
+
+		<section id="container">
+			<!-- header -->
+			<div class="dim"></div>
+			<header>
+				<section class="gnb_area">
+					<h1><a href="#"><img src="./img/common/logo.png " alt="현대 H Mall" /></a></h1>
+					<!-- gnb -->
+					<nav class="gnb">
+						<a href="#"><img src="./img/common/btn_gnb1.png" alt="카테고리" /></a>
+						<a href="#"><img src="./img/common/btn_gnb2.png" alt="주문/배송" /></a>
+						<a href="#"><img src="./img/common/btn_gnb3.png" alt="쿠폰/" /></span></a>
+					</nav>
+					<!-- //gnb -->
+					<!-- 검색, 사이드버튼 -->
+					<div class="bot">
+						<a href="#left_side" class="lt_on">나의 쇼핑정보</a>
+						<div class="search_area">
+							<span class="inputs txt">
+								<input type="text" title="검색어를 입력하세요." />
+								<a href="#"><i class="ico zoom_g">검색</i></a>
+							</span>
+						</div>
+						<a href="#right_side" class="rt_on">전체 메뉴</a>
+					</div>
+					<!-- //검색, 사이드버튼 -->
+				</section>
+
+				<!-- 연관검색어 -->
+				<section class="chain_search_key_box">
+					<span class="set_shadow"></span>
+					<table>
+						<colgroup>
+							<col width='50%'/>
+							<col width='50%'/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<td><a href="#">나이키</a></td>
+								<td><a href="#">아디다스</a></td>
+							</tr>
+							<tr>
+								<td><a href="#">나이키 운동화</a></td>
+								<td><a href="#">아디다스 운동화</a></td>
+							</tr>
+							<tr>
+								<td><a href="#">나이키 나이키</a></td>
+								<td><a href="#">아디다스스스</a></td>
+							</tr>
+							<tr>
+								<td><a href="#">나이키키키키키</a></td>
+								<td><a href="#">아디다닫</a></td>
+							</tr>
+							<tr>
+								<td><a href="#">나나나난</a></td>
+								<td><a href="#">푸마</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<a class="close_cskb" href="#"><i class="ico x_g"></i>닫기</a>
+				</section>
+				<!-- //연관검색어 -->
+			</header>
+			<!-- //header -->
+
+			<section class="top_event_area">
+				<a class="sample" href="#">최대 20% 혜택! <span class="setp">5% 깜작할인</span> + <span class="setp">15% 다운쿠폰</span></a>
+			</section>
+
+			<!-- Index -->
+			<section class="contanier index">
+
+				<!-- index_top_tab -->
+				<div class="index_top_tab">
+					<ul>
+						<li class="on"><a href="#" onclick="tabtabtab('.index_top_tab','.index_top_box','0')">Hmall상품</a></li>
+						<li><a href="#" onclick="tabtabtab('.index_top_tab','.index_top_box','1')">TV방송상품</a></li>
+						<li><a href="#" onclick="tabtabtab('.index_top_tab','.index_top_box','2')">현대백화점</a></li>
+					</ul>
+				</div>
+
+				<div class="index_top_box itb_body1 on">
+					<p><img src="./img/main/ico_notice.png" alt="" />Click H</p>
+					<div class="loading" alt="로딩중"></div>
+					<div class="in_tb1">
+						<div class="swiper-slide">
+							<a href="#" class="img"><img src="./img/@main_thum9.gif" alt="상품명" />
+							<span class="sale_rib">15%</span>
+							</a>
+							<a href="#" class="right_box">
+								<span class="star_point star1"></span>
+								<span class="tit">제품 제품 ㅈ품 타이트랑러ㅏㅏㄴ이 394238ㅇ랑</span>
+								<span class="badge blk">
+									<span class="bages_type2 c_blue"><em>무 5</em></span>
+									<span class="bages_type2 c_green"><em>적 1,000</em></span>
+									<span class="bages_type2 c_orenge "><em>쿠폰20%</em></span>
+									<span class="bages_type2 c_gray"><em>일시불</em></span>
+									<span class="bages_type2 c_red"><em>깜짝</em></span>
+								</span>
+								<span class="price1">158,000원</span>
+								<span class="price">158,000원</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="img"><img src="./img/@main_thum9.gif" alt="상품명" />
+							<span class="sale_rib">15%</span>
+							</a>
+							<a href="#" class="right_box">
+								<span class="star_point star1"></span>
+								<span class="tit">제품 제품 ㅈ품 타이트랑러ㅏㅏㄴ이 394238ㅇ랑</span>
+								<span class="badge blk">
+									<span class="bages_type2 c_blue"><em>무 5</em></span>
+									<span class="bages_type2 c_green"><em>적 1,000</em></span>
+									<span class="bages_type2 c_orenge "><em>쿠폰20%</em></span>
+									<span class="bages_type2 c_gray"><em>일시불</em></span>
+									<span class="bages_type2 c_red"><em>깜짝</em></span>
+								</span>
+								<span class="price1">158,000원</span>
+								<span class="price">158,000원</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="img"><img src="./img/@main_thum9.gif" alt="상품명" />
+							<span class="sale_rib">15%</span>
+							</a>
+							<a href="#" class="right_box">
+								<span class="star_point star1"></span>
+								<span class="tit">제품 제품 ㅈ품 타이트랑러ㅏㅏㄴ이 394238ㅇ랑</span>
+								<span class="badge blk">
+									<span class="bages_type2 c_blue"><em>무 5</em></span>
+									<span class="bages_type2 c_green"><em>적 1,000</em></span>
+									<span class="bages_type2 c_orenge "><em>쿠폰20%</em></span>
+									<span class="bages_type2 c_gray"><em>일시불</em></span>
+									<span class="bages_type2 c_red"><em>깜짝</em></span>
+								</span>
+								<span class="price1">158,000원</span>
+								<span class="price">158,000원</span>
+							</a>
+						</div>
+					</div>
+					<div class="in_mid_nav itb_body1_nav"></div>
+				</div>
+
+				<div class="index_top_box itb_body2">
+					<ul class="itb_body2_tab">
+						<li><a href="#" class="on">TV방송상품</a></li>
+						<li><a href="#">편성표</a></li>
+						<li><a href="#">미리주문</a></li>
+						<li><a href="#">지난방송</a></li>
+					</ul>
+
+					<p><img src="./img/main/ico_notice.png" alt="" />On Air</p>
+					<div class="in_tb2">
+						<div class="swiper-slide">
+							<a href="#" class="img">
+								<img src="./img/@main_thum9.gif" alt="상품명" />
+								<span class="sale_rib">15%</span>
+							</a>
+							<a href="#" class="right_box">
+								<span class="hour"><img src="./img/common/clickh_count2.png" alt="" /><strong>10:13~12:10</strong></span>
+								<span class="star_point star4"></span>
+								<span class="tit">제품 제품 ㅈ품 타이트랑러ㅏㅏㄴ이 394238ㅇ랑</span>
+								<span class="badge blk">
+									<span class="bages_type2 c_blue"><em>무 5</em></span>
+									<span class="bages_type2 c_green"><em>적 1,000</em></span>
+									<span class="bages_type2 c_orenge "><em>쿠폰20%</em></span>
+									<span class="bages_type2 c_gray"><em>일시불</em></span>
+									<span class="bages_type2 c_red"><em>깜짝</em></span>
+								</span>
+								<span class="price1">158,000원</span>
+								<span class="price">158,000원</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="img">
+								<img src="./img/@main_thum9.gif" alt="상품명" />
+								<span class="sale_rib">15%</span>
+							</a>
+							<a href="#" class="right_box">
+								<span class="hour"><img src="./img/common/clickh_count2.png" alt="" /><strong>10:13~12:10</strong></span>
+								<span class="star_point star1"></span>
+								<span class="tit">제품 제품 ㅈ품 타이트랑러ㅏㅏㄴ이 394238ㅇ랑</span>
+								<span class="badge blk">
+									<span class="bages_type2 c_blue"><em>무 5</em></span>
+									<span class="bages_type2 c_green"><em>적 1,000</em></span>
+									<span class="bages_type2 c_orenge "><em>쿠폰20%</em></span>
+									<span class="bages_type2 c_gray"><em>일시불</em></span>
+									<span class="bages_type2 c_red"><em>깜짝</em></span>
+								</span>
+								<span class="price1">158,000원</span>
+								<span class="price">158,000원</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="img">
+								<img src="./img/@main_thum9.gif" alt="상품명" />
+								<span class="sale_rib">15%</span>
+							</a>
+							<a href="#" class="right_box">
+								<span class="hour"><img src="./img/common/clickh_count2.png" alt="" /><strong>10:13~12:10</strong></span>
+								<span class="star_point star3"></span>
+								<span class="tit">제품 제품 ㅈ품 타이트랑러ㅏㅏㄴ이 394238ㅇ랑</span>
+								<span class="badge blk">
+									<span class="bages_type2 c_blue"><em>무 5</em></span>
+									<span class="bages_type2 c_green"><em>적 1,000</em></span>
+									<span class="bages_type2 c_orenge "><em>쿠폰20%</em></span>
+									<span class="bages_type2 c_gray"><em>일시불</em></span>
+									<span class="bages_type2 c_red"><em>깜짝</em></span>
+								</span>
+								<span class="price1">158,000원</span>
+								<span class="price">158,000원</span>
+							</a>
+						</div>
+					</div>
+					<div class="list_page">
+						<a href="#" class="btns_page_left"><span><img src="./img/tv/btn_page_left.png" alt="" /></span></a>
+						<p><em>1</em>/5</p>
+						<a href="#" class="btns_page_right"><span><img src="./img/tv/btn_page_right.png" alt="" /></span></a>
+					</div>
+					<div class="rtpay">
+						<div class="option_box">
+							<ul>
+								<li>
+									<label for="detail_option1">색상</label>
+									<span class="selects">
+										<select id="detail_option1">
+											<option>카키</option>
+											<option>브라운</option>
+										</select>
+									</span>
+								</li>
+								<li>
+									<label for="detail_option2">사이즈</label>
+									<span class="selects">
+										<select id="detail_option2">
+											<option>265</option>
+											<option>270</option>
+										</select>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="sel_option">
+							<ul>
+								<li>
+									<div class="sel_prod">
+										<a href="#"><i class="ico x_g"></i></a>
+										<p class="name"><span>제품명 NAME -001</span><span>옵션1</span><span>옵션2</span><span>옵션3</span><span>옵션4</span></p>
+										<p class="price">122,247,999원</p>
+									</div>
+									<div class="set_number">
+										<label for="detail_number1">수량</label>
+										<span class="inputs number">
+											<a href="#" class="setting">수량 빼기</a>
+											<input type="number" id="detail_number1" min="1" value="1" />
+											<a href="#" class="setting">수량 더하기</a>
+										</span>
+									</div>
+								</li>
+							</ul>
+							<script type="text/javascript">
+								$('.sel_option .sel_prod a').click(function(){
+									$(this).parent().parent('li').remove()
+								})
+							</script>
+						</div>
+						<div class="rt_yn">
+							<a href="#" class="btns3 gray"><span>취소</span></a>
+							<a href="#" class="btns3 red"><span>주문하기</span></a>
+						</div>
+					</div>
+					<div class="btns_rt">
+						<a href="#" class="btns3 green"><span>생방송 보기</span></a>
+						<a href="#" class="btns3 red"><span>바로구매</span></a>
+						<a href="#" class="btns3 gray"><span>상세보기</span></a>
+						<script type="text/javascript">
+							$('.btns_rt .red').click(function(){
+								if (!$('.rtpay').hasClass('on')) {
+									$('.rtpay').addClass('on')
+								}
+							})
+							$('.rt_yn a').click(function(){
+								$('.rtpay').removeClass('on')
+							})
+						</script>
+					</div>
+					<a href="#" class="btns w46 btn_go_all_list"><span>전체보기</span></a>
+				</div>
+
+				<div class="index_top_box itb_body3">
+					<a href="#" class="btns go_hyundai"><span>현대백화점 바로가기</span></a>
+					<p><img src="./img/main/ico_notice.png" alt="" />HOT 아이템</p>
+					<div class="in_tb3">
+						<div class="swiper-slide">
+							<a href="#" class="img">
+								<img src="./img/@main_thum9.gif" alt="상품명" />
+								<span class="sale_rib">15%</span>
+							</a>
+							<a href="#" class="right_box">
+								<span class="star_point star4"></span>
+								<span class="tit">제품 제품 ㅈ품 타이트랑러ㅏㅏㄴ이 394238ㅇ랑</span>
+								<span class="badge blk">
+									<span class="bages_type2 c_blue"><em>무 5</em></span>
+									<span class="bages_type2 c_green"><em>적 1,000</em></span>
+									<span class="bages_type2 c_orenge "><em>쿠폰20%</em></span>
+									<span class="bages_type2 c_gray"><em>일시불</em></span>
+									<span class="bages_type2 c_red"><em>깜짝</em></span>
+								</span>
+								<span class="price1">158,000원</span>
+								<span class="price">158,000원</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="img">
+								<img src="./img/@main_thum9.gif" alt="상품명" />
+								<span class="sale_rib">15%</span>
+							</a>
+							<a href="#" class="right_box">
+								<span class="star_point star2"></span>
+								<span class="tit">제품 제품 ㅈ품 타이트랑러ㅏㅏㄴ이 394238ㅇ랑</span>
+								<span class="badge blk">
+									<span class="bages_type2 c_blue"><em>무 5</em></span>
+									<span class="bages_type2 c_green"><em>적 1,000</em></span>
+									<span class="bages_type2 c_orenge "><em>쿠폰20%</em></span>
+									<span class="bages_type2 c_gray"><em>일시불</em></span>
+									<span class="bages_type2 c_red"><em>깜짝</em></span>
+								</span>
+								<span class="price1">158,000원</span>
+								<span class="price">158,000원</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="img">
+								<img src="./img/@main_thum9.gif" alt="상품명" />
+								<span class="sale_rib">15%</span>
+							</a>
+							<a href="#" class="right_box">
+								<span class="star_point star5"></span>
+								<span class="tit">제품 제품 ㅈ품 타이트랑러ㅏㅏㄴ이 394238ㅇ랑</span>
+								<span class="badge blk">
+									<span class="bages_type2 c_blue"><em>무 5</em></span>
+									<span class="bages_type2 c_green"><em>적 1,000</em></span>
+									<span class="bages_type2 c_orenge "><em>쿠폰20%</em></span>
+									<span class="bages_type2 c_gray"><em>일시불</em></span>
+									<span class="bages_type2 c_red"><em>깜짝</em></span>
+								</span>
+								<span class="price1">158,000원</span>
+								<span class="price">158,000원</span>
+							</a>
+						</div>
+					</div>
+					<div class="list_page">
+						<a href="#" class="btns_page_left"><span><img src="./img/tv/btn_page_left.png" alt="" /></span></a>
+						<p><em>1</em>/5</p>
+						<a href="#" class="btns_page_right"><span><img src="./img/tv/btn_page_right.png" alt="" /></span></a>
+					</div>
+					<a href="#" class="btns w46 btn_go_all_list"><span>전체보기</span></a>
+				</div>
+				<!-- //index_top_tab -->
+
+
+				<!-- index_mid_slide_banner -->
+				<div class="index_mid_slide_banner">
+					<div class="index_mid_slide_wrap">
+						<div class="swiper-slide">
+							<a href="#"><img src="./img/main/in_mid_banner_1.jpg" alt="배너 내용" /></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"><img src="./img/main/in_mid_banner_1.jpg" alt="배너 내용" /></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"><img src="./img/main/in_mid_banner_1.jpg" alt="배너 내용" /></a>
+						</div>
+					</div>
+					<div class="in_mid_nav in_mid_slide_nav"></div>
+				</div>
+				<!-- //index_mid_slide_banner -->
+
+				<!-- hit_keyword -->
+				<div class="hit_keyword">
+					<a href="#">지금 가장 인기 있는 검색어 Top 10</a>
+					<ol class="key_list">
+						<li><a href="#"><span class="key_num">1</span>김민정</a><span class="up"></span><span class="knum">6</span></li>
+						<li><a href="#"><span class="key_num">2</span>박중훈</a><span class="new"></span></li>
+						<li><a href="#"><span class="key_num">3</span>가문의귀환</a><span class="no"></span></li>
+						<li><a href="#"><span class="key_num">4</span>최성수</a><span class="down"></span><span class="knum">126</span></li>
+						<li><a href="#"><span class="key_num">5</span>양승은</a><span class="new"></span></li>
+						<li><a href="#"><span class="key_num">6</span>신한은행 우리은행</a><span class="up"></span><span class="knum">6</span></li>
+						<li><a href="#"><span class="key_num">7</span>해커스어학원</a><span class="new"></span></li>
+						<li><a href="#"><span class="key_num">8</span>경희대학교 입학처</a><span class="no"></span></li>
+						<li><a href="#"><span class="key_num">9</span>투표장소조회</a><span class="down"></span><span class="knum">126</span></li>
+						<li><a href="#"><span class="key_num">10</span>신의탑</a><span class="new"></span></li>
+						<li><a href="#" class="colse"><img src="./img/main/colse.jpg" alt="닫기" /></a></li>
+					</ol>
+				</div>
+				<!-- //hit_keyword -->
+
+				<!-- index_special -->
+				<div class="index_special">
+					<ul class="index_special_tab">
+						<li class="on"><a href="#" onclick="tabtabtab('.index_special_tab','.special_box','0')"><img src="./img/main/in_speacial_tab1.jpg" alt="모바일 특가" /></a></li>
+						<li><a href="#" onclick="tabtabtab('.index_special_tab','.special_box','1')"><img src="./img/main/in_speacial_tab2.jpg" alt="고객 베스트" /></a></li>
+					</ul>
+					<div class="is_load" alt="로딩중"></div>
+					<div class="special_box isb_body1 on">
+						<ul class="slides">
+							<li>
+								<a href="#" class="img"><span><strong>99</strong>%</span><img src="./img/@main_thum2.gif" alt="상품 명" /></a>
+								<a href="#" class="paragraph">
+									<span class="tit">제품상품 명칭 이름 길이 넓이 높이 가나다라</span>
+									<span class="price1">999,999,999원</span>
+									<span class="price2">1,900,000원</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="img"><span><strong>5</strong>%</span><img src="./img/@main_thum8.gif" alt="상품 명" /></a>
+								<a href="#" class="paragraph">
+									<span class="tit">제품상품 명칭 이름 길이 넓이 높이 가나다라</span>
+									<span class="price1">999,999,999원</span>
+									<span class="price2">1,900,000원</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="img"><span><strong>12</strong>%</span><img src="./img/@main_thum4.gif" alt="상품 명" /></a>
+								<a href="#" class="paragraph">
+									<span class="tit">제품상품 명칭 이름 길이 넓이 높이 가나다라</span>
+									<span class="price1">999,999,999원</span>
+									<span class="price2">1,900,000원</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="img"><span><strong>12</strong>%</span><img src="./img/@main_thum4.gif" alt="상품 명" /></a>
+								<a href="#" class="paragraph">
+									<span class="tit">제품상품 명칭 이름 길이 넓이 높이 가나다라</span>
+									<span class="price1">999,999,999원</span>
+									<span class="price2">1,900,000원</span>
+								</a>
+							</li>
+						</ul>
+						<!-- <div class="in_mid_nav isb_body1_nav"></div> -->
+					</div>
+					<div class="special_box isb_body2">
+						<ul class="slides">
+							<li>
+								<a href="#" class="img"><span><strong>30</strong>%</span><img src="./img/@main_thum3.gif" alt="상품 명" /></a>
+								<a href="#" class="paragraph">
+									<span class="tit">제품상품 명칭 이름 길이 넓이 높이 가나다라</span>
+									<span class="price1">999,999,999원</span>
+									<span class="price2">1,900,000원</span>
+								</a>
+							</li>
+						</ul>
+						<!-- <div class="in_mid_nav isb_body2_nav"></div> -->
+					</div>
+				</div>
+				<!-- //index_special -->
+
+				<script type="text/javascript" src="./js/jquery.flexslider.js"></script>
+				<script type="text/javascript">
+				$(window).load(function(){
+					$(".isb_body1").fadeIn("500");
+					$(".is_load").hide();
+					 $('.isb_body1').flexslider({
+						animation: "slide",
+						animationLoop: true,
+						directionNav: false,
+						itemWidth: 220,
+						animation: "slide",
+						minItems: 2
+					});
+
+					 $('.isb_body2').flexslider({
+						animation: "slide",
+						animationLoop: true,
+						directionNav: false,
+						itemWidth: 220,
+						animation: "slide",
+						minItems: 2
+					});
+
+					 $('.l4l_wrap').flexslider({
+						animation: "slide",
+						animationLoop: true,
+						controlNav: false,
+						itemWidth: 82,
+						animation: "slide"
+					});
+				})
+				</script>
+
+				<!-- hit -->
+				<div class="hit_tab">
+					<p>인기기획전</p>
+					<div style="position:relative;float:right;">
+						<span><a href="#" class="btn_hit_left"></a></span>
+						<div class="ht_bordor">
+							<div class="sp_box_wrap">
+								<div class="swiper-slide on"><a href="#" onclick="tabtabtab('.hit_tab','.hit_box','0')">패션</a></div>
+								<div class="swiper-slide"><a href="#" onclick="tabtabtab('.hit_tab','.hit_box','1')">잡화/명품</a></div>
+								<div class="swiper-slide"><a href="#" onclick="tabtabtab('.hit_tab','.hit_box','2')">스포츠/아동</a></div>
+								<div class="swiper-slide"><a href="#" onclick="tabtabtab('.hit_tab','.hit_box','3')">가전기기</a></div>
+							</div>
+						</div>
+						<span><a href="#" class="btn_hit_left"></a></span>
+					</div>
+				</div>
+				<div class="hit_box body01 on">
+					<ul>
+						<li class="typ1"><a href="#"><img src="./img/main/in_foot_banner_1.jpg" alt="배너 내용" /></a></li>
+						<li class="typ2"><a href="#"><img src="./img/main/hs_foot_banner_2.jpg" alt="배너 내용" /></a></li>
+						<li class="typ2"><a href="#"><img src="./img/main/hs_foot_banner_3.jpg" alt="배너 내용" /></a></li>
+					</ul>
+				</div>
+				<div class="hit_box body02">
+					<ul>
+						<li class="typ1"><a href="#"><img src="./img/main/hs_foot_banner_1.jpg" alt="배너 내용" /></a></li>
+						<li class="typ2"><a href="#"><img src="./img/main/hs_foot_banner_2.jpg" alt="배너 내용" /></a></li>
+						<li class="typ2"><a href="#"><img src="./img/main/hs_foot_banner_3.jpg" alt="배너 내용" /></a></li>
+					</ul>
+				</div>
+				<div class="hit_box body03">
+					<ul>
+						<li class="typ1"><a href="#"><img src="./img/main/in_foot_banner_1.jpg" alt="배너 내용" /></a></li>
+						<li class="typ2"><a href="#"><img src="./img/main/hs_foot_banner_2.jpg" alt="배너 내용" /></a></li>
+						<li class="typ2"><a href="#"><img src="./img/main/hs_foot_banner_3.jpg" alt="배너 내용" /></a></li>
+					</ul>
+				</div>
+				<div class="hit_box body04">
+					<ul>
+						<li class="typ1"><a href="#"><img src="./img/main/hs_foot_banner_1.jpg" alt="배너 내용" /></a></li>
+						<li class="typ2"><a href="#"><img src="./img/main/hs_foot_banner_2.jpg" alt="배너 내용" /></a></li>
+						<li class="typ2"><a href="#"><img src="./img/main/hs_foot_banner_3.jpg" alt="배너 내용" /></a></li>
+					</ul>
+				</div>
+				<!-- //hit -->
+
+				<!-- qick_service -->
+				<div class="qick_service_tit">
+					<h3>즐겨찾는 서비스</h3>
+					<a href="#" class="btns"><span>전체보기</span></a>
+				</div>
+				<div class="qick_service">
+					<ul>
+						<li><a href="#"><img src="./img/etc/fav_1.png" alt="" /><b>현대백화점관</b></a></li>
+						<li><a href="#"><img src="./img/etc/fav_2.png" alt="" /><b>TV쇼핑관</b></a></li>
+						<li><a href="#"><img src="./img/etc/fav_3.png" alt="" /><b>클릭!카탈로그</b></a></li>
+						<li><a href="#"><img src="./img/etc/fav_4.png" alt="" /><b>쇼킹프라이스</b></a></li>
+						<li><a href="#"><img src="./img/etc/fav_5.png" alt="" /><b>출석이벤트</b></a></li>
+						<li><a href="#"><img src="./img/etc/fav_6.png" alt="" /><b>인기기획전</b></a></li>
+						<li><a href="#"><img src="./img/etc/fav_7.png" alt="" /><b>클릭 H</b></a></li>
+						<li><a href="#"><img src="./img/etc/fav_8.png" alt="" /><b>e쿠폰</b></a></li>
+					</ul>
+				</div>
+				<!-- //qick_service -->
+
+				<!-- news_section -->
+				<div class="news_section">
+					<a href="#">
+						<span>공지</span>
+						<span>Hmall 모바일 홈페이지 리뉴얼 리뉴얼 리뉴얼 리리리리리리리리리리릴ㄹ</span>
+						<img src="./img/main/gt_gray.gif" alt="공지사항 바로가기" />
+					</a>
+				</div>
+				<!-- //news_section -->
+			</section>
+			<!-- Index -->
+
+			<script type="text/javascript" src="./js/idangerous.swiper-1.6.min.js"></script>
+			<script type="text/javascript">
+			$(window).load(function(){
+				$(".in_tb1").fadeIn("500");
+				$(".loading").hide();
+				// 클릭H
+				if ($('.itb_body1 .swiper-slide').length > 1) {
+					var mySwiper1 = $('.itb_body1').swiper({
+						wrapperClass :'in_tb1',
+						autoPlay:'5000',
+						pagination : '.itb_body1_nav',
+						loop: true
+					});
+				}
+
+				// TV방송상품
+				var itb_b2 = $('.itb_body2 .swiper-slide').length;
+				var itb_b_w = $('#container').outerWidth();
+				$('.itb_body2 .in_tb2 .swiper-slide').css('width',itb_b_w)
+				if (itb_b2 > 1) {
+					$('.itb_body2 .in_tb2').css('width',itb_b_w*itb_b2+'px')
+				}
+
+				$('.itb_body2_tab li a').click(function(){
+					$('.itb_body2_tab li a').removeClass('on')
+					$(this).addClass('on')
+				})
+
+				//현대백화점
+				if ($('.itb_body3 .swiper-slide').length > 1) {
+					var mySwiper3 = $('.itb_body3').swiper({
+						wrapperClass :'in_tb3'
+					});
+				}
+
+				// 중간 배너 슬라이드
+				if ($('.index_mid_slide_banner .swiper-slide').length > 1) {
+					var mySwiper = $('.index_mid_slide_banner').swiper({
+						wrapperClass :'index_mid_slide_wrap',
+						autoPlay:'5000',
+						pagination : '.in_mid_slide_nav',
+						loop: true
+					});
+				}
+
+				if ($('.ht_bordor').length > 0) {
+					var mySwiper4 = $('.ht_bordor').swiper({
+						wrapperClass :'sp_box_wrap',
+						slidesPerSlide: 3,
+						loop: false
+					});
+				}
+			});
+			</script>
+			<footer>
+				<nav>
+					<ul>
+						<li><a href="#"><img src="./img/common/btn_footer_event.gif" alt="이벤트" /></a></li>
+						<li><a href="#"><img src="./img/common/btn_footer_hcodi.gif" alt="H코디" /></a></li>
+						<li><a href="#"><img src="./img/common/btn_footer_cust.gif" alt="고객센터" /></a></li>
+						<li><a href="tel:080-000-0000"><img src="./img/common/btn_footer_call.gif" alt="전화문의하기" /></a></li>
+					</ul>
+				</nav>
+				<ul>
+					<li><a href="#"><img src="./img/common/btn_verpc.gif" alt="PC 버전" /></a></li>
+					<li><a href="#"><img src="./img/common/btn_appdw.gif" alt="APP 다운로드" /></a></li>
+					<li><a href="#"><img src="./img/common/btn_footer_login.gif" alt="로그인" /></a></li>
+				</ul>
+				<address>
+					<p>현대 홈쇼핑 | 서울특별시 강동구 천호동 454-2 | 대표이사 김인권</p>
+					<p>사업자등록번호 : <span>211</span>-86<span>-</span>76540 | 통신판매업신고 : 제25-3133호</p>
+					<p>부가통신 신고번호 : 3787 | 개인정보 관리책임 : CCM</p>
+					<p>최고고객책임자 박민희 | <a href="mailto:webmaster@hyundaihmall.com">메일 문의</a></p>
+				</address>
+			</footer>
+		</section>
+
+		<!-- 오른쪽 사이드 카테고리 -->
+		<section id="right_side" class="side_set">
+			<div>
+				<h2><img src="./img/common/h2_cartegory.jpg" alt="전체메뉴" /><a href="#" class="col" style="font-size:40px; position:absolute; top:18px; right:10px;"></a></h2>
+				<div class="bg_note">
+					<h3 class="btn on"><a href="#"><img src="./img/common/ico_w_right1.png" alt="" /><span>주간 BEST</span></a></h3>
+					<ul>
+						<li><a href="#">클릭 카탈로그</a></li>
+						<li><a href="#">기획전</a></li>
+						<li><a href="#">TV쇼핑</a></li>
+						<li><a href="#">패밀리존</a></li>
+						<li><a href="#">백화점</a></li>
+					</ul>
+
+					<h3 class="btn"><a href="#"><img src="./img/common/ico_w_right2.png" alt="" /><span>주간 BEST</span></a></h3>
+					<ul>
+						<li><a href="#">고객맞춤 BEST</a></li>
+					</ul>
+
+					<h3 class="btn"><a href="#"><img src="./img/common/ico_w_right3.png" alt="" /><span>주간 BEST</span></a></h3>
+					<ul>
+						<li><a href="#">고객맞춤 BEST</a></li>
+					</ul>
+
+					<h3 class="btn"><a href="#"><img src="./img/common/ico_w_right4.png" alt="" /><span>주간 BEST</span></a></h3>
+					<ul>
+						<li><a href="#">고객맞춤 BEST</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- // 오른쪽 사이드 카테고리 -->
+
+	</article>
+</body></html>
